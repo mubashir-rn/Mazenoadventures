@@ -3,8 +3,52 @@ import Footer from "@/components/Footer";
 import EnquiryForm from "@/components/EnquiryForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useSEO } from "@/hooks/use-seo";
 
 const ContactUs = () => {
+  useSEO({
+    title: "Contact Mazano Adventures | Adventure in Pakistan | Online Appointments",
+    description:
+      "Contact Mazano Adventures for top-rated adventure tours in Pakistan. Online appointments available. Reach us via WhatsApp or email for Fairy Meadows, Skardu, Deosai and more.",
+    keywords: [
+      "adventure in pakistan",
+      "online appointments adventure in pakistan",
+      "top rated adventure in pakistan",
+      "adventure tours pakistan",
+      "adventure places in pakistan",
+      "best adventure places in pakistan",
+      "adventures islamabad",
+      "pakistan tour packages",
+      "mountain adventure pakistan",
+      "fairy meadows",
+      "things to see in skardu",
+      "skardu deosai",
+      "contact adventure pakistan",
+    ],
+    canonical: typeof window !== "undefined" ? window.location.origin + "/contact-us" : undefined,
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      name: "Mazano Adventures",
+      url: typeof window !== "undefined" ? window.location.origin + "/contact-us" : "",
+      email: "akhtarnagabarbat@gmail.com",
+      telephone: "+92 345 9160113",
+      sameAs: ["https://wa.link/d4d1pg"],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Post Office Tarnishing",
+        addressLocality: "Tehsil Shouter",
+        addressRegion: "Gilgit-Baltistan",
+        addressCountry: "PK",
+      },
+      openingHoursSpecification: [{
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        opens: "00:00",
+        closes: "23:59",
+      }],
+    },
+  });
   return (
     <div className="min-h-screen">
       <Navigation />
