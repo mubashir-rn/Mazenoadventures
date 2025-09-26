@@ -55,13 +55,21 @@ const Footer = () => {
                   </a>
                 </span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-secondary" />
-                <span className="text-sm">
-                  <a href="mailto:akhtarnagabarbat@gmail.com" className="underline underline-offset-4">
-                    akhtarnagabarbat@gmail.com
-                  </a>
-                </span>
+              <div className="flex items-start">
+                <div className="text-sm space-y-1">
+                  <div className="flex items-center gap-2">
+                    <Mail className="h-4 w-4 text-secondary" />
+                    <a href="mailto:akhtar_nangaparbat@yahoo.com" className="underline underline-offset-4">
+                      akhtar_nangaparbat@yahoo.com
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Mail className="h-4 w-4 text-secondary" />
+                    <a href="mailto:akhtarnagabarbat@gmail.com" className="underline underline-offset-4">
+                      akhtarnagabarbat@gmail.com
+                    </a>
+                  </div>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-secondary" />

@@ -62,7 +62,7 @@ const Index = () => {
       "@type": "TravelAgency",
       name: "Mazano Adventures",
       url: typeof window !== "undefined" ? window.location.origin : "",
-      email: "akhtarnagabarbat@gmail.com",
+      email: ["akhtar_nangaparbat@yahoo.com", "akhtarnagabarbat@gmail.com"],
       telephone: "+92 345 9160113",
       areaServed: "Pakistan",
       address: {

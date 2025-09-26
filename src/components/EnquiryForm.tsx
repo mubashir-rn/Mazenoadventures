@@ -65,11 +65,24 @@ const EnquiryForm = () => {
                 </a>
               </Button>
               <Button variant="outline" asChild>
-                <a href="mailto:akhtarnagabarbat@gmail.com" className="inline-flex items-center">
+                <a href="mailto:akhtar_nangaparbat@yahoo.com,akhtarnagabarbat@gmail.com" className="inline-flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
                   Email Us
                 </a>
               </Button>
+            </div>
+            <div className="mt-2 text-xs text-muted-foreground">
+              <div className="flex items-center justify-center gap-4">
+                <div className="flex items-center gap-1">
+                  <Mail className="h-3 w-3" />
+                  <a href="mailto:akhtar_nangaparbat@yahoo.com" className="hover:underline">akhtar_nangaparbat@yahoo.com</a>
+                </div>
+                <span>•</span>
+                <div className="flex items-center gap-1">
+                  <Mail className="h-3 w-3" />
+                  <a href="mailto:akhtarnagabarbat@gmail.com" className="hover:underline">akhtarnagabarbat@gmail.com</a>
+                </div>
+              </div>
             </div>
           </CardHeader>
           

@@ -9,6 +9,7 @@ import k2BaseCampImage from "@/assets/k2-basecamp-trek.jpg";
 import gondogoroImage from "@/assets/gondogoro-trek.jpg";
 import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
 import snowLakeImage from "@/assets/snow-lake-trek.jpg";
+import biafoImg1 from "@/assets/BIAFO GLACIER TREK img1.jpg";
 
 const Trekkings = () => {
   const popularTreks = [
@@ -94,6 +95,22 @@ const Trekkings = () => {
       reviews: 34,
       elevation: "4800m",
       category: "Cultural Trek"
+    },
+    {
+      id: "biafo-glacier-trek",
+      title: "BIAFO GLACIER TREK",
+      duration: "22 Days",
+      groupSize: "3-8",
+      difficulty: 5,
+      minAge: "18+",
+      pickupLocation: "Islamabad Airport",
+      tourType: "Technical Trek",
+      description: "Difficult trek requiring glacier travel with harness and rope, traversing Biafo and Hispar glaciers over Hispar La to the meadows of Hispar.",
+      image: biafoImg1,
+      rating: 4.8,
+      reviews: 0,
+      elevation: "5151m",
+      category: "Challenging Trek"
     },
     {
       id: "mazeno-pass-trek",

@@ -34,8 +34,17 @@ const Navigation = () => {
               </a>
             </div>
             <div className="flex items-center space-x-2">
-              <Mail className="h-4 w-4" />
-              <a href="mailto:akhtarnagabarbat@gmail.com" className="hover:underline">akhtarnagabarbat@gmail.com</a>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1">
+                  <Mail className="h-4 w-4" />
+                  <a href="mailto:akhtar_nangaparbat@yahoo.com" className="hover:underline">akhtar_nangaparbat@yahoo.com</a>
+                </div>
+                <span>•</span>
+                <div className="flex items-center gap-1">
+                  <Mail className="h-4 w-4" />
+                  <a href="mailto:akhtarnagabarbat@gmail.com" className="hover:underline">akhtarnagabarbat@gmail.com</a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex">

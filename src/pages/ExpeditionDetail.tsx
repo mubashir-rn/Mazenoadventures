@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Clock, Users, MapPin, Calendar, Star, CheckCircle, XCircle, Gift } from "lucide-react";
 import k2Image from "@/assets/k2-expedition.jpg";
+import ShareBookingButtons from "@/components/ShareBookingButtons";
 
 const ExpeditionDetail = () => {
   const { id } = useParams();
@@ -300,17 +301,20 @@ const ExpeditionDetail = () => {
                     </div>
                   </div>
 
-                  <div className="border-t pt-4">
-                    <div className="flex justify-between items-center mb-4">
+                  <div className="border-t pt-4 space-y-4">
+                    <div className="flex justify-between items-center">
                       <span className="text-lg">Starting from:</span>
                       <span className="text-2xl font-bold text-primary">$12,500</span>
                     </div>
-                    <Button variant="mountain" size="lg" className="w-full mb-3">
-                      Book Now
-                    </Button>
-                    <Button variant="outline" size="lg" className="w-full">
-                      Contact Us
-                    </Button>
+                    <ShareBookingButtons
+                      title={expedition.title}
+                      kind="Expedition"
+                      duration={expedition.duration}
+                      groupSize={expedition.groupSize}
+                      pickupLocation={expedition.pickupLocation}
+                      price={"$12,500"}
+                      emails={["akhtar_nangaparbat@yahoo.com", "akhtarnagabarbat@gmail.com"]}
+                    />
                   </div>
 
                   <div className="text-center text-sm text-muted-foreground">

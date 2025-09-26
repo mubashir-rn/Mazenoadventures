@@ -31,7 +31,7 @@ const ContactUs = () => {
       "@type": "TravelAgency",
       name: "Mazano Adventures",
       url: typeof window !== "undefined" ? window.location.origin + "/contact-us" : "",
-      email: "akhtarnagabarbat@gmail.com",
+      email: ["akhtar_nangaparbat@yahoo.com", "akhtarnagabarbat@gmail.com"],
       telephone: "+92 345 9160113",
       sameAs: ["https://wa.link/d4d1pg"],
       address: {
@@ -79,13 +79,17 @@ const ContactUs = () => {
 
             <Card className="text-center">
               <CardContent className="p-6">
-                <Mail className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Email</h3>
-                <p className="text-muted-foreground">
-                  <a href="mailto:akhtarnagabarbat@gmail.com" className="underline underline-offset-4">
-                    akhtarnagabarbat@gmail.com
-                  </a>
-                </p>
+                <div className="text-muted-foreground space-y-1">
+                  <div className="flex items-center justify-center gap-2">
+                    <Mail className="h-4 w-4 text-primary" />
+                    <a href="mailto:akhtar_nangaparbat@yahoo.com" className="underline underline-offset-4">akhtar_nangaparbat@yahoo.com</a>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <Mail className="h-4 w-4 text-primary" />
+                    <a href="mailto:akhtarnagabarbat@gmail.com" className="underline underline-offset-4">akhtarnagabarbat@gmail.com</a>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 

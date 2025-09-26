@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Expeditions from "./pages/Expeditions";
 import ExpeditionDetail from "./pages/ExpeditionDetail";
 import Trekkings from "./pages/Trekkings";
+import TrekDetail from "./pages/TrekDetail";
 import HolidayTours from "./pages/HolidayTours";
 import Destinations from "./pages/Destinations";
 import Resources from "./pages/Resources";
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/expeditions" element={<Expeditions />} />
           <Route path="/expedition/:id" element={<ExpeditionDetail />} />
           <Route path="/trekkings" element={<Trekkings />} />
+          <Route path="/trek/:id" element={<TrekDetail />} />
           <Route path="/holiday-tours" element={<HolidayTours />} />
           <Route path="/destinations" element={<Destinations />} />
           <Route path="/resources" element={<Resources />} />
