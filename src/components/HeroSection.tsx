@@ -2,8 +2,30 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import heroMountain from "@/assets/hero-mountain.jpg";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  const [destination, setDestination] = useState("");
+  const [date, setDate] = useState("");
+  const [duration, setDuration] = useState("");
+  const [people, setPeople] = useState("");
+
+  const onViewAllTours = () => {
+    navigate("/holiday-tours");
+  };
+
+  const onSearchTours = () => {
+    const params = new URLSearchParams();
+    if (destination) params.set("destination", destination);
+    if (date) params.set("date", date);
+    if (duration) params.set("duration", duration);
+    if (people) params.set("people", people);
+    const qs = params.toString();
+    navigate(`/holiday-tours${qs ? `?${qs}` : ""}`);
+  };
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -35,6 +57,7 @@ const HeroSection = () => {
             variant="hero" 
             size="hero"
             className="mb-4"
+            onClick={onViewAllTours}
           >
             VIEW ALL TOURS
           </Button>
@@ -50,6 +73,8 @@ const HeroSection = () => {
               <Input 
                 placeholder="Where to?" 
                 className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                value={destination}
+                onChange={(e) => setDestination(e.target.value)}
               />
             </div>
             <div>
@@ -57,6 +82,8 @@ const HeroSection = () => {
               <Input 
                 type="date" 
                 className="bg-white/20 border-white/30 text-white"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
               />
             </div>
             <div>
@@ -64,6 +91,8 @@ const HeroSection = () => {
               <Input 
                 placeholder="Days" 
                 className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                value={duration}
+                onChange={(e) => setDuration(e.target.value)}
               />
             </div>
             <div>
@@ -71,11 +100,13 @@ const HeroSection = () => {
               <Input 
                 placeholder="Guests" 
                 className="bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                value={people}
+                onChange={(e) => setPeople(e.target.value)}
               />
             </div>
           </div>
           
-          <Button variant="adventure" size="lg" className="w-full md:w-auto">
+          <Button variant="adventure" size="lg" className="w-full md:w-auto" onClick={onSearchTours}>
             <Search className="h-5 w-5 mr-2" />
             SEARCH TOURS
           </Button>

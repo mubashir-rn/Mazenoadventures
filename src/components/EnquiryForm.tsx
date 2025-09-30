@@ -30,9 +30,28 @@ const EnquiryForm = () => {
       return;
     }
     
+    // Build mailto link
+    const to = "akhtarnagabarbat@gmail.com";
+    const subject = encodeURIComponent(`New Enquiry from ${formData.fullName}`);
+    const body = encodeURIComponent(
+      [
+        `Full Name: ${formData.fullName}`,
+        `Email: ${formData.email}`,
+        `Travel Date: ${formData.travelDate}`,
+        `People: ${formData.people}`,
+        ``,
+        `Enquiry:`,
+        `${formData.enquiry}`,
+      ].join("\n")
+    );
+    const mailtoUrl = `mailto:${to}?subject=${subject}&body=${body}`;
+    
+    // Open user's default email client with prefilled details
+    window.location.href = mailtoUrl;
+    
     toast({
-      title: "Enquiry Submitted!",
-      description: "We'll get back to you within 24 hours.",
+      title: "Opening email client...",
+      description: "If it doesn't open, please ensure a default mail app is configured.",
     });
     
     // Reset form

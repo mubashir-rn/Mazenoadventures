@@ -5,8 +5,10 @@ import k2Image from "@/assets/k2-expedition.jpg";
 import broadPeakImage from "@/assets/broad-peak.jpg";
 import nangaParbatImage from "@/assets/nanga-parbat.jpg";
 import gasherbrumImage from "@/assets/gasherbrum.jpg";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedExpeditions = () => {
+  const navigate = useNavigate();
   const expeditions = [
     {
       id: "k2-expedition",
@@ -96,7 +98,7 @@ const FeaturedExpeditions = () => {
 
         {/* View More Button */}
         <div className="text-center">
-          <Button variant="mountain" size="lg">
+          <Button variant="mountain" size="lg" onClick={() => navigate("/expeditions")}>
             View All Expeditions
             <ArrowRight className="h-5 w-5 ml-2" />
           </Button>

@@ -105,8 +105,10 @@ const ExpeditionCard = ({
         </div>
 
         <div className="flex space-x-2">
-          <Button variant="outline" size="sm" className="flex-1">
-            Quick View
+          <Button variant="outline" size="sm" className="flex-1" asChild>
+            <Link to={`/expedition/${id}`}>
+              Quick View
+            </Link>
           </Button>
           <Button variant="mountain" size="sm" className="flex-1" asChild>
             <Link to={`/expedition/${id}`}>

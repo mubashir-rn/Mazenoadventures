@@ -7,29 +7,14 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Clock, Users, MapPin, Calendar, Star, CheckCircle, XCircle, Gift } from "lucide-react";
 import k2Image from "@/assets/k2-expedition.jpg";
+import { expeditionsById } from "@/lib/expeditions";
 import ShareBookingButtons from "@/components/ShareBookingButtons";
 
 const ExpeditionDetail = () => {
   const { id } = useParams();
 
-  // Mock data - in real app this would come from API
-  const expedition = {
-    id: "k2-expedition",
-    title: "K2 PEAK (8611M) EXPEDITION",
-    elevation: "8611M",
-    duration: "47 Days",
-    groupSize: "8-15",
-    difficulty: 5,
-    minAge: "18+",
-    pickupLocation: "Islamabad Airport",
-    tourType: "Guided Expedition",
-    description: "K2, at 8,611 metres above sea level, is the second highest mountain in the world, after Mount Everest at 8,848 metres. It is located on the China–Pakistan border between Baltistan in the Baltoro Glacier Karakoram Mountain range Pakistan.",
-    image: k2Image,
-    rating: 4.9,
-    reviews: 86,
-    departureLocation: "Islamabad International Airport",
-    departureTime: "3 Hours Before Flight Time"
-  };
+  // Load from shared dataset, fallback to K2 if id not found
+  const expedition = (id && expeditionsById[id]) || expeditionsById["k2-expedition"];
 
   const priceIncludes = [
     "Air fares",
@@ -219,7 +204,7 @@ const ExpeditionDetail = () => {
                       <div key={index} className="aspect-square">
                         <img 
                           src={expedition.image} 
-                          alt={`K2 expedition photo ${index + 1}`}
+                          alt={`${expedition.title} photo ${index + 1}`}
                           className="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform cursor-pointer"
                         />
                       </div>
@@ -304,7 +289,7 @@ const ExpeditionDetail = () => {
                   <div className="border-t pt-4 space-y-4">
                     <div className="flex justify-between items-center">
                       <span className="text-lg">Starting from:</span>
-                      <span className="text-2xl font-bold text-primary">$12,500</span>
+                      <span className="text-2xl font-bold text-primary">{expedition.price || "$0"}</span>
                     </div>
                     <ShareBookingButtons
                       title={expedition.title}
@@ -312,7 +297,7 @@ const ExpeditionDetail = () => {
                       duration={expedition.duration}
                       groupSize={expedition.groupSize}
                       pickupLocation={expedition.pickupLocation}
-                      price={"$12,500"}
+                      price={expedition.price || "$0"}
                       emails={["akhtar_nangaparbat@yahoo.com", "akhtarnagabarbat@gmail.com"]}
                     />
                   </div>
