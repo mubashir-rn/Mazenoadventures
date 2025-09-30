@@ -43,7 +43,7 @@ const ExpeditionCard = ({
         <img 
           src={image} 
           alt={title}
-          className="w-full h-64 object-cover"
+          className="w-full h-48 md:h-64 object-cover"
         />
         <div className="absolute top-4 left-4">
           <Badge variant="secondary" className="bg-secondary/90 text-secondary-foreground">

@@ -41,12 +41,12 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
         {/* Main Title */}
         <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight">
+          <h1 className="text-4xl md:text-7xl lg:text-9xl font-black tracking-tight">
             <span className="text-secondary drop-shadow-lg">MAZANO</span>
             <br />
             <span className="text-primary drop-shadow-lg">ADVENTURES</span>
           </h1>
-          <p className="text-xl md:text-2xl mt-6 text-white/90 font-medium">
+          <p className="text-base md:text-2xl mt-6 text-white/90 font-medium">
             Adventure awaits, let's find it together
           </p>
         </div>

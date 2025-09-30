@@ -25,30 +25,28 @@ const Navigation = () => {
     <nav className="bg-background border-b border-border sticky top-0 z-50">
       {/* Top contact bar */}
       <div className="bg-muted py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm text-muted-foreground max-w-7xl">
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
+        <div className="container mx-auto flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 text-xs sm:text-sm text-muted-foreground max-w-7xl">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
               <a href="https://wa.link/d4d1pg" target="_blank" rel="noopener noreferrer" className="hover:underline">
                 +92 345 9160113 (WhatsApp)
               </a>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="flex items-center gap-3">
-                <div className="flex items-center gap-1">
-                  <Mail className="h-4 w-4" />
-                  <a href="mailto:akhtar_nangaparbat@yahoo.com" className="hover:underline">akhtar_nangaparbat@yahoo.com</a>
-                </div>
-                <span>•</span>
-                <div className="flex items-center gap-1">
-                  <Mail className="h-4 w-4" />
-                  <a href="mailto:akhtarnagabarbat@gmail.com" className="hover:underline">akhtarnagabarbat@gmail.com</a>
-                </div>
+            <div className="flex items-center gap-3 flex-wrap">
+              <div className="flex items-center gap-1">
+                <Mail className="h-4 w-4" />
+                <a href="mailto:akhtar_nangaparbat@yahoo.com" className="hover:underline break-all">akhtar_nangaparbat@yahoo.com</a>
+              </div>
+              <span className="hidden sm:inline">•</span>
+              <div className="flex items-center gap-1">
+                <Mail className="h-4 w-4" />
+                <a href="mailto:akhtarnagabarbat@gmail.com" className="hover:underline break-all">akhtarnagabarbat@gmail.com</a>
               </div>
             </div>
           </div>
-          <div className="flex">
-            <Button variant="secondary" size="sm" asChild>
+          <div className="flex self-start sm:self-auto">
+            <Button variant="secondary" size="sm" asChild className="py-1 px-2">
               <a href="https://wa.link/d4d1pg" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                 <MessageCircle className="h-4 w-4 mr-1.5" />
                 Chat on WhatsApp
@@ -60,10 +58,10 @@ const Navigation = () => {
 
       {/* Main navigation */}
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="flex justify-between items-center h-28">
+        <div className="flex justify-between items-center h-20 md:h-28">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={Logo} alt="Mazano Adventures" className="h-28 w-auto" />
+            <img src={Logo} alt="Mazano Adventures" className="h-16 md:h-28 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
