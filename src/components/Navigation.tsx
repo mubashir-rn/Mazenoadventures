@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail, MessageCircle } from "lucide-react";
+import { Menu, X, Phone, Mail, MessageCircle, Instagram } from "lucide-react";
 import Logo from "@/assets/MazenoadventureLogo.png";
 
 const Navigation = () => {
@@ -45,11 +45,16 @@ const Navigation = () => {
               </div>
             </div>
           </div>
-          <div className="flex self-start sm:self-auto">
+          <div className="flex items-center gap-2 self-start sm:self-auto">
             <Button variant="secondary" size="sm" asChild className="py-1 px-2">
               <a href="https://wa.link/d4d1pg" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                 <MessageCircle className="h-4 w-4 mr-1.5" />
                 Chat on WhatsApp
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild className="text-muted-foreground hover:text-primary">
+              <a href="https://www.instagram.com/mazeno_adventures/" target="_blank" rel="noopener noreferrer" aria-label="Mazano Adventures on Instagram">
+                <Instagram className="h-4 w-4" />
               </a>
             </Button>
           </div>

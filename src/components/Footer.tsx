@@ -82,8 +82,10 @@ const Footer = () => {
               <Button variant="ghost" size="icon" className="text-white hover:text-secondary hover:bg-white/10">
                 <Facebook className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:text-secondary hover:bg-white/10">
-                <Instagram className="h-5 w-5" />
+              <Button variant="ghost" size="icon" asChild className="text-white hover:text-secondary hover:bg-white/10">
+                <a href="https://www.instagram.com/mazeno_adventures/" target="_blank" rel="noopener noreferrer" aria-label="Mazano Adventures on Instagram">
+                  <Instagram className="h-5 w-5" />
+                </a>
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:text-secondary hover:bg-white/10">
                 <Twitter className="h-5 w-5" />
