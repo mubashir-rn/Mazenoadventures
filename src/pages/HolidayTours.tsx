@@ -6,10 +6,13 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, Filter, Plane, Car, Camera, Heart, Users, Calendar } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
 import gondogoroImage from "@/assets/gondogoro-trek.jpg";
 
 const HolidayTours = () => {
+  const { theme } = useTheme();
+
   const tourCategories = [
     {
       title: "Air Travel",
@@ -124,11 +127,17 @@ const HolidayTours = () => {
 
           {/* Search Filters */}
           <div className="bg-white rounded-2xl p-8 shadow-card max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center">Find Your Perfect Holiday</h2>
+            <h2 className={`text-2xl font-bold mb-6 text-center transition-colors duration-300 ${
+              theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+            }`}>
+              Find Your Perfect Holiday
+            </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
               <div>
-                <label className="block text-sm font-medium mb-2">Tour Type</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Tour Type</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select type" />
@@ -142,7 +151,9 @@ const HolidayTours = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Duration</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Duration</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select duration" />
@@ -156,7 +167,9 @@ const HolidayTours = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Budget</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Budget</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select budget" />
@@ -169,7 +182,9 @@ const HolidayTours = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Search</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Search</label>
                 <Input placeholder="Search tours..." />
               </div>
             </div>

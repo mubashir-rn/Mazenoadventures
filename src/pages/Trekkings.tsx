@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, Filter, Mountain } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 import k2BaseCampImage from "@/assets/k2-basecamp-trek.jpg";
 import gondogoroImage from "@/assets/gondogoro-trek.jpg";
 import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
@@ -12,6 +13,8 @@ import snowLakeImage from "@/assets/snow-lake-trek.jpg";
 import biafoImg1 from "@/assets/BIAFO GLACIER TREK img1.jpg";
 
 const Trekkings = () => {
+  const { theme } = useTheme();
+
   const popularTreks = [
     {
       id: "k2-base-camp-trek",
@@ -183,11 +186,17 @@ const Trekkings = () => {
 
           {/* Filters */}
           <div className="bg-white rounded-2xl p-8 shadow-card max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center">Find Your Perfect Trek</h2>
+            <h2 className={`text-2xl font-bold mb-6 text-center transition-colors duration-300 ${
+              theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+            }`}>
+              Find Your Perfect Trek
+            </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
               <div>
-                <label className="block text-sm font-medium mb-2">Trek Type</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Trek Type</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select type" />
@@ -200,7 +209,9 @@ const Trekkings = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Difficulty</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Difficulty</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select difficulty" />
@@ -214,7 +225,9 @@ const Trekkings = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Duration</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Duration</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select duration" />
@@ -228,7 +241,9 @@ const Trekkings = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Search</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Search</label>
                 <Input placeholder="Search treks..." />
               </div>
             </div>
