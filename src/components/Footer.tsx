@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Youtube } from "luci
 import Logo from "@/assets/MazenoadventureLogo.png";
 
 const Footer = () => {
+
   const expeditionLinks = [
     "K2 Peak (8611m)",
     "Broad Peak (8047m)", 
@@ -39,7 +40,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-6">
-              <img src={Logo} alt="Mazano Adventures" className="h-28 w-auto" />
+              <img
+                src={Logo}
+                alt="Mazano Adventures"
+                className="h-28 w-auto transition-all duration-300 invert brightness-0"
+              />
             </Link>
             
             <p className="text-white/80 mb-6 leading-relaxed">

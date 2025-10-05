@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 import heroMountain from "@/assets/hero-mountain.jpg";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const HeroSection = () => {
   const navigate = useNavigate();
+  const { theme } = useTheme();
   const [destination, setDestination] = useState("");
   const [date, setDate] = useState("");
   const [duration, setDuration] = useState("");

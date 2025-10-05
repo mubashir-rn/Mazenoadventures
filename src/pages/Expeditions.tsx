@@ -5,12 +5,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, Filter } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 import k2Image from "@/assets/k2-expedition.jpg";
 import broadPeakImage from "@/assets/broad-peak.jpg";
 import nangaParbatImage from "@/assets/nanga-parbat.jpg";
 import gasherbrumImage from "@/assets/gasherbrum.jpg";
 
 const Expeditions = () => {
+  const { theme } = useTheme();
+
   const expeditions = [
     {
       id: "k2-expedition",
@@ -112,11 +115,17 @@ const Expeditions = () => {
 
           {/* Filters */}
           <div className="bg-white rounded-2xl p-8 shadow-card max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center">Find Your Perfect Expedition</h2>
+            <h2 className={`text-2xl font-bold mb-6 text-center transition-colors duration-300 ${
+              theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+            }`}>
+              Find Your Perfect Expedition
+            </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
               <div>
-                <label className="block text-sm font-medium mb-2">Peak Height</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Peak Height</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select height" />
@@ -129,7 +138,9 @@ const Expeditions = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Difficulty</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Difficulty</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select difficulty" />
@@ -142,7 +153,9 @@ const Expeditions = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Duration</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Duration</label>
                 <Select>
                   <SelectTrigger>
                     <SelectValue placeholder="Select duration" />
@@ -155,7 +168,9 @@ const Expeditions = () => {
                 </Select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Search</label>
+                <label className={`block text-sm font-medium mb-2 transition-colors duration-300 ${
+                  theme === 'dark' ? 'text-gray-900' : 'text-foreground'
+                }`}>Search</label>
                 <Input placeholder="Search expeditions..." />
               </div>
             </div>

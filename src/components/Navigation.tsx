@@ -2,11 +2,14 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, MessageCircle, Instagram } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { useTheme } from "@/hooks/use-theme";
 import Logo from "@/assets/MazenoadventureLogo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { theme } = useTheme();
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -66,11 +69,17 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20 md:h-28">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={Logo} alt="Mazano Adventures" className="h-16 md:h-28 w-auto" />
+            <img
+              src={Logo}
+              alt="Mazano Adventures"
+              className={`h-16 md:h-28 w-auto transition-all duration-300 ${
+                theme === 'dark' ? 'invert brightness-0' : ''
+              }`}
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex space-x-8">
+          <div className="hidden lg:flex space-x-8 items-center">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
@@ -84,6 +93,7 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
           {/* Mobile menu button */}
@@ -113,6 +123,11 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              <div className="pt-2 border-t border-border">
+                <div className="flex justify-center">
+                  <ThemeToggle />
+                </div>
+              </div>
             </div>
           </div>
         )}
