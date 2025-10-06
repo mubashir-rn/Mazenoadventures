@@ -9,6 +9,14 @@ import { Search, Filter, Plane, Car, Camera, Heart, Users, Calendar } from "luci
 import { useTheme } from "@/hooks/use-theme";
 import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
 import gondogoroImage from "@/assets/gondogoro-trek.jpg";
+import k2Expedition1 from "@/assets/k2 expedition 1.jpg";
+import nangaParbatExpedition1 from "@/assets/NANGA PARBAT  EXPEDITION 1.jpg";
+import broadPeakExpedition1 from "@/assets/BROAD PEAK expedition 1.jpg";
+import gasherbrumIExpedition1 from "@/assets/GASHERBRUM I EXPEDITION 1.jpg";
+import mountainImage from "@/assets/mountain.jpeg";
+import tarishingImage from "@/assets/tarishing.jpeg";
+import groupImage from "@/assets/group.jpeg";
+import heroMountainImage from "@/assets/hero-mountain.jpg";
 
 const HolidayTours = () => {
   const { theme } = useTheme();
@@ -19,28 +27,28 @@ const HolidayTours = () => {
       icon: Plane,
       description: "Comfortable flight-based tours to major destinations",
       tours: 25,
-      image: fairyMeadowsImage
+      image: k2Expedition1
     },
     {
       title: "Road Trips",
       icon: Car,
       description: "Scenic overland journeys through northern Pakistan",
       tours: 18,
-      image: gondogoroImage
+      image: tarishingImage
     },
     {
       title: "Cultural Tours",
       icon: Camera,
       description: "Explore Pakistan's rich heritage and local traditions",
       tours: 32,
-      image: fairyMeadowsImage
+      image: nangaParbatExpedition1
     },
     {
       title: "Family Holidays",
       icon: Users,
       description: "Perfect family-friendly adventures and experiences",
       tours: 22,
-      image: gondogoroImage
+      image: groupImage
     },
     {
       title: "Honeymoon",
@@ -54,7 +62,7 @@ const HolidayTours = () => {
       icon: Calendar,
       description: "Short 2-3 day escapes from city life",  
       tours: 28,
-      image: gondogoroImage
+      image: heroMountainImage
     }
   ];
 
@@ -71,7 +79,7 @@ const HolidayTours = () => {
       pickupLocation: "Gilgit Airport",
       tourType: "Cultural Tour",
       description: "Discover the enchanting Hunza Valley with its ancient forts, apricot orchards, and warm hospitality. Perfect for families and cultural enthusiasts.",
-      image: fairyMeadowsImage,
+      image: broadPeakExpedition1,
       rating: 4.8,
       reviews: 234
     },
@@ -87,7 +95,7 @@ const HolidayTours = () => {
       pickupLocation: "Skardu Airport",
       tourType: "Nature Tour",
       description: "Experience the Land of Giants - Deosai Plains, with its wildflower meadows and wildlife including the Himalayan brown bear.",
-      image: gondogoroImage,
+      image: mountainImage,
       rating: 4.7,
       reviews: 156
     },
@@ -103,7 +111,7 @@ const HolidayTours = () => {
       pickupLocation: "Lahore Airport",
       tourType: "Heritage Tour",
       description: "Explore the cultural heart of Pakistan with visits to Badshahi Mosque, Lahore Fort, and the vibrant streets of the Walled City.",
-      image: fairyMeadowsImage,
+      image: gasherbrumIExpedition1,
       rating: 4.6,
       reviews: 298
     }

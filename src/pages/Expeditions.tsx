@@ -6,10 +6,30 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, Filter } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
-import k2Image from "@/assets/k2-expedition.jpg";
-import broadPeakImage from "@/assets/broad-peak.jpg";
-import nangaParbatImage from "@/assets/nanga-parbat.jpg";
-import gasherbrumImage from "@/assets/gasherbrum.jpg";
+import k2Expedition1 from "@/assets/k2 expedition 1.jpg";
+import k2Expedition2 from "@/assets/k2 expedition 2.jpg";
+import k2Expedition3 from "@/assets/k2 expedition 3.jpg";
+import k2Expedition4 from "@/assets/k2 expedition 4.jpg";
+import k2Expedition5 from "@/assets/k2 expedition 5.jpg";
+import k2Expedition6 from "@/assets/k2 expedition 6.jpg";
+import broadPeakExpedition1 from "@/assets/BROAD PEAK expedition 1.jpg";
+import broadPeakExpedition2 from "@/assets/BROAD PEAK expedition 2.jpg";
+import broadPeakExpedition3 from "@/assets/BROAD PEAK expedition 3.jpg";
+import broadPeakExpedition4 from "@/assets/BROAD PEAK expedition 4.jpg";
+import broadPeakExpedition5 from "@/assets/BROAD PEAK expedition 5.jpg";
+import broadPeakExpedition6 from "@/assets/BROAD PEAK expedition 6.jpg";
+import nangaParbatExpedition1 from "@/assets/NANGA PARBAT  EXPEDITION 1.jpg";
+import nangaParbatExpedition2 from "@/assets/NANGA PARBAT  EXPEDITION 2.jpg";
+import nangaParbatExpedition3 from "@/assets/NANGA PARBAT  EXPEDITION 3.jpg";
+import nangaParbatExpedition4 from "@/assets/NANGA PARBAT  EXPEDITION 4.jpg";
+import nangaParbatExpedition5 from "@/assets/NANGA PARBAT  EXPEDITION 5.jpg";
+import nangaParbatExpedition6 from "@/assets/NANGA PARBAT  EXPEDITION 6.jpg";
+import gasherbrumIExpedition1 from "@/assets/GASHERBRUM I EXPEDITION 1.jpg";
+import gasherbrumIExpedition2 from "@/assets/GASHERBRUM I EXPEDITION 2.jpg";
+import gasherbrumIExpedition3 from "@/assets/GASHERBRUM I EXPEDITION 3.jpg";
+import gasherbrumIExpedition4 from "@/assets/GASHERBRUM I EXPEDITION 4.jpg";
+import gasherbrumIExpedition5 from "@/assets/GASHERBRUM I EXPEDITION 5.jpg";
+import gasherbrumIExpedition6 from "@/assets/GASHERBRUM I EXPEDITION 6.jpg";
 
 const Expeditions = () => {
   const { theme } = useTheme();
@@ -27,7 +47,7 @@ const Expeditions = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Guided Expedition",
       description: "K2, at 8,611 metres above sea level, is the second highest mountain in the world, after Mount Everest. The ultimate mountaineering challenge in the Karakoram range of Pakistan.",
-      image: k2Image,
+      image: k2Expedition1,
       rating: 4.9,
       reviews: 86
     },
@@ -43,7 +63,7 @@ const Expeditions = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Guided Expedition",
       description: "Broad Peak is the 12th highest mountain in the world at 8,047 metres. First ascended in 1957, it offers a challenging yet achievable 8000m summit experience.",
-      image: broadPeakImage,
+      image: broadPeakExpedition1,
       rating: 4.8,
       reviews: 62
     },
@@ -59,7 +79,7 @@ const Expeditions = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Extreme Expedition",
       description: "Known as the 'Killer Mountain', Nanga Parbat is the ninth highest mountain in the world. A formidable challenge requiring extensive mountaineering experience.",
-      image: nangaParbatImage,
+      image: nangaParbatExpedition1,
       rating: 4.7,
       reviews: 41
     },
@@ -75,7 +95,7 @@ const Expeditions = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Technical Expedition",
       description: "Hidden Peak, as it's also known, offers technical climbing through the beautiful Baltoro Glacier region with stunning views of the Karakoram giants.",
-      image: gasherbrumImage,
+      image: gasherbrumIExpedition1,
       rating: 4.8,
       reviews: 73
     },
@@ -91,7 +111,7 @@ const Expeditions = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Guided Expedition",
       description: "Often considered the most accessible of the 8000m peaks, Gasherbrum II provides excellent training for aspiring high-altitude mountaineers.",
-      image: gasherbrumImage,
+      image: gasherbrumIExpedition2,
       rating: 4.6,
       reviews: 91
     }

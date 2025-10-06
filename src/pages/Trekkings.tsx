@@ -11,6 +11,23 @@ import gondogoroImage from "@/assets/gondogoro-trek.jpg";
 import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
 import snowLakeImage from "@/assets/snow-lake-trek.jpg";
 import biafoImg1 from "@/assets/BIAFO GLACIER TREK img1.jpg";
+import biafoImg2 from "@/assets/BIAFO GLACIER TREK img2.jpg";
+import biafoImg3 from "@/assets/BIAFO GLACIER TREK img3.jpg";
+import nangaParbatExpedition1 from "@/assets/NANGA PARBAT  EXPEDITION 1.jpg";
+import nangaParbatExpedition2 from "@/assets/NANGA PARBAT  EXPEDITION 2.jpg";
+import k2Expedition1 from "@/assets/k2 expedition 1.jpg";
+import k2Expedition2 from "@/assets/k2 expedition 2.jpg";
+import mountainImage from "@/assets/mountain.jpeg";
+import tarishingImage from "@/assets/tarishing.jpeg";
+import bazinGlacierImage from "@/assets/arround nangaparbat/bazin-glacier-2 nangaparbat.jpeg";
+import enrouteMazenImage from "@/assets/arround nangaparbat/enroute-mazen-high-camp nangaparbat.jpeg";
+import heliCofferBcImage from "@/assets/arround nangaparbat/heli-coffer-bc nangaparbat.jpeg";
+import lataboMeadowsImage from "@/assets/arround nangaparbat/latabo-meadows nangaparbat.jpeg";
+import localHousesRupalImage from "@/assets/arround nangaparbat/local-houses-rupal-valley nangaparbat.jpeg";
+import mazenoGlacierImage from "@/assets/arround nangaparbat/mazeno-glacier nangaparbat.jpeg";
+import npFromLatoboImage from "@/assets/arround nangaparbat/np-from-latobo  nangaparbat.jpeg";
+import npFromMazaenoPassImage from "@/assets/arround nangaparbat/np-from-mazaeno-pass nangaparbat.jpeg";
+import aroundNangaParbatMainImage from "@/assets/arround nangaparbat/np-from-latobo  nangaparbat.jpeg";
 
 const Trekkings = () => {
   const { theme } = useTheme();
@@ -26,7 +43,7 @@ const Trekkings = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Classic Trek",
       description: "The ultimate trekking adventure to the base of the world's second highest mountain. Experience the magnificent Baltoro Glacier and Concordia.",
-      image: k2BaseCampImage,
+      image: k2Expedition1,
       rating: 4.9,
       reviews: 156,
       elevation: "5150m",
@@ -58,7 +75,7 @@ const Trekkings = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Scenic Trek",
       description: "Discover the breathtaking beauty of Fairy Meadows with stunning views of Nanga Parbat, the 'Killer Mountain'.",
-      image: fairyMeadowsImage,
+      image: nangaParbatExpedition1,
       rating: 4.7,
       reviews: 203,
       elevation: "4200m",
@@ -74,7 +91,7 @@ const Trekkings = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Wilderness Trek",
       description: "One of the world's most remote and challenging treks through pristine glacial valleys and the famous Snow Lake plateau.",
-      image: snowLakeImage,
+      image: biafoImg1,
       rating: 4.9,
       reviews: 67,
       elevation: "5100m",
@@ -83,6 +100,22 @@ const Trekkings = () => {
   ];
 
   const challengingTreks = [
+    {
+      id: "around-nanga-parbat-trek",
+      title: "AROUND NANGA PARBAT TREK",
+      duration: "21 Days / 20 Nights",
+      groupSize: "6-12",
+      difficulty: 5,
+      minAge: "18+",
+      pickupLocation: "Islamabad Airport",
+      tourType: "Technical Trek",
+      description: "A challenging but rewarding adventure that takes you on a circular route around the majestic Nanga Parbat, the ninth-highest mountain in the world. This trek offers stunning views of the mountain's various faces, including the iconic Rupal Face.",
+      image: aroundNangaParbatMainImage,
+      rating: 4.9,
+      reviews: 27,
+      elevation: "5400m",
+      category: "Technical Trek"
+    },
     {
       id: "wakhan-corridor-trek",
       title: "WAKHAN CORRIDOR AND CHILINJI PASS TREK",
@@ -109,7 +142,7 @@ const Trekkings = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Technical Trek",
       description: "Difficult trek requiring glacier travel with harness and rope, traversing Biafo and Hispar glaciers over Hispar La to the meadows of Hispar.",
-      image: biafoImg1,
+      image: biafoImg2,
       rating: 4.8,
       reviews: 0,
       elevation: "5151m",
@@ -125,7 +158,7 @@ const Trekkings = () => {
       pickupLocation: "Islamabad Airport",
       tourType: "Technical Trek",
       description: "A demanding trek around Nanga Parbat with technical sections and breathtaking mountain scenery.",
-      image: fairyMeadowsImage,
+      image: nangaParbatExpedition2,
       rating: 4.5,
       reviews: 42,
       elevation: "5377m",
@@ -144,7 +177,7 @@ const Trekkings = () => {
       pickupLocation: "Gilgit Airport",
       tourType: "Family Trek",
       description: "A moderate trek suitable for families with spectacular views of Rakaposhi peak and surrounding glaciers.",
-      image: gondogoroImage,
+      image: tarishingImage,
       rating: 4.4,
       reviews: 187,
       elevation: "4100m",
@@ -160,7 +193,7 @@ const Trekkings = () => {
       pickupLocation: "Gilgit Airport",
       tourType: "Alpine Trek",
       description: "Trek to one of the highest alpine lakes in the world with stunning reflections of surrounding peaks.",
-      image: snowLakeImage,
+      image: mountainImage,
       rating: 4.6,
       reviews: 132,
       elevation: "4694m",
