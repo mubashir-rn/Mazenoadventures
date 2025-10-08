@@ -38,7 +38,7 @@ const ExpeditionCard = ({
   reviews = 127 
 }: ExpeditionCardProps) => {
   return (
-    <Card className="overflow-hidden hover:shadow-mountain transition-all duration-300 transform hover:-translate-y-2">
+    <Card className="overflow-hidden shadow-[0_10px_35px_rgb(0,0,0,0.15)] hover:shadow-[0_15px_45px_rgb(0,0,0,0.22)] transition-all duration-300 transform hover:-translate-y-3 bg-white/95 dark:bg-card backdrop-blur-sm border-0">
       <div className="relative">
         <img 
           src={image} 
@@ -48,12 +48,12 @@ const ExpeditionCard = ({
           decoding="async"
         />
         <div className="absolute top-4 left-4">
-          <Badge variant="secondary" className="bg-secondary/90 text-secondary-foreground">
+          <Badge variant="secondary" className="bg-secondary/90 text-secondary-foreground shadow-[0_4px_12px_rgb(0,0,0,0.15)] backdrop-blur-sm">
             {elevation}
           </Badge>
         </div>
         <div className="absolute top-4 right-4">
-          <Badge variant="outline" className="bg-white/95 dark:bg-gray-900/95 text-gray-900 dark:text-white border-white dark:border-gray-700 backdrop-blur-sm">
+          <Badge variant="outline" className="bg-white/90 dark:bg-gray-900/90 text-gray-900 dark:text-white border-white/50 dark:border-gray-700/50 backdrop-blur-md shadow-[0_4px_12px_rgb(0,0,0,0.15)]">
             {tourType}
           </Badge>
         </div>

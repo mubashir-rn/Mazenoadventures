@@ -114,14 +114,14 @@ const AboutUs = () => {
               across Pakistan's legendary peaks and landscapes.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-              <div className="bg-card rounded-2xl p-6 shadow-lg border border-border/50">
+              <div className="bg-white/95 dark:bg-card rounded-2xl p-6 shadow-[0_10px_35px_rgb(0,0,0,0.15)] hover:shadow-[0_15px_45px_rgb(0,0,0,0.22)] transition-all duration-300 border-0 backdrop-blur-sm">
                 <h3 className="text-xl font-semibold text-foreground mb-4">Our Promise</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Expert guidance, world-class safety standards, and authentic local experiences 
                   that create memories of a lifetime.
                 </p>
               </div>
-              <div className="bg-card rounded-2xl p-6 shadow-lg border border-border/50">
+              <div className="bg-white/95 dark:bg-card rounded-2xl p-6 shadow-[0_10px_35px_rgb(0,0,0,0.15)] hover:shadow-[0_15px_45px_rgb(0,0,0,0.22)] transition-all duration-300 border-0 backdrop-blur-sm">
                 <h3 className="text-xl font-semibold text-foreground mb-4">Why Choose Us</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Licensed professionals, 24/7 support, and unmatched knowledge of Pakistan's 
@@ -146,9 +146,9 @@ const AboutUs = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-b from-card to-card/50">
+              <Card key={index} className="text-center shadow-[0_10px_35px_rgb(0,0,0,0.15)] hover:shadow-[0_15px_45px_rgb(0,0,0,0.22)] transition-all duration-300 transform hover:-translate-y-2 bg-white/95 dark:bg-card backdrop-blur-sm border-0">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 shadow-[0_4px_12px_rgb(0,0,0,0.1)]">
                     <achievement.icon className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">{achievement.title}</h3>
@@ -173,9 +173,9 @@ const AboutUs = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 bg-card/80 backdrop-blur-sm">
+              <Card key={index} className="text-center shadow-[0_10px_35px_rgb(0,0,0,0.15)] hover:shadow-[0_15px_45px_rgb(0,0,0,0.22)] transition-all duration-300 bg-white/95 dark:bg-card backdrop-blur-sm border-0">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-[0_4px_12px_rgb(0,0,0,0.1)]">
                     <stat.icon className={`h-8 w-8 ${stat.color}`} />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-4">{stat.label}</h3>
@@ -208,8 +208,8 @@ const AboutUs = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {services.map((service, index) => (
-              <div key={index} className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border/50 hover:bg-primary/5 transition-colors">
-                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <div key={index} className="flex items-center gap-4 p-4 bg-white/95 dark:bg-card rounded-lg shadow-[0_6px_20px_rgb(0,0,0,0.12)] hover:shadow-[0_10px_30px_rgb(0,0,0,0.18)] hover:bg-primary/5 dark:hover:bg-primary/5 transition-all duration-300 border-0 backdrop-blur-sm">
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 shadow-[0_2px_8px_rgb(0,0,0,0.1)]">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
                 <span className="text-foreground font-medium">{service}</span>
