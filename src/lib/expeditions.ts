@@ -16,10 +16,10 @@ export type Expedition = {
   price?: string;
 };
 
-import k2Image from "@/assets/k2-expedition.jpg";
-import broadPeakImage from "@/assets/broad-peak.jpg";
-import nangaParbatImage from "@/assets/nanga-parbat.jpg";
-import gasherbrumImage from "@/assets/gasherbrum.jpg";
+import k2Image from "@/assets/k2 expedition 1.jpg";
+import broadPeakImage from "@/assets/BROAD PEAK expedition 1.jpg";
+import nangaParbatImage from "@/assets/NANGA PARBAT  EXPEDITION 1.jpg";
+import gasherbrumImage from "@/assets/GASHERBRUM I EXPEDITION 1.jpg";
 
 export const expeditions: Expedition[] = [
   {

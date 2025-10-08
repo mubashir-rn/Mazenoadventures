@@ -53,7 +53,7 @@ const ExpeditionCard = ({
           </Badge>
         </div>
         <div className="absolute top-4 right-4">
-          <Badge variant="outline" className="bg-white/90 text-foreground border-white">
+          <Badge variant="outline" className="bg-white/95 dark:bg-gray-900/95 text-gray-900 dark:text-white border-white dark:border-gray-700 backdrop-blur-sm">
             {tourType}
           </Badge>
         </div>

@@ -34,6 +34,22 @@ const Trekkings = () => {
 
   const popularTreks = [
     {
+      id: "around-nanga-parbat-trek",
+      title: "AROUND NANGA PARBAT TREK",
+      duration: "21 Days / 20 Nights",
+      groupSize: "6-12",
+      difficulty: 5,
+      minAge: "18+",
+      pickupLocation: "Islamabad Airport",
+      tourType: "Technical Trek",
+      description: "A challenging but rewarding adventure that takes you on a circular route around the majestic Nanga Parbat, the ninth-highest mountain in the world. This trek offers stunning views of the mountain's various faces, including the iconic Rupal Face.",
+      image: aroundNangaParbatMainImage,
+      rating: 4.9,
+      reviews: 27,
+      elevation: "5400m",
+      category: "Popular Trek"
+    },
+    {
       id: "k2-base-camp-trek",
       title: "K2 BASE CAMP TREK",
       duration: "19 Days",
@@ -100,22 +116,6 @@ const Trekkings = () => {
   ];
 
   const challengingTreks = [
-    {
-      id: "around-nanga-parbat-trek",
-      title: "AROUND NANGA PARBAT TREK",
-      duration: "21 Days / 20 Nights",
-      groupSize: "6-12",
-      difficulty: 5,
-      minAge: "18+",
-      pickupLocation: "Islamabad Airport",
-      tourType: "Technical Trek",
-      description: "A challenging but rewarding adventure that takes you on a circular route around the majestic Nanga Parbat, the ninth-highest mountain in the world. This trek offers stunning views of the mountain's various faces, including the iconic Rupal Face.",
-      image: aroundNangaParbatMainImage,
-      rating: 4.9,
-      reviews: 27,
-      elevation: "5400m",
-      category: "Technical Trek"
-    },
     {
       id: "wakhan-corridor-trek",
       title: "WAKHAN CORRIDOR AND CHILINJI PASS TREK",
