@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from "@/components/ui/dialog";
 import { Clock, Users, MapPin, Calendar, Star, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -108,9 +109,65 @@ const TrekkingCard = ({
         </div>
 
         <div className="flex space-x-2">
-          <Button variant="outline" size="sm" className="flex-1">
-            Quick View
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" size="sm" className="flex-1">
+                Quick View
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl">
+              <DialogHeader>
+                <DialogTitle>{title}</DialogTitle>
+                <DialogDescription>
+                  {category} • {tourType}
+                </DialogDescription>
+              </DialogHeader>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="rounded-md overflow-hidden">
+                  <img src={image} alt={title} className="w-full h-56 object-cover" />
+                </div>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-center space-x-2"><Clock className="h-4 w-4 text-primary" /><span>{duration}</span></div>
+                  <div className="flex items-center space-x-2"><Users className="h-4 w-4 text-primary" /><span>{groupSize} People</span></div>
+                  <div className="flex items-center space-x-2"><MapPin className="h-4 w-4 text-primary" /><span>{pickupLocation}</span></div>
+                  <div className="flex items-center space-x-2"><Calendar className="h-4 w-4 text-primary" /><span>Min Age: {minAge}</span></div>
+                  <div className="flex items-center space-x-2">
+                    <span className="font-medium">Difficulty:</span>
+                    <div className="flex">
+                      {[...Array(difficulty)].map((_, i) => (
+                        <div key={i} className="w-2 h-4 bg-primary mr-1 rounded-sm"></div>
+                      ))}
+                      {[...Array(5 - difficulty)].map((_, i) => (
+                        <div key={i} className="w-2 h-4 bg-gray-300 mr-1 rounded-sm"></div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="font-medium">Rating:</span>
+                    <div className="flex items-center space-x-1">
+                      <div className="flex">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className={`h-4 w-4 ${i < Math.floor(rating) ? 'text-secondary fill-secondary' : 'text-gray-300'}`} />
+                        ))}
+                      </div>
+                      <span className="text-muted-foreground">({reviews})</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-3 text-sm text-muted-foreground line-clamp-5">
+                {description}
+              </div>
+              <DialogFooter>
+                <Button variant="outline" asChild>
+                  <Link to={`/trek/${id}`}>View Details</Link>
+                </Button>
+                <Button variant="mountain" asChild>
+                  <Link to={`/trek/${id}`}>Book Now</Link>
+                </Button>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
           <Button variant="mountain" size="sm" className="flex-1" asChild>
             <Link to={`/trek/${id}`}>
               Book Now

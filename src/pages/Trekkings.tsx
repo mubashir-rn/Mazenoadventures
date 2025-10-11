@@ -52,7 +52,7 @@ const Trekkings = () => {
     {
       id: "k2-base-camp-trek",
       title: "K2 BASE CAMP TREK",
-      duration: "19 Days",
+      duration: "22 DAYS / 21 NIGHTS",
       groupSize: "6-12",
       difficulty: 4,
       minAge: "16+",
@@ -63,44 +63,44 @@ const Trekkings = () => {
       rating: 4.9,
       reviews: 156,
       elevation: "5150m",
-      category: "Popular Trek"
+      category: "Trekking"
     },
     {
       id: "gondogoro-la-trek",
-      title: "GONDOGORO LA TREK",
-      duration: "21 Days",
+      title: "K2 Gondogoro La Trek",
+      duration: "22 DAYS / 21 NIGHTS",
       groupSize: "6-10",
       difficulty: 5,
       minAge: "18+",
       pickupLocation: "Islamabad Airport",
       tourType: "Technical Trek",
-      description: "A challenging high-altitude pass crossing connecting the Baltoro and Hushe valleys with spectacular mountain views.",
+      description: "A challenging high-altitude traverse via Gondogoro La with breathtaking views of K2, Broad Peak, and the Gasherbrums.",
       image: gondogoroImage,
       rating: 4.8,
       reviews: 98,
       elevation: "5585m",
-      category: "Challenging Trek"
+      category: "Trekking"
     },
     {
-      id: "fairy-meadows-trek",
-      title: "FAIRY MEADOWS & NANGA PARBAT BASE CAMP TREK",
-      duration: "12 Days",
+      id: "nanga-parbat-rupal-face-trek",
+      title: "Nanga parbat Rupal Face Trek",
+      duration: "10 DAYS / 09 NIGHTS",
       groupSize: "4-15",
       difficulty: 3,
       minAge: "14+",
       pickupLocation: "Islamabad Airport",
       tourType: "Scenic Trek",
-      description: "Discover the breathtaking beauty of Fairy Meadows with stunning views of Nanga Parbat, the 'Killer Mountain'.",
+      description: "A rewarding trek to the south side of Nanga Parbat through lush Rupal Valley to Herrligkoffer Base Camp with imposing views of the 5000m Rupal Face.",
       image: nangaParbatExpedition1,
       rating: 4.7,
       reviews: 203,
-      elevation: "4200m",
-      category: "Scenic Trek"
+      elevation: "4600m",
+      category: "Trekking"
     },
     {
       id: "snow-lake-bifo-hispar-trek",
-      title: "BIAFO, HISPAR & SNOW LAKE TREK",
-      duration: "25 Days",
+      title: "Biafo Hispar Snow Lake",
+      duration: "23 DAYS / 22 NIGHTS",
       groupSize: "6-10",
       difficulty: 5,
       minAge: "18+",
@@ -111,7 +111,7 @@ const Trekkings = () => {
       rating: 4.9,
       reviews: 67,
       elevation: "5100m",
-      category: "Remote Trek"
+      category: "Trekking"
     }
   ];
 
