@@ -7,30 +7,29 @@ import Logo from "@/assets/MazenoadventureLogo.png";
 const Footer = () => {
 
   const expeditionLinks = [
-    "K2 Peak (8611m)",
-    "Broad Peak (8047m)", 
-    "Gasherbrum I & II",
-    "Nanga Parbat (8126m)",
-    "Diran Peak (7266m)",
-    "Masherbrum (7821m)"
+    { label: "K2 PEAK (8611M) EXPEDITION", id: "k2-expedition" },
+    { label: "BROAD PEAK (8047M) EXPEDITION", id: "broad-peak-expedition" },
+    { label: "NANGA PARBAT (8126M) EXPEDITION", id: "nanga-parbat-expedition" },
+    { label: "GASHERBRUM I (8080M) EXPEDITION", id: "gasherbrum-i-expedition" },
+    { label: "GASHERBRUM II (8035M) EXPEDITION", id: "gasherbrum-ii-expedition" },
   ];
 
   const trekkingLinks = [
-    "K2 Base Camp Trek",
-    "Gondogoro La Trek",
-    "Fairy Meadows Trek",
-    "Rakaposhi Base Camp",
-    "Rush Lake Trek",
-    "Biafo Hispar Trek"
+    { label: "AROUND NANGA PARBAT TREK", id: "around-nanga-parbat-trek" },
+    { label: "K2 BASE CAMP TREK", id: "k2-base-camp-trek" },
+    { label: "K2 Gondogoro La Trek", id: "gondogoro-la-trek" },
+    { label: "Nanga parbat Rupal Face Trek", id: "nanga-parbat-rupal-face-trek" },
+    { label: "Biafo Hispar Snow Lake", id: "snow-lake-bifo-hispar-trek" },
+    { label: "BIAFO GLACIER TREK", id: "biafo-glacier-trek" },
   ];
 
   const destinationLinks = [
-    "Skardu",
-    "Hunza Valley",
-    "Fairy Meadows",
-    "Deosai National Park",
-    "Shigar Valley",
-    "Naltar Valley"
+    { label: "SKARDU" },
+    { label: "HUNZA VALLEY" },
+    { label: "FAIRY MEADOWS" },
+    { label: "DEOSAI NATIONAL PARK" },
+    { label: "K2 (8611M) – SECOND HIGHEST PEAK IN THE WORLD" },
+    { label: "NANGA PARBAT (8126M) – KILLER MOUNTAIN" },
   ];
 
   return (
@@ -103,15 +102,17 @@ const Footer = () => {
 
           {/* Expeditions */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-secondary">Expeditions</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              <Link to="/expeditions" className="text-secondary hover:text-secondary/80 transition-colors">Expeditions</Link>
+            </h3>
             <ul className="space-y-2">
-              {expeditionLinks.map((link, index) => (
+              {expeditionLinks.map((item, index) => (
                 <li key={index}>
                   <Link 
-                    to={`/expedition/${link.toLowerCase().replace(/\s+/g, '-')}`}
+                    to={`/expedition/${item.id}`}
                     className="text-white/70 hover:text-secondary transition-colors text-sm"
                   >
-                    {link}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -120,15 +121,17 @@ const Footer = () => {
 
           {/* Trekkings */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-secondary">Trekkings</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              <Link to="/trekkings" className="text-secondary hover:text-secondary/80 transition-colors">Trekkings</Link>
+            </h3>
             <ul className="space-y-2">
-              {trekkingLinks.map((link, index) => (
+              {trekkingLinks.map((item, index) => (
                 <li key={index}>
                   <Link 
-                    to={`/trek/${link.toLowerCase().replace(/\s+/g, '-')}`}
+                    to={`/trek/${item.id}`}
                     className="text-white/70 hover:text-secondary transition-colors text-sm"
                   >
-                    {link}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -137,15 +140,17 @@ const Footer = () => {
 
           {/* Destinations */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-secondary">Destinations</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              <Link to="/destinations" className="text-secondary hover:text-secondary/80 transition-colors">Destinations</Link>
+            </h3>
             <ul className="space-y-2">
-              {destinationLinks.map((link, index) => (
+              {destinationLinks.map((item, index) => (
                 <li key={index}>
                   <Link 
-                    to={`/destination/${link.toLowerCase().replace(/\s+/g, '-')}`}
+                    to="/destinations"
                     className="text-white/70 hover:text-secondary transition-colors text-sm"
                   >
-                    {link}
+                    {item.label}
                   </Link>
                 </li>
               ))}
