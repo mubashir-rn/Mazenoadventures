@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Mountain, Users, Award, Heart, Leaf, Headphones, Target, Shield, Globe, CheckCircle, Star, Calendar, MapPin, Phone } from "lucide-react";
 import coverImage from "@/assets/mazenoadventures poster.jpeg";
+import aboutMe from "@/assets/About Me.jpg";
 
 const AboutUs = () => {
   const stats = [
@@ -60,7 +61,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen scroll-smooth">
       <Navigation />
       
       {/* Hero Cover Section */}
@@ -96,6 +97,18 @@ const AboutUs = () => {
                   <Phone className="h-5 w-5 text-primary" />
                   <span className="text-sm font-medium">24/7 Expert Support</span>
                 </div>
+              </div>
+              <div className="mt-10">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-white px-8 py-4 shadow-[0_10px_30px_rgba(0,0,0,0.25)] hover:shadow-[0_14px_40px_rgba(0,0,0,0.35)] transition-shadow"
+                  asChild
+                >
+                  <a href="#about-akhtar" aria-label="Scroll to About Akhtar section" className="inline-flex items-center gap-2">
+                    <Users className="h-5 w-5" />
+                    <span>About Me</span>
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -236,6 +249,33 @@ const AboutUs = () => {
             <Button variant="outline" size="lg" className="px-8 py-4" asChild>
               <a href="/expeditions">View Expeditions</a>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* About Akhtar Hussain Section */}
+      <section id="about-akhtar" className="py-20 bg-background scroll-mt-24">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">AKHTAR HUSSAIN</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Pakistani guide based in the village of Tarishing, next to Nanga Parbat. I am specialized in trekking in remote and hardly traveled areas. I also organize anthropological routes designed to learn about the society and culture of my country.
+            </p>
+            <p className="text-muted-foreground mt-6">
+              If you want to travel to Pakistan, please write me at: <a href="mailto:akhtar_nangaparbat@yahoo.com" className="text-primary underline">akhtar_nangaparbat@yahoo.com</a>
+            </p>
+            <p className="text-muted-foreground mt-2">
+              You can also contact me via Whatsapp: <a href="https://wa.me/923459160113" target="_blank" rel="noopener noreferrer" className="text-primary underline">+92 345 9160113</a>
+            </p>
+          </div>
+          <div className="mt-10">
+            <img
+              src={aboutMe}
+              alt="Akhtar Hussain — Pakistani mountain guide based in Tarishing near Nanga Parbat"
+              className="mx-auto w-full max-w-3xl rounded-2xl shadow-[0_10px_35px_rgba(0,0,0,0.15)]"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
