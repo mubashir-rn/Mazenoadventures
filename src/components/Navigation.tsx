@@ -27,13 +27,13 @@ const Navigation = () => {
   return (
     <nav className="bg-background/95 backdrop-blur-md border-b border-border/50 z-50 shadow-sm">
       {/* Top contact bar */}
-      <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-3 sm:px-4 border-b border-border/30 backdrop-blur-sm">
+      <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-0 sm:px-4 border-b border-border/30 backdrop-blur-sm">
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-row items-center justify-start gap-2 sm:gap-3">
             {/* Contact Information */}
-            <div className="flex flex-row items-center justify-start gap-2 sm:gap-4 text-xs sm:text-sm flex-nowrap">
-              {/* Phone/WhatsApp - Mobile First Design */}
-              <div className="flex items-center gap-2 sm:gap-3 p-1 sm:p-0">
+            <div className="flex flex-row items-center justify-between w-full gap-2 sm:gap-4 text-xs sm:text-sm flex-nowrap">
+              {/* Phone */}
+              <div className="flex items-center gap-2 sm:gap-3 p-1 sm:p-0 md:basis-1/4">
                 <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                 </div>
@@ -47,8 +47,8 @@ const Navigation = () => {
                 </a>
               </div>
               
-              {/* Combined Email Option - Single Icon */}
-              <div className="flex items-center gap-2 sm:gap-3 p-1 sm:p-0">
+              {/* Email */}
+              <div className="flex items-center justify-center gap-2 sm:gap-3 p-1 sm:p-0 md:basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
                 <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm">
                   <Mail className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                 </div>
@@ -63,41 +63,46 @@ const Navigation = () => {
                 </a>
               </div>
 
-              {/* WhatsApp CTA - inline with phone and email */}
-              <Button
-                variant="default"
-                size="icon"
-                asChild
-                className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[40px] min-w-[40px] transform hover:scale-105 active:scale-95"
-              >
-                <a
-                  href="https://wa.link/d4d1pg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Chat on WhatsApp"
+              {/* WhatsApp */}
+              <div className="flex items-center justify-center gap-2 md:basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
+                {/* Mobile icon-only button */}
+                <Button
+                  variant="default"
+                  size="icon"
+                  asChild
+                  className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[40px] min-w-[40px] transform hover:scale-105 active:scale-95"
                 >
-                  <MessageCircle className="h-5 w-5" />
-                </a>
-              </Button>
+                  <a
+                    href="https://wa.link/d4d1pg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Chat on WhatsApp"
+                  >
+                    <MessageCircle className="h-5 w-5" />
+                  </a>
+                </Button>
 
-              <Button 
-                variant="default" 
-                size="default" 
-                asChild 
-                className="hidden sm:inline-flex bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-4 sm:px-6 py-3 sm:py-2 rounded-full font-semibold text-sm sm:text-base transform hover:scale-105 active:scale-95"
-              >
-                <a 
-                  href="https://wa.link/d4d1pg" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center justify-center gap-2 sm:gap-3"
+                {/* Tablet/Desktop full button */}
+                <Button 
+                  variant="default" 
+                  size="default" 
+                  asChild 
+                  className="hidden sm:inline-flex bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-4 sm:px-6 py-3 sm:py-2 rounded-full font-semibold text-sm sm:text-base transform hover:scale-105 active:scale-95"
                 >
-                  <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="font-bold tracking-wide">Chat on WhatsApp</span>
-                </a>
-              </Button>
-              {/* Mobile Theme Toggle */}
-              <div className="sm:hidden ml-2">
+                  <a 
+                    href="https://wa.link/d4d1pg" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center justify-center gap-2 sm:gap-3"
+                  >
+                    <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
+                    <span className="font-bold tracking-wide">Chat on WhatsApp</span>
+                  </a>
+                </Button>
+              </div>
+
+              {/* Theme Toggle (separate item) */}
+              <div className="flex items-center justify-end md:basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
                 <ThemeToggle />
               </div>
             </div>
@@ -106,7 +111,7 @@ const Navigation = () => {
       </div>
 
       {/* Main navigation */}
-      <div className="container mx-auto px-3 sm:px-4 max-w-7xl">
+      <div className="container mx-auto px-0 sm:px-4 max-w-7xl">
         <div className="flex justify-between items-center h-16 sm:h-20 md:h-24 lg:h-28">
           {/* Logo */}
           <Link 
@@ -142,9 +147,6 @@ const Navigation = () => {
                 />
               </Link>
             ))}
-            <div className="ml-4">
-              <ThemeToggle />
-            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -185,11 +187,6 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4 mt-4 border-t border-border/50">
-                <div className="flex justify-center p-2">
-                  <ThemeToggle />
-                </div>
-              </div>
             </div>
           </div>
         </div>
