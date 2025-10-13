@@ -200,6 +200,7 @@ const Trekkings = () => {
       image: fmImg5,
       rating: 4.6,
       reviews: 10,
+      bestTime: "July to September",
       price: "$3000",
       elevation: "3300m",
       category: "Scenic Trek"
