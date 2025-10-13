@@ -29,9 +29,9 @@ const Navigation = () => {
       {/* Top contact bar */}
       <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-3 sm:px-4 border-b border-border/30 backdrop-blur-sm">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-row items-center gap-2 sm:gap-3">
+          <div className="flex flex-row items-center justify-start gap-2 sm:gap-3">
             {/* Contact Information */}
-            <div className="flex flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm flex-nowrap">
+            <div className="flex flex-row items-center justify-start gap-2 sm:gap-4 text-xs sm:text-sm flex-nowrap">
               {/* Phone/WhatsApp - Mobile First Design */}
               <div className="flex items-center gap-2 sm:gap-3 p-1 sm:p-0">
                 <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
@@ -96,6 +96,10 @@ const Navigation = () => {
                   <span className="font-bold tracking-wide">Chat on WhatsApp</span>
                 </a>
               </Button>
+              {/* Mobile Theme Toggle */}
+              <div className="sm:hidden ml-2">
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </div>
