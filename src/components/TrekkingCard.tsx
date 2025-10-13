@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from "@/components/ui/dialog";
-import { Clock, Users, MapPin, Calendar, Star, TrendingUp } from "lucide-react";
+import { Clock, Users, MapPin, Calendar, Star, TrendingUp, Tag } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface TrekkingCardProps {
@@ -20,6 +20,7 @@ interface TrekkingCardProps {
   reviews?: number;
   elevation?: string;
   category: string;
+  bestTime?: string;
 }
 
 const TrekkingCard = ({ 
@@ -36,7 +37,8 @@ const TrekkingCard = ({
   rating = 4.7,
   reviews = 89,
   elevation,
-  category
+  category,
+  bestTime
 }: TrekkingCardProps) => {
   return (
     <Card className="overflow-hidden shadow-[0_10px_35px_rgb(0,0,0,0.15)] hover:shadow-[0_15px_45px_rgb(0,0,0,0.22)] transition-all duration-300 transform hover:-translate-y-3 bg-white/95 dark:bg-card backdrop-blur-sm border-0">
@@ -84,6 +86,12 @@ const TrekkingCard = ({
             <Calendar className="h-4 w-4 text-primary" />
             <span>Min Age: {minAge}</span>
           </div>
+          {bestTime && (
+            <div className="flex items-center space-x-2 col-span-2">
+              <Tag className="h-4 w-4 text-primary" />
+              <span>Best Time: {bestTime}</span>
+            </div>
+          )}
         </div>
 
         <div className="flex items-center justify-between mb-4">
@@ -131,6 +139,9 @@ const TrekkingCard = ({
                   <div className="flex items-center space-x-2"><Users className="h-4 w-4 text-primary" /><span>{groupSize} People</span></div>
                   <div className="flex items-center space-x-2"><MapPin className="h-4 w-4 text-primary" /><span>{pickupLocation}</span></div>
                   <div className="flex items-center space-x-2"><Calendar className="h-4 w-4 text-primary" /><span>Min Age: {minAge}</span></div>
+                  {bestTime && (
+                    <div className="flex items-center space-x-2"><Tag className="h-4 w-4 text-primary" /><span>Best Time: {bestTime}</span></div>
+                  )}
                   <div className="flex items-center space-x-2">
                     <span className="font-medium">Difficulty:</span>
                     <div className="flex">

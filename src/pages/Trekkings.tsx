@@ -64,6 +64,7 @@ const Trekkings = () => {
       image: aroundNangaParbatMainImage,
       rating: 4.9,
       reviews: 27,
+      bestTime: "June to September",
       elevation: "5400m",
       category: "Popular Trek"
     },
@@ -80,6 +81,7 @@ const Trekkings = () => {
       image: k2Expedition1,
       rating: 4.9,
       reviews: 156,
+      bestTime: "June to September",
       elevation: "5150m",
       category: "Trekking"
     },
@@ -96,6 +98,7 @@ const Trekkings = () => {
       image: gondogoroImage,
       rating: 4.8,
       reviews: 98,
+      bestTime: "June to September",
       elevation: "5585m",
       category: "Trekking"
     },
@@ -112,6 +115,7 @@ const Trekkings = () => {
       image: nangaParbatExpedition1,
       rating: 4.7,
       reviews: 203,
+      bestTime: "June to September",
       elevation: "4600m",
       category: "Trekking"
     },
@@ -128,6 +132,7 @@ const Trekkings = () => {
       image: biafoImg1,
       rating: 4.9,
       reviews: 67,
+      bestTime: "June to September",
       elevation: "5100m",
       category: "Trekking"
     }
@@ -148,6 +153,7 @@ const Trekkings = () => {
       rating: 4.6,
       reviews: 34,
       price: "$2300",
+      bestTime: "June to September",
       elevation: "5290m",
       category: "Cultural Trek"
     },
@@ -164,6 +170,7 @@ const Trekkings = () => {
       image: rdbImg3,
       rating: 4.8,
       reviews: 5,
+      bestTime: "June to September",
       price: "$2200",
       category: "Challenging Trek"
     },
@@ -180,6 +187,7 @@ const Trekkings = () => {
       image: mazenoLatabo,
       rating: 4.5,
       reviews: 42,
+      bestTime: "June to September",
       price: "$3500",
       elevation: "5400m",
       category: "Challenging Trek"
@@ -200,8 +208,7 @@ const Trekkings = () => {
       image: fmImg5,
       rating: 4.6,
       reviews: 10,
-      bestTime: "July to September",
-      price: "$3000",
+      bestTime: "June to September",
       elevation: "3300m",
       category: "Scenic Trek"
     },
@@ -218,6 +225,7 @@ const Trekkings = () => {
       image: rushLakeImg1,
       rating: 4.6,
       reviews: 7,
+      bestTime: "June to September",
       elevation: "4694m",
       category: "Trekking",
       price: "$1150"
