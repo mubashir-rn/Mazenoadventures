@@ -44,6 +44,8 @@ import mazenoGlacierImage from "@/assets/arround nangaparbat/mazeno-glacier nang
 import npFromLatoboImage from "@/assets/arround nangaparbat/np-from-latobo  nangaparbat.jpeg";
 import npFromMazaenoPassImage from "@/assets/arround nangaparbat/np-from-mazaeno-pass nangaparbat.jpeg";
 import aroundNangaParbatMainImage from "@/assets/arround nangaparbat/np-from-latobo  nangaparbat.jpeg";
+import rushLakeImg1 from "@/assets/Rush Phari Lake Trek/RUSH LAKE TREK.jpg";
+import rushLakeImg3 from "@/assets/Rush Phari Lake Trek/RUSH LAKE TREK 3.jpg";
 
 const Trekkings = () => {
   const { theme } = useTheme();
@@ -161,12 +163,13 @@ const Trekkings = () => {
       description: "Rakaposhi peak 7788 meters high above sea level located in the Karakoram range, is one of the most beautiful and easy accessible to any other mountain peaks in Karakoram this beautiful peak can be seen from all directions and surrounding valleys. Diran peak 7200 meters above sea level in the same Rakaposhi massive and junction of two glaciers from Rakaposhi and Diran peaks provides a magnificent view of both peaks and glaciers. The lush and green meadows and ablation valleys around this mountain range offers a thrilling adventure for the nature lovers.",
       image: rdbImg3,
       rating: 4.8,
-      reviews: 0,
+      reviews: 5,
+      price: "$2200",
       category: "Challenging Trek"
     },
     {
       id: "mazeno-pass-trek",
-      title: "Around Nanga Parbat Trek",
+      title: "NANGA PARBAT & MAZENO PASS TREK",
       duration: "21 DAYS / 20 NIGHTS",
       groupSize: "6-10",
       difficulty: 5,
@@ -177,6 +180,7 @@ const Trekkings = () => {
       image: mazenoLatabo,
       rating: 4.5,
       reviews: 42,
+      price: "$3500",
       elevation: "5400m",
       category: "Challenging Trek"
     }
@@ -202,19 +206,20 @@ const Trekkings = () => {
     },
     {
       id: "rush-lake-trek",
-      title: "RUSH LAKE TREK",
-      duration: "10 Days",
+      title: "Rush Phari Lake Trek",
+      duration: "14 DAYS / 13 NIGHTS",
       groupSize: "6-12",
       difficulty: 3,
       minAge: "14+",
       pickupLocation: "Gilgit Airport",
-      tourType: "Alpine Trek",
-      description: "Trek to one of the highest alpine lakes in the world with stunning reflections of surrounding peaks.",
-      image: mountainImage,
+      tourType: "Trekking",
+      description: "Rush Phari Trek in the Karakoram (Rush Phari means sparkling Lake), is one of the most recommended treks for those who want to have a first time trekking experience with a life long pleasant memory. We walk on glaciers, through villages to a look at the real life of those living at foot steps of mighty glaciers along the irrigated terraced fields with the impressive view of the mighty Karakoram Mountains from summit of Rush Peak (5098 Meters). It is the junction of two famous glaciers of Barpu and Bualter. It is interesting that local legends talk about the gender of these glaciers of being male and female and also about their meeting and birth of the new glaciers. Our trek starts at Hoper, a marvelous valley with green fields and fruit orchards which is also famous for its potato seeds which are exported to other parts of Pakistan especially in the Northern Areas. If you have enough skill you can climb Push Peak.",
+      image: rushLakeImg1,
       rating: 4.6,
-      reviews: 132,
+      reviews: 7,
       elevation: "4694m",
-      category: "Alpine Trek"
+      category: "Trekking",
+      price: "$1150"
     }
   ];
 

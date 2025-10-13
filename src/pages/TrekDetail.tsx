@@ -70,6 +70,8 @@ import snow4 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW 
 import snow5 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 5.jpg";
 import snow6 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 6.jpg";
 import snow7 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 7.jpg";
+import rushImg1 from "@/assets/Rush Phari Lake Trek/RUSH LAKE TREK.jpg";
+import rushImg3 from "@/assets/Rush Phari Lake Trek/RUSH LAKE TREK 3.jpg";
 
 interface TrekData {
   id: string;
@@ -145,9 +147,42 @@ const treks: Record<string, TrekData> = {
       { day: "21", title: "Departure", description: "Transfer to airport for onward international flight." }
     ]
   },
+  "rush-lake-trek": {
+    id: "rush-lake-trek",
+    title: "Rush Phari Lake Trek",
+    duration: "14 DAYS / 13 NIGHTS",
+    groupSize: "6-12",
+    difficulty: 3,
+    minAge: "14+",
+    pickupLocation: "Gilgit Airport",
+    tourType: "Trekking",
+    description:
+      "Rush Phari Trek in the Karakoram (Rush Phari means sparkling Lake), is one of the most recommended treks for those who want to have a first time trekking experience with a life long pleasant memory. We walk on glaciers, through villages to a look at the real life of those living at foot steps of mighty glaciers along the irrigated terraced fields with the impressive view of the mighty Karakoram Mountains from summit of Rush Peak (5098 Meters). It is the junction of two famous glaciers of Barpu and Bualter. It is interesting that local legends talk about the gender of these glaciers of being male and female and also about their meeting and birth of the new glaciers. Our trek starts at Hoper, a marvelous valley with green fields and fruit orchards which is also famous for its potato seeds which are exported to other parts of Pakistan especially in the Northern Areas. If you have enough skill you can climb Push Peak.",
+    images: [rushImg1, rushImg3],
+    rating: 4.6,
+    reviews: 7,
+    bestTime: "June to October",
+    price: "$1150",
+    itinerary: [
+      { day: "1", title: "Islamabad - Arrival at Islamabad. Transfer to Hotel." },
+      { day: "2", title: "Islamabad - Chilas - Drive to Chilas 8-10hrs. Overnight at hotel." },
+      { day: "3", title: "Chilas - Hopar" },
+      { day: "4", title: "Hopar - Shiskin - Trek to Shiskin. Overnight at camp" },
+      { day: "5", title: "Shikin - Barpu Giram - Trek to Barpu Giram. Overnight in Camp." },
+      { day: "6", title: "Barpu Giram -Rusk Lake - Trek to Rush Lake. Overnight at Camp." },
+      { day: "7", title: "Rush Lake and Rest Day" },
+      { day: "8", title: "Rush Lake and Rest Day" },
+      { day: "9", title: "Datchugan - Hamdar - Trek to Datchugan and Hamdar. Overnight in camp." },
+      { day: "10", title: "Hamdar - Hopar - Karimabad - Trek to Hopar, Drive to Karimabad. Overnight at hotel." },
+      { day: "11", title: "Karimabad - Khunjerab Pass - Gulmit" },
+      { day: "12", title: "Gulmit - Chilas" },
+      { day: "13", title: "Chilas - Islamabad - Drive back to Islamabad. Overnight at Hotel." },
+      { day: "14", title: "Departure - Transfer to airport" }
+    ]
+  },
   "mazeno-pass-trek": {
     id: "mazeno-pass-trek",
-    title: "Around Nanga Parbat Trek",
+    title: "NANGA PARBAT & MAZENO PASS TREK",
     elevation: "5400m",
     duration: "21 DAYS / 20 NIGHTS",
     groupSize: "6-10",
@@ -160,6 +195,8 @@ const treks: Record<string, TrekData> = {
     images: [mazenoImg7, mazenoImg1, mazenoImg2, mazenoImg3, mazenoImg4, mazenoImg5, mazenoImg6],
     rating: 4.5,
     reviews: 42,
+    bestTime: "May to October",
+    price: "$3500",
     emails: [
       "akhtar_nangaparbat@yahoo.com",
       "akhtarnagabarbat@gmail.com"
@@ -465,7 +502,9 @@ const treks: Record<string, TrekData> = {
       "Rakaposhi peak 7788meters high above sea level located in the Karakoram range, is one of the most beautiful and easy accessible to any other mountain peaks in Karakoram this beautiful peak can be seen from all directions and surrounding valleys.\nDiran peak 7200 meters above sea level in the same Rakaposhi massive and junction of two glaciers from Rakaposhi and Diran peaks provides a magnificent view of both peaks and glaciers. The lush and green meadows and ablation valleys around this mountain range offers a thrilling adventure for the nature lovers.\n\nPlease Note:\nThe above itinerary is not a fixed programme but is intended to give an indication of the likely events during the expedition. Please note that because of the nature of mountaineering on 8,000m peaks, it will be necessary to have a flexible plan in order to take the best advantage of situations as they present themselves. Any changes to the itinerary will be made with a view to maximizing the benefit to the team members and of ensuring their eventual success on the mountain.",
     images: [rdbImg1, rdbImg2, rdbImg3, rdbImg4, rdbImg5, rdbImg6, rdbImg7],
     rating: 4.8,
-    reviews: 0,
+    reviews: 5,
+    bestTime: "June to October",
+    price: "$2200",
     emails: [
       "akhtar_nangaparbat@yahoo.com",
       "akhtarnagabarbat@gmail.com"

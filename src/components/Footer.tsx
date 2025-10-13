@@ -16,6 +16,7 @@ const Footer = () => {
 
   const trekkingLinks = [
     { label: "AROUND NANGA PARBAT TREK", id: "around-nanga-parbat-trek" },
+    { label: "NANGA PARBAT & MAZENO PASS TREK", id: "mazeno-pass-trek" },
     { label: "K2 BASE CAMP TREK", id: "k2-base-camp-trek" },
     { label: "K2 Gondogoro La Trek", id: "gondogoro-la-trek" },
     { label: "Nanga parbat Rupal Face Trek", id: "nanga-parbat-rupal-face-trek" },
