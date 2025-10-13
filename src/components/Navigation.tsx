@@ -71,7 +71,7 @@ const Navigation = () => {
                 variant="default" 
                 size="sm" 
                 asChild 
-                className="bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-2 sm:px-4 md:px-6 py-2 sm:py-2 rounded-full font-semibold text-xs sm:text-sm md:text-base min-h-[36px] sm:min-h-0 transform hover:scale-105 active:scale-95"
+                className="bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-2 xs:px-3 sm:px-4 md:px-6 py-2 sm:py-2 rounded-full font-semibold text-xs sm:text-sm md:text-base min-h-[36px] sm:min-h-0 transform hover:scale-105 active:scale-95"
               >
                 <a 
                   href="https://wa.link/d4d1pg" 
@@ -80,8 +80,9 @@ const Navigation = () => {
                   className="inline-flex items-center justify-center gap-1 sm:gap-2 md:gap-3"
                   aria-label="Chat on WhatsApp"
                 >
-                  <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
-                  <span className="font-bold tracking-wide">Chat on WhatsApp</span>
+                  <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 flex-shrink-0" />
+                  {/* Responsive text - icon only on mobile, full text on larger screens */}
+                  <span className="font-bold tracking-wide hidden sm:inline">Chat on WhatsApp</span>
                 </a>
               </Button>
             </div>
