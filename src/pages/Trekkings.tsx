@@ -11,14 +11,30 @@ import gondogoroImage from "@/assets/gondogoro-trek.jpg";
 import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
 import snowLakeImage from "@/assets/snow-lake-trek.jpg";
 import biafoImg1 from "@/assets/BIAFO GLACIER TREK img1.jpg";
-import biafoImg2 from "@/assets/BIAFO GLACIER TREK img2.jpg";
-import biafoImg3 from "@/assets/BIAFO GLACIER TREK img3.jpg";
+import rdbImg1 from "@/assets/Rakaposhi & Diran Base Camp/Altit-Garden Rakaposhi Diran Base Camp .jpg";
+import rdbImg2 from "@/assets/Rakaposhi & Diran Base Camp/Altit-old-village-2 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg3 from "@/assets/Rakaposhi & Diran Base Camp/Rakaposhi-Wall-1 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg4 from "@/assets/Rakaposhi & Diran Base Camp/Rakaposhi1 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg5 from "@/assets/Rakaposhi & Diran Base Camp/Rakaposhi_KKH1 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg6 from "@/assets/Rakaposhi & Diran Base Camp/Rakaposhi_Peak2-1 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg7 from "@/assets/Rakaposhi & Diran Base Camp/rakaposhi-1 Rakaposhi & Diran Base Camp.jpg";
 import nangaParbatExpedition1 from "@/assets/NANGA PARBAT  EXPEDITION 1.jpg";
 import nangaParbatExpedition2 from "@/assets/NANGA PARBAT  EXPEDITION 2.jpg";
 import k2Expedition1 from "@/assets/k2 expedition 1.jpg";
 import k2Expedition2 from "@/assets/k2 expedition 2.jpg";
 import mountainImage from "@/assets/mountain.jpeg";
-import tarishingImage from "@/assets/tarishing.jpeg";
+import fmImg1 from "@/assets/Fairy Meadows Trek/1647270477-fairy_meadows_and_the_view_of_nanga_parbat.webp";
+import fmImg2 from "@/assets/Fairy Meadows Trek/Nanga-Parbat-base-camp-trek-in-Pakistan-scaled.jpg";
+import fmImg3 from "@/assets/Fairy Meadows Trek/fairy-meadows-tour-package-3.jpg";
+import fmImg4 from "@/assets/Fairy Meadows Trek/fairy-meadows-tour-prices-2.jpg";
+import fmImg5 from "@/assets/Fairy Meadows Trek/fairy-meadows-trek-3.jpg";
+import fmImg6 from "@/assets/Fairy Meadows Trek/fairy-meadows-trek-6.jpg";
+import wakhan1 from "@/assets/WAKHAN CORRIDOR AND CHILINJI PASS TREK/WAKHAN CORRIDOR AND CHILINJI PASS TREK 1.jpg";
+import wakhan2 from "@/assets/WAKHAN CORRIDOR AND CHILINJI PASS TREK/WAKHAN CORRIDOR AND CHILINJI PASS TREK 2.jpg";
+import wakhan3 from "@/assets/WAKHAN CORRIDOR AND CHILINJI PASS TREK/WAKHAN CORRIDOR AND CHILINJI PASS TREK 3.jpg";
+import wakhan4 from "@/assets/WAKHAN CORRIDOR AND CHILINJI PASS TREK/WAKHAN CORRIDOR AND CHILINJI PASS TREK 4.jpg";
+import mazenoLatabo from "@/assets/NANGA PARBAT & MAZENO PASS TREK/latabo-meadows.jpeg";
+import mazenoBazin1 from "@/assets/NANGA PARBAT & MAZENO PASS TREK/bazin-glacier-1.jpeg";
 import bazinGlacierImage from "@/assets/arround nangaparbat/bazin-glacier-2 nangaparbat.jpeg";
 import enrouteMazenImage from "@/assets/arround nangaparbat/enroute-mazen-high-camp nangaparbat.jpeg";
 import heliCofferBcImage from "@/assets/arround nangaparbat/heli-coffer-bc nangaparbat.jpeg";
@@ -119,69 +135,70 @@ const Trekkings = () => {
     {
       id: "wakhan-corridor-trek",
       title: "WAKHAN CORRIDOR AND CHILINJI PASS TREK",
-      duration: "18 Days",
+      duration: "22 Days",
       groupSize: "6-8",
-      difficulty: 4,
+      difficulty: 3,
       minAge: "18+",
       pickupLocation: "Islamabad Airport",
-      tourType: "Cultural Trek",
-      description: "Explore the remote Wakhan Corridor with its unique culture and stunning high-altitude landscapes.",
-      image: snowLakeImage,
+      tourType: "Trekking",
+      description: "Ancient Wakhan Corridor trek through Hindukush and Hindu Raj, high pastures, serene lakes, and Chilinji Pass (5290m) into Upper Hunza.",
+      image: wakhan1,
       rating: 4.6,
       reviews: 34,
-      elevation: "4800m",
+      price: "$2300",
+      elevation: "5290m",
       category: "Cultural Trek"
     },
     {
       id: "biafo-glacier-trek",
-      title: "BIAFO GLACIER TREK",
-      duration: "22 Days",
+      title: "Rakaposhi & Diran Base Camp",
+      duration: "11 DAYS / 10 NIGHTS",
       groupSize: "3-8",
       difficulty: 5,
       minAge: "18+",
       pickupLocation: "Islamabad Airport",
-      tourType: "Technical Trek",
-      description: "Difficult trek requiring glacier travel with harness and rope, traversing Biafo and Hispar glaciers over Hispar La to the meadows of Hispar.",
-      image: biafoImg2,
+      tourType: "Trekking",
+      description: "Rakaposhi peak 7788 meters high above sea level located in the Karakoram range, is one of the most beautiful and easy accessible to any other mountain peaks in Karakoram this beautiful peak can be seen from all directions and surrounding valleys. Diran peak 7200 meters above sea level in the same Rakaposhi massive and junction of two glaciers from Rakaposhi and Diran peaks provides a magnificent view of both peaks and glaciers. The lush and green meadows and ablation valleys around this mountain range offers a thrilling adventure for the nature lovers.",
+      image: rdbImg3,
       rating: 4.8,
       reviews: 0,
-      elevation: "5151m",
       category: "Challenging Trek"
     },
     {
       id: "mazeno-pass-trek",
-      title: "NANGA PARBAT & MAZENO PASS TREK",
-      duration: "16 Days",
+      title: "Around Nanga Parbat Trek",
+      duration: "21 DAYS / 20 NIGHTS",
       groupSize: "6-10",
       difficulty: 5,
       minAge: "18+",
       pickupLocation: "Islamabad Airport",
-      tourType: "Technical Trek",
-      description: "A demanding trek around Nanga Parbat with technical sections and breathtaking mountain scenery.",
-      image: nangaParbatExpedition2,
+      tourType: "Trekking",
+      description: "Challenging circuit of Nanga Parbat via Mazeno La (5400m), Kado Sagar (4900m), and Khustu Pass (4840m), with panoramic glacier and peak views and rich local culture.",
+      image: mazenoLatabo,
       rating: 4.5,
       reviews: 42,
-      elevation: "5377m",
-      category: "Technical Trek"
+      elevation: "5400m",
+      category: "Challenging Trek"
     }
   ];
 
   const scenicTreks = [
     {
       id: "rakaposhi-base-camp-trek",
-      title: "RAKAPOSHI BASE CAMP TREK",
-      duration: "8 Days",
+      title: "Fairy Meadows Nanga Parbat base camp Trek",
+      duration: "10 Days",
       groupSize: "4-12",
       difficulty: 2,
       minAge: "12+",
-      pickupLocation: "Gilgit Airport",
-      tourType: "Family Trek",
-      description: "A moderate trek suitable for families with spectacular views of Rakaposhi peak and surrounding glaciers.",
-      image: tarishingImage,
-      rating: 4.4,
-      reviews: 187,
-      elevation: "4100m",
-      category: "Family Trek"
+      pickupLocation: "Islamabad Airport",
+      tourType: "Trekking",
+      description: "Fairy Meadows Trek offers an adventure of a lifetime with jeep ride to Tatu, a short hike to meadows, and stunning views of Nanga Parbat with starry skies and alpine meadows.",
+      image: fmImg5,
+      rating: 4.6,
+      reviews: 10,
+      price: "$3000",
+      elevation: "3300m",
+      category: "Scenic Trek"
     },
     {
       id: "rush-lake-trek",

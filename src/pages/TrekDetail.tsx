@@ -8,9 +8,30 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Clock, Users, MapPin, Calendar, Star, Mail, Tag, ChevronDown } from "lucide-react";
 import ShareBookingButtons from "@/components/ShareBookingButtons";
-import biafoImg1 from "@/assets/BIAFO GLACIER TREK img1.jpg";
-import biafoImg2 from "@/assets/BIAFO GLACIER TREK img2.jpg";
-import biafoImg3 from "@/assets/BIAFO GLACIER TREK img3.jpg";
+import fmImg1 from "@/assets/Fairy Meadows Trek/1647270477-fairy_meadows_and_the_view_of_nanga_parbat.webp";
+import fmImg2 from "@/assets/Fairy Meadows Trek/Nanga-Parbat-base-camp-trek-in-Pakistan-scaled.jpg";
+import fmImg3 from "@/assets/Fairy Meadows Trek/fairy-meadows-tour-package-3.jpg";
+import fmImg4 from "@/assets/Fairy Meadows Trek/fairy-meadows-tour-prices-2.jpg";
+import fmImg5 from "@/assets/Fairy Meadows Trek/fairy-meadows-trek-3.jpg";
+import fmImg6 from "@/assets/Fairy Meadows Trek/fairy-meadows-trek-6.jpg";
+import wakhan1 from "@/assets/WAKHAN CORRIDOR AND CHILINJI PASS TREK/WAKHAN CORRIDOR AND CHILINJI PASS TREK 1.jpg";
+import wakhan2 from "@/assets/WAKHAN CORRIDOR AND CHILINJI PASS TREK/WAKHAN CORRIDOR AND CHILINJI PASS TREK 2.jpg";
+import wakhan3 from "@/assets/WAKHAN CORRIDOR AND CHILINJI PASS TREK/WAKHAN CORRIDOR AND CHILINJI PASS TREK 3.jpg";
+import wakhan4 from "@/assets/WAKHAN CORRIDOR AND CHILINJI PASS TREK/WAKHAN CORRIDOR AND CHILINJI PASS TREK 4.jpg";
+import mazenoImg1 from "@/assets/NANGA PARBAT & MAZENO PASS TREK/bazin-glacier-1.jpeg";
+import mazenoImg2 from "@/assets/NANGA PARBAT & MAZENO PASS TREK/bazin-glacier-2.jpeg";
+import mazenoImg3 from "@/assets/NANGA PARBAT & MAZENO PASS TREK/down-to-sergalio-base-camp.jpeg";
+import mazenoImg4 from "@/assets/NANGA PARBAT & MAZENO PASS TREK/enroute-mazen-high-camp.jpeg";
+import mazenoImg5 from "@/assets/NANGA PARBAT & MAZENO PASS TREK/kaeo-pass-lunch.jpeg";
+import mazenoImg6 from "@/assets/NANGA PARBAT & MAZENO PASS TREK/karo-pass-3.jpeg";
+import mazenoImg7 from "@/assets/NANGA PARBAT & MAZENO PASS TREK/latabo-meadows.jpeg";
+import rdbImg1 from "@/assets/Rakaposhi & Diran Base Camp/Altit-Garden Rakaposhi Diran Base Camp .jpg";
+import rdbImg2 from "@/assets/Rakaposhi & Diran Base Camp/Altit-old-village-2 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg3 from "@/assets/Rakaposhi & Diran Base Camp/Rakaposhi-Wall-1 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg4 from "@/assets/Rakaposhi & Diran Base Camp/Rakaposhi1 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg5 from "@/assets/Rakaposhi & Diran Base Camp/Rakaposhi_KKH1 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg6 from "@/assets/Rakaposhi & Diran Base Camp/Rakaposhi_Peak2-1 Rakaposhi & Diran Base Camp.jpg";
+import rdbImg7 from "@/assets/Rakaposhi & Diran Base Camp/rakaposhi-1 Rakaposhi & Diran Base Camp.jpg";
 import aroundNpImg1 from "@/assets/arround nangaparbat/np-from-latobo  nangaparbat.jpeg";
 import aroundNpImg2 from "@/assets/arround nangaparbat/np-from-mazaeno-pass nangaparbat.jpeg";
 import aroundNpImg3 from "@/assets/arround nangaparbat/bazin-glacier-2 nangaparbat.jpeg";
@@ -122,6 +143,127 @@ const treks: Record<string, TrekData> = {
       { day: "19", title: "Naran - Islamabad", description: "Today we will drive towards the well-developed cities of the country. On our way if time allows us we will visit, Taxila museum and sites, which is an archaeological location dated from (600 BC to 500 AD) are located around Taxila museum. For over one Thousand-year Taxila remained famous as a center of learning Gandhara art of sculpture, architecture, education, and Buddhism in the days of Buddhist glory. Later we will drive to Islamabad. Overnight at Islamabad hotel." },
       { day: "20", title: "Islamabad", description: "Day free for Rawalpindi & Islamabad for sightseen. We will start our day from Rawalpindi Raja Bazar, which is an traditional bazar, where you can see the real lifestyle. We we walk through different bazar, where you can see almost every products in different location with small shops. Later we will enter into modern capital of Pakistan and visit the Margala hills including Shah Faisal Mosque. The dinner going to be from Nanga Parbat adventure. Overnight in Hotel." },
       { day: "21", title: "Departure", description: "Transfer to airport for onward international flight." }
+    ]
+  },
+  "mazeno-pass-trek": {
+    id: "mazeno-pass-trek",
+    title: "Around Nanga Parbat Trek",
+    elevation: "5400m",
+    duration: "21 DAYS / 20 NIGHTS",
+    groupSize: "6-10",
+    difficulty: 5,
+    minAge: "18+",
+    pickupLocation: "Islamabad Airport",
+    tourType: "Trekking",
+    description:
+      "Around Nanga Parbat Trek is a challenging but rewarding adventure that takes you on a circular route around the majestic Nanga Parbat, the ninth-highest mountain in the world. This trek offers stunning views of the mountain's various faces, including the iconic Rupal Face, as well as other impressive peaks in the surrounding region. The trek involves crossing three high passes: Mazeno La (5,400 meters), Kado Sagar Pass (4,900 meters), and Khustu Pass (4,840 meters). While Mazeno La presents technical challenges, particularly during the descent, the other two passes are generally less demanding. The trek offers breathtaking panoramic views of Nanga Parbat, its surrounding glaciers, and the surrounding Himalayan landscape. The Around Nanga Parbat Trek is a unique opportunity to explore a remote and unspoiled region of Pakistan, far from the tourist crowds. The trek also offers opportunities to interact with local communities and learn about their culture and traditions.",
+    images: [mazenoImg7, mazenoImg1, mazenoImg2, mazenoImg3, mazenoImg4, mazenoImg5, mazenoImg6],
+    rating: 4.5,
+    reviews: 42,
+    emails: [
+      "akhtar_nangaparbat@yahoo.com",
+      "akhtarnagabarbat@gmail.com"
+    ],
+    itinerary: [
+      { day: "1", title: "Islamabad (600m)", description: "Arrival at Islamabad. Transfer to hotel, afternoon visit of the twin towns of Islamabad and Rawalpindi. Evening presentation of the program." },
+      { day: "2", title: "Chilas (1200m) 12 hrs", description: "Drive to Chilas by the Karakorum Highway (KKH). Visit Abbottabad and see petroglyphs in Chilas. Meals and overnight at hotel." },
+      { day: "3", title: "Tarishing (2911m) 6 hrs", description: "Drive to Tarshing along the Astore River via Gurikot and Astore. Tarshing is the departure point of the trek. Meals and overnight at camp." },
+      { day: "4", title: "Latoba (4000m) 5 hrs", description: "Cross Tarshing and Bashin glaciers, discover Rupal villages. Campsite offers a view of the Rupal face of Nanga Parbat. Meals and overnight at camp." },
+      { day: "5", title: "Shaigiri 4450m 4-5 hrs", description: "Follow the northern lateral moraine of the Toshain glacier with views of Leila, Rupal peaks, and Nanga Parbat. View of the Toshain glacier. Meals and overnight at camp." },
+      { day: "6", title: "Shaigri", description: "Rest day at Shaigri. Explore the nearby mountains walls. Overnight at Camp." },
+      { day: "7", title: "Mazeno BC (4700m) 6 hrs", description: "Trek towards Mazeno pass. This is a high and cold location where porters from Tarishing are often changed. Overnight at camp." },
+      { day: "8", title: "Mazeno high Camp. 5399m 4 hrs", description: "Early morning trek to the highest point to cross the Mazeno pass. Overnight at camp." },
+      { day: "9", title: "Upper Loiba (4300m) 6 hrs", description: "Climb up is not difficult. The other side is a steady slope on a glacier. Reach birch woods and green meadows at the foot. Meals and overnight at camp." },
+      { day: "10", title: "Sargialo Pass (4843m) 7 hrs", description: "Cross Sargialo Pass for a magnificent view of snow-covered mountains including Nanga Parbat Diamer side. Descend to Sargialo campsite. Overnight at camp." },
+      { day: "11", title: "Kotghali (3000m) 4 hrs", description: "Walk on the Diamir glacier towards Kotghali, a summer settlement. Interact with locals and enjoy local dairy products. Overnight at camp." },
+      { day: "12", title: "Kotghali 6 hrs Rest day", description: "Relaxing day at Kotghali. Option to walk on the glacier and surroundings. View of Nanga Parbat. Free time for laundry. Overnight at camp." },
+      { day: "13", title: "Day excursion Nanga Parbat Base Camp", description: "Walk towards the first base camp (3850m) and second Base Camp (4250m), the departure point for most expeditions. View of the ninth highest peak in the world. Option for acclimatization climb of Diamerio peak (6000m). Meals and overnight at camp." },
+      { day: "14", title: "Kutgali Pass to Karu Sagar 6-7 hrs", description: "Hike up to Kutgali Pass with amazing views of Nanga Parbat. Reach Karu Sagar. Overnight at camp." },
+      { day: "15", title: "Trekking to Gutum Sagar / Base Camp of Jiliper Pass 4 to 5 hrs.", description: "Walk towards Gutum Sagar on green meadows, passing small summer villages. Meals and overnight at camp." },
+      { day: "16", title: "Crossing of Jiliper Pass to Bayal", description: "Cross Jiliper Pass to approach the Fairy Meadows region (North face of Nanga Parbat). Overnight at camp." },
+      { day: "17", title: "Nanga Parbat Base camp (3300m) Option", description: "Excursions to the Base Camp (4300m) of the north face of Nanga Parbat. Visit the memorial of early expeditions, including the first successful 1953 expedition. Trek back to Fairy Meadows. Overnight at wooden huts." },
+      { day: "18", title: "Fairy Meadows – Naran 7-8 hrs", description: "Trek back to Tato, then take jeeps to KKH and drive over Babusar pass to Naran. Overnight at Hotel." },
+      { day: "19", title: "Naran - Islamabad", description: "Drive towards Islamabad. If time allows, visit Taxila museum and archaeological sites. Overnight at Islamabad hotel." },
+      { day: "20", title: "Islamabad", description: "Sightseeing in Rawalpindi (Raja Bazar) and modern Islamabad (Shah Faisal Mosque, Margala hills). Farewell dinner. Overnight in Hotel." },
+      { day: "21", title: "Departure", description: "Transfer to airport for onward international flight." }
+    ]
+  },
+  "wakhan-corridor-trek": {
+    id: "wakhan-corridor-trek",
+    title: "WAKHAN CORRIDOR AND CHILINJI PASS TREK",
+    elevation: "5290m",
+    duration: "22 Days",
+    groupSize: "6-8",
+    difficulty: 3,
+    minAge: "18+",
+    pickupLocation: "Islamabad Airport",
+    tourType: "Trekking",
+    description:
+      "Ancient Wakhan Corridor is truly one of the finest treks offered within Hindukush Range in Pakistan, exploring an area visited by very few tourists as it has recently been opened for foreigners. We trek through the beautiful and scenic mountain villages in Chitral valley under the shadow of Tirichmir peak rising to 7708 meters, the highest peak in the Hindukush range. Alexander the great passed through this mountain range in 326 B.C leaving behind Greek traditions and customs, which to this day are reflected in the indigenous tribes residing in isolated Kalash valleys. After driving through the fabulous Hindukush and Hindu Raj mountains we reach the Yarkhun valley from where the exciting trek begins.\nFrom here you trek on one of the offshoots of the legendry Silk Road, traversed by camels and yak caravans of ancient times from the bazaars of Samarkand and Bukhara of central Asia to the Indian Sub Continent. It's an enchanting land of extensive high grazing pastures with serene lakes set against the back drop of high towering snow caped peaks and evergreen meadows.\nThe locals call this the roof of the world as it serves the beautiful landscape, large herds of Yaks, goats and sheep can be seen grazing across the fertile and sweet grassy meadows of this high plateau. From here we trek down to the Ishkoman valley or ascend to the path leading to Chilinji Pass at 5290 meters and enter Chupurson valley in upper Hunza. The trek ends at Babagundi Ziarat, an ancient Sufi shrine with a large following. From here you drive by jeep to the Karakoram Highway and proceed to Hunza and Gilgit.",
+    images: [wakhan1, wakhan2, wakhan3, wakhan4],
+    rating: 4.6,
+    reviews: 34,
+    bestTime: "June to October",
+    price: "$2300",
+    emails: [
+      "akhtar_nangaparbat@yahoo.com",
+      "akhtarnagabarbat@gmail.com"
+    ],
+    itinerary: [
+      { day: "1", title: "Islamabad", description: "Morning arrive Islamabad international airport, meet and Transfer to hotel. Afternoon visit the Shah Faisal Mosque and Daman-e-Koh in Margalla hills to have a magnificent view of Islamabad and the colorful bazaars of Rawalpindi. Meals and overnight in hotel." },
+      { day: "2", title: "Islamabad – Dir", description: "Morning drive to Dir, a scenic town at the foot of Lowari Pass; en-route visit the archaeological museum at Chakdara. Meals and overnight at hotel." },
+      { day: "3", title: "Lowari Pass – Chitral", description: "Drive over scenic and adventurous Lowari Pass (3118m) with panoramic views of Hindukush, through pine forests and valleys to Chitral. Meals and overnight at hotel." },
+      { day: "4", title: "Kalash Valley", description: "Full day excursion to Bomboret and Rambur to explore, visit local houses and learn customs and traditions of Kalash tribes. Return to Chitral. Overnight hotel." },
+      { day: "5", title: "Yarkhun – Lasht", description: "4x4 jeep through scenic mountain villages under snow-covered peaks, lush meadows along Chitral River, to Yarkhun and Lasht. Meals and overnight in tents." },
+      { day: "6", title: "Kishmanja", description: "First trekking day along green meadows on the Yarkhun River past summer shepherd settlements. Meals and overnight in tents." },
+      { day: "7", title: "Iskharwaz", description: "Gentle walk through meadows with wild willow and birch forest at altitude. Meals and overnight in tents." },
+      { day: "8", title: "Chikar", description: "Easy walk through lush meadows beneath hanging snow peaks and glaciers to Chikar, a scenic village at the mouth of Darkot Pass. Overnight tents." },
+      { day: "9", title: "Broghil", description: "Scenic walk on high plateaus of the Wakhan, near the famous Broghil Pass; Gujar nomads and high pastures. Meals and overnight in tents." },
+      { day: "10", title: "Karumber Lake", description: "Continue across high plateaus of the Wakhan; Gujar nomads with herds in high grazing pastures. Meals and overnight in tents." },
+      { day: "11", title: "Warghut", description: "Beautiful and easy trek towards the Chilinji Pass and Ishkoman valley through juniper/birch forests and Gujar summer settlements. Meals and overnight in tents." },
+      { day: "12", title: "Chilinji Base Camp", description: "Trek to green meadows of high grazing pastures; camp at foot of Chilinji Pass amid high snow-capped peaks. Meals and overnight tents." },
+      { day: "13", title: "Chilinji Base Camp", description: "Rest and exploration day at base; prepare for pass crossing. Meals and overnight in tents." },
+      { day: "14", title: "Chilinji Pass – Babaghundi Ziarat", description: "Early start to cross Chilinji Pass (5290m). Steep ascent over rocky trail to panoramic summit, then descend into Chupurson valley to Babaghundi Ziarat. Meals and overnight tents." },
+      { day: "15", title: "Babaghundi Ziarat", description: "Contingency/rest/exploration day in beautiful mountain village at Sufi shrine. Meals and overnight tents." },
+      { day: "16", title: "Khunjerab Pass – Gulmit", description: "Drive through Chupurson valley to KKH; continue to Khunjerab Pass (4733m). After brief stop at Pak-China border, return to Gulmit in Upper Hunza. Overnight hotel." },
+      { day: "17", title: "Karimabad", description: "Drive to Karimabad, capital of Hunza; visit ancient rock carvings, old wooden mosques and watch-towers in Ganesh. Visit Baltit and Altit Forts; free afternoon. Overnight hotel." },
+      { day: "18", title: "Karimabad", description: "Free day to explore or drive to Duikar meadows for sunset views; enjoy views from Eagles Nest Hotel. Overnight hotel." },
+      { day: "19", title: "Karimabad – Gilgit", description: "Drive back to Gilgit; stop at Rakaposhi viewpoint (7788m). Visit 7th-century Buddha Rock and explore Gilgit bazaars. Overnight hotel." },
+      { day: "20", title: "Gilgit – Besham", description: "Drive to Besham with views of Nanga Parbat (8125m), passing villages along the Indus; visit 4th-century rock carvings at Chilas and Shatial. Overnight hotel." },
+      { day: "21", title: "Besham – Islamabad", description: "Drive to Islamabad via Mansehra and Abbottabad; visit Taxila Museum and the excavated cities of Sirkap, Sirsukh and Julian Monastery. Overnight hotel." },
+      { day: "22", title: "Departure", description: "Fly out." }
+    ]
+  },
+  "rakaposhi-base-camp-trek": {
+    id: "rakaposhi-base-camp-trek",
+    title: "Fairy Meadows Nanga Parbat base camp Trek",
+    duration: "10 Days",
+    groupSize: "4-12",
+    difficulty: 2,
+    minAge: "12+",
+    pickupLocation: "Islamabad Airport",
+    tourType: "Trekking",
+    description:
+      "Fairy Meadows Trek offers an adventure of a lifetime in just 5 days. It offers a drive along Indus River, a small hike, a view of Nanga Parbat (8126m), clear view of stars and short hikes in to meadows through small valleys of diamer district. Fairy Meadows Trek starts with a jeep ride from Raikot Bridge to Tatu Village. The first stop of the trek is Chilas, a city located in the region of Gilgit-Baltistan.\n\nThere are three ways to reach Chilas for the Fairy Meadows Trek, the first one and most feasible in terms of exploring scenic beauty is via NaranKaghan. It takes about 10-12 hrs to reach Chilas via Naran-Kaghan and Babusar Top. Second option is via Karakoram Highway. Babusar Top is closed due to heavy snowfall in winters from November to May, so the alternate route that adventurer’s take is via Karakoram Highway through Mansehra, Besham and Kohistan region. This route take about 14-16 hours from Islamabad. Third option is to take a one hour flight from Islamabad to Gilgit and a 2-3 hour drive to Chilas by road.\n\nThe best time to do this trek is from April-September, the greenery of the meadows with snow on the top of the mountains takes you close to nature, away from hectic urban life. Any health person can do this trek, it is an easy, short and perfect for beginners. This trek also offers a lot of adventure. The jeep track from Raikot Bridge to Tatu village is one of the most dangerous jeep tracks in the world, yet the local jeep driver will drive like a walk in the park.\n\nPricing (per person):\n- USD 990 for 8-member foreign group\n- USD 1,190 for 6-member foreign group\n- USD 1,390 for 4-member foreign group\n- USD 1,590 for 2-member foreign group\n- USD 1,750 for a single-member tour.",
+    rating: 4.6,
+    reviews: 10,
+    price: "$3000",
+    images: [fmImg1, fmImg2, fmImg3, fmImg4, fmImg5, fmImg6],
+    emails: [
+      "akhtar_nangaparbat@yahoo.com",
+      "akhtarnagabarbat@gmail.com"
+    ],
+    itinerary: [
+      { day: "1", title: "Arrival of the Fairy Meadows Trek Participants", description: "Tour guide and driver pick up from airport. Hotel check-in, refresh, and Islamabad city tour (Shakarparian, Pakistan Monument, Faisal Mosque, Daman-e-Koh). Optional Rawalpindi visit. Lunch at Monal, dinner at hotel." },
+      { day: "2", title: "Departure for the Fairy Meadows Trek", description: "Drive via Karakoram Highway along the Indus River (weather/flight dependent). Route via Taxila, Haripur, Mansehra, Besham, Kohistan. Lunch at Besham. Expect 14–16 hours to reach Chilas. Dinner and overnight at Chilas hotel." },
+      { day: "3", title: "Fairy Meadows Jeep ride and Trek", description: "Early start. One-hour drive to Raikot Bridge, then jeep to Tatu village (dramatic jeep track). Hike 3–4 hours to Fairy Meadows. Overnight in camps." },
+      { day: "4", title: "Full day at Fairy Meadows", description: "Breakfast in camps. Free day for rest, short hikes, local interaction, photography, star gazing. Lunch and dinner in camps. Overnight in camps." },
+      { day: "5", title: "Final Day of Fairy Meadows Trek", description: "Hike down to Tatu, jeep to Raikot Bridge, drive to Karimabad (Hunza). Tea at Rakaposhi viewpoint en route. Evening walk in Karimabad bazaar if time allows. Overnight at Karimabad (Baltit Inn – Serena Hotels)." },
+      { day: "6", title: "Trek to Tour (Hunza Valley)", description: "Visit Baltit Fort (900+ years) and Altit Fort (700+ years). Stroll Royal Gardens of Altit. Sunset at Eagle’s Nest View Point. Overnight in Karimabad (Baltit Inn – Serena Hotels)." },
+      { day: "7", title: "Visit to Khunjerab Top", description: "Early breakfast and depart for Pak-China border. Cover Ganish Bridge, Attabad Lake, Pak-China tunnels, Passu Cathedral, Batura Glacier, Wildlife Conservation Area (possible ibex, snow leopard, marmots). Return to Karimabad for overnight." },
+      { day: "8", title: "Visit to Nagar Valley", description: "Excursion to Hopper Glacier View Point (Nagar). Free time for shopping and local food (don’t miss walnut cake). Overnight in Karimabad (Baltit Inn – Serena Hotels)." },
+      { day: "9", title: "Drive Back to Chilas", description: "Drive back along KKH to Chilas for overnight. If Babusar Top is open, Naran may be used as alternate stop on Day 8." },
+      { day: "10", title: "Islamabad", description: "Departure for Islamabad and drop at the hotel." }
     ]
   },
   "snow-lake-bifo-hispar-trek": {
@@ -312,49 +454,37 @@ const treks: Record<string, TrekData> = {
   },
   "biafo-glacier-trek": {
     id: "biafo-glacier-trek",
-    title: "BIAFO GLACIER TREK",
-    elevation: "5151m",
-    duration: "22 Days",
+    title: "Rakaposhi & Diran Base Camp",
+    duration: "11 DAYS / 10 NIGHTS",
     groupSize: "3-8",
     difficulty: 5,
     minAge: "18+",
     pickupLocation: "Islamabad Airport",
-    tourType: "Technical Trek",
+    tourType: "Trekking",
     description:
-      "Difficult trek that requires glacier crossing, harness and rope. The traverse of the Biafo and Hispar glaciers proceeds through a wilderness of rock and ice over the Hispar La and down to the meadows of Hispar.",
-    images: [biafoImg1, biafoImg2, biafoImg3],
+      "Rakaposhi peak 7788meters high above sea level located in the Karakoram range, is one of the most beautiful and easy accessible to any other mountain peaks in Karakoram this beautiful peak can be seen from all directions and surrounding valleys.\nDiran peak 7200 meters above sea level in the same Rakaposhi massive and junction of two glaciers from Rakaposhi and Diran peaks provides a magnificent view of both peaks and glaciers. The lush and green meadows and ablation valleys around this mountain range offers a thrilling adventure for the nature lovers.\n\nPlease Note:\nThe above itinerary is not a fixed programme but is intended to give an indication of the likely events during the expedition. Please note that because of the nature of mountaineering on 8,000m peaks, it will be necessary to have a flexible plan in order to take the best advantage of situations as they present themselves. Any changes to the itinerary will be made with a view to maximizing the benefit to the team members and of ensuring their eventual success on the mountain.",
+    images: [rdbImg1, rdbImg2, rdbImg3, rdbImg4, rdbImg5, rdbImg6, rdbImg7],
     rating: 4.8,
     reviews: 0,
-    bestTime: "July to September",
-    price: "$3000",
     emails: [
       "akhtar_nangaparbat@yahoo.com",
       "akhtarnagabarbat@gmail.com"
     ],
     itinerary: [
-      { day: "1", title: "We meet in the international airport of Islamabad and go to hotel." },
-      { day: "2", title: "Drive to Gilgit. Night in hotel." },
-      { day: "3", title: "Drive to Skardu. Night in hotel." },
-      { day: "4", title: "Skardu to Askole by jeep." },
-      { day: "5", title: "Trekking. Askole to Namla (6 – 8 h)." },
-      { day: "6", title: "Trekking. Namla to Mango (5 – 6 h). -30 m" },
-      { day: "7-8", title: "Trekking. Mango to Baintha +330 m." },
-      { day: "9", title: "Trekking. Baintha to Napina or Marpongoro or Glacier camp (4 – 6 h)." },
-      { day: "10", title: "Trekking. Napina or Marpongoro or Glacier camp to Hispar pass Base Camp (4 – 5 h)." },
-      { day: "11", title: "Trekking. Climb to Hispar pass (3 – 5 h). 5151 m +350 m." },
-      { day: "12", title: "Trekking. Hispar pass to Khanibasa (4 – 5 h). 4500 m -650 m." },
-      { day: "13", title: "Trekking. Khanibasa to Yutmaru (4 – 6 h). 4300 m -200 m." },
-      { day: "14", title: "Trekking. Yutmaru to Shikam Baris (5 – 7 h). 4150 m -200 m." },
-      { day: "15", title: "Trekking. Shikam Baris to Dachigan (5 – 7 h). 3950 m -200 m." },
-      { day: "16", title: "Trekking. From Dachigan we cross the Kunyang glacier (5 – 7 h). 3850 m -100 m." },
-      { day: "17", title: "Trekking. Down to Hispar village (4 h). 3250 m -600 m." },
-      { day: "18", title: "Trekking. Hispar village to Huru (4 – 5 h). 2800 m -450 m." },
-      { day: "19", title: "By car. Huru to Nagar and Hunza." },
-      { day: "20", title: "By car. Hunza to Gilgit. Night in hotel." },
-      { day: "21", title: "By car. Gilgit to Rawalpindi or Islamabad. Night in hotel." },
-      { day: "22", title: "By car. Rawalpindi to International Airport of Islamabad and back home." }
+      { day: "1", title: "Islamabad", description: "Arrival Islamabad. Transfer to hotel, afternoon sightseeing of the twin cities Islamabad and Rawalpindi. Meals and overnight at hotel." },
+      { day: "2", title: "Chilas", description: "Drive to Chilas, enroute visit Taxila Museum, Julian monastery and other Archaeological sites, lunch at Besham and continues drive to Chilas. Dinner and Overnight at hotel.(12 hours)." },
+      { day: "3", title: "Diran", description: "Morning visit rock carving inscriptions at thalepan on KKH, which dates back to 2nd to 6th century AD. Drive to Gilgit for lunch enroute. Short stop at Thalechi, the view point of the Nanga Parbat(8125m) after lunch. At Gilgit drive to minapin village. Meals and overnight at Diran Guest House." },
+      { day: "4", title: "Hapakun", description: "Today we start our first day of trek to Hapakun, the summer pasture of the Minapin Village. Walk 3-4 hours on the permenet steep pony trail to Hapakun, meals and overnight in tents." },
+      { day: "5", title: "Tagaphary", description: "Walk along the beautiful green meadows to Taghaphary, the second Summer pasture and green ablation valley provides magnificent view of Rakaposhi and Diran peaks and Minapin glacier. Meals and overnight in Tents.(3 hours)." },
+      { day: "6", title: "Diran Base Camp", description: "Full day excursion to Diran peak base camp, walk through the Minapin Glacier and explore the area, after lunch at Diran base camp trek back Through the same glacier to Taghaphary. Meals and overnight in tents." },
+      { day: "7", title: "Minapin", description: "Trek back to Minapin by the same route. Tranfer to same hotel for meals. And overnight.(5 hours)." },
+      { day: "8", title: "Karimabad", description: "Early in the morning drive to Karimabad the capital of Hunza, after lunch visit Baltit and Altit forts, walk in village and explore the area. Evening drive to duiker view point for sunset photography. Meals and Overnight at hotel." },
+      { day: "9", title: "Chilas", description: "Drive back to Chilas. Lunch en-route and proceed to Chilas, Dinner and overnight at hotel." },
+      { day: "10", title: "Islamabad", description: "Drive to Islamabad, en-route visit shatial rock carving, lunch at Besham and Continues drive to Islamabad. Dinner and overnight at hotel." },
+      { day: "11", title: "Departure", description: "Transfer to airport." }
     ]
-  }
+  },
+  
 };
 
 const TrekDetail = () => {
