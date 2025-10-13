@@ -29,9 +29,9 @@ const Navigation = () => {
       {/* Top contact bar */}
       <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-3 sm:px-4 border-b border-border/30 backdrop-blur-sm">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center gap-2 sm:gap-3">
+          <div className="flex flex-row items-center gap-2 sm:gap-3">
             {/* Contact Information */}
-            <div className="flex flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm">
+            <div className="flex flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm flex-nowrap">
               {/* Phone/WhatsApp - Mobile First Design */}
               <div className="flex items-center gap-2 sm:gap-3 p-1 sm:p-0">
                 <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
@@ -41,7 +41,7 @@ const Navigation = () => {
                   href="https://wa.link/d4d1pg" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] sm:min-h-0 flex items-center"
+                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap"
                 >
                   +92 345 9160113
                 </a>
@@ -56,27 +56,41 @@ const Navigation = () => {
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=akhtar_nangaparbat@yahoo.com&cc=akhtarnagabarbat@gmail.com&su=Inquiry%20about%20Mazano%20Adventures"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 text-xs sm:text-sm min-h-[44px] sm:min-h-0 flex items-center"
+                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 text-xs sm:text-sm min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap"
                   title="Send email to both addresses via Gmail"
                 >
                   Email Us
                 </a>
               </div>
-            </div>
-            
-            {/* WhatsApp CTA Button - Mobile Optimized */}
-            <div className="flex justify-center xl:justify-end mt-2 xl:mt-0">
+
+              {/* WhatsApp CTA - inline with phone and email */}
+              <Button
+                variant="default"
+                size="icon"
+                asChild
+                className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[40px] min-w-[40px] transform hover:scale-105 active:scale-95"
+              >
+                <a
+                  href="https://wa.link/d4d1pg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <MessageCircle className="h-5 w-5" />
+                </a>
+              </Button>
+
               <Button 
                 variant="default" 
                 size="default" 
                 asChild 
-                className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-4 sm:px-6 py-3 sm:py-2 rounded-full font-semibold text-sm sm:text-base min-h-[48px] sm:min-h-0 transform hover:scale-105 active:scale-95"
+                className="hidden sm:inline-flex bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-4 sm:px-6 py-3 sm:py-2 rounded-full font-semibold text-sm sm:text-base transform hover:scale-105 active:scale-95"
               >
                 <a 
                   href="https://wa.link/d4d1pg" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center justify-center gap-2 sm:gap-3 w-full"
+                  className="inline-flex items-center justify-center gap-2 sm:gap-3"
                 >
                   <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
                   <span className="font-bold tracking-wide">Chat on WhatsApp</span>
