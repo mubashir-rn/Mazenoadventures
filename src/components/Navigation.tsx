@@ -33,9 +33,9 @@ const Navigation = () => {
             {/* Contact Information */}
             <div className="flex flex-row items-center justify-between w-full gap-1 sm:gap-4 text-[11px] sm:text-sm flex-nowrap">
               {/* Phone */}
-              <div className="flex items-center gap-1 sm:gap-3 p-1 sm:p-0 basis-1/4 min-w-0">
-                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
-                  <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
+              <div className="flex items-center justify-center gap-1 sm:gap-3 p-1 sm:p-0 flex-1 min-w-0 basis-1/4">
+                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
+                  <Phone className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <a 
                   href="https://wa.link/d4d1pg" 
@@ -49,9 +49,9 @@ const Navigation = () => {
               </div>
               
               {/* Email */}
-              <div className="flex items-center justify-center gap-1 sm:gap-3 p-1 sm:p-0 basis-1/4 min-w-0 sm:border-l sm:border-border/50 sm:pl-4">
-                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm">
-                  <Mail className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
+              <div className="flex items-center justify-center gap-1 sm:gap-3 p-1 sm:p-0 flex-1 min-w-0 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
+                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm">
+                  <Mail className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <a 
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=akhtar_nangaparbat@yahoo.com&cc=akhtarnagabarbat@gmail.com&su=Inquiry%20about%20Mazano%20Adventures"
@@ -65,13 +65,13 @@ const Navigation = () => {
               </div>
 
               {/* WhatsApp */}
-              <div className="flex items-center justify-center gap-2 flex-none basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
+              <div className="flex items-center justify-center gap-1 sm:gap-3 flex-1 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
                 {/* Mobile icon-only button */}
                 <Button
                   variant="default"
                   size="icon"
                   asChild
-                  className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[24px] min-w-[24px] p-0 transform hover:scale-105 active:scale-95"
+                  className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[24px] min-w-[24px] sm:min-h-[32px] sm:min-w-[32px] md:min-h-[36px] md:min-w-[36px] p-0 transform hover:scale-105 active:scale-95"
                 >
                   <a
                     href="https://wa.link/d4d1pg"
@@ -79,7 +79,7 @@ const Navigation = () => {
                     rel="noopener noreferrer"
                     aria-label="Chat on WhatsApp"
                   >
-                    <MessageCircle className="h-3 w-3" />
+                    <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                   </a>
                 </Button>
 
@@ -96,14 +96,14 @@ const Navigation = () => {
                     rel="noopener noreferrer" 
                     className="inline-flex items-center justify-center gap-2 sm:gap-3"
                   >
-                    <MessageCircle className="h-4 w-4" />
+                    <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                     <span className="font-bold tracking-wide">Chat on WhatsApp</span>
                   </a>
                 </Button>
               </div>
 
               {/* Theme Toggle (separate item) */}
-              <div className="flex items-center justify-end flex-none basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
+              <div className="flex items-center justify-center flex-1 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
                 <ThemeToggle />
               </div>
             </div>

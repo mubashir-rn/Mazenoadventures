@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogOverlay } from "@/components/ui/dialog";
-import { X } from "lucide-react";
 
 // A global image previewer that opens a modal when any <img> on the page is clicked.
 // Add data-no-preview to an <img> to exclude it from previewing.
@@ -74,15 +73,6 @@ const GlobalImagePreview: React.FC = () => {
       <DialogOverlay className="bg-black/70" />
       <DialogContent className="max-w-4xl w-[95vw] p-0 border-0 bg-transparent shadow-none">
         <div className="relative w-full h-full flex items-center justify-center" onContextMenu={handleContextMenu}>
-          {/* Close button */}
-          <button
-            type="button"
-            aria-label="Close preview"
-            onClick={() => setOpen(false)}
-            className="absolute top-2 right-2 inline-flex items-center justify-center h-9 w-9 rounded-full bg-background/80 text-foreground border border-border backdrop-blur-sm shadow-sm hover:bg-background/90 focus:outline-none focus:ring-2 focus:ring-primary"
-          >
-            <X className="h-4 w-4" />
-          </button>
           {/* Image container */}
           {src && (
             <img
