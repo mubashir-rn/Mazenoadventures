@@ -33,7 +33,7 @@ const Navigation = () => {
             {/* Contact Information - Always horizontal */}
             <div className="flex flex-row items-center gap-1 sm:gap-3 md:gap-4 text-xs sm:text-sm flex-1">
               {/* Phone/WhatsApp - Mobile First Design */}
-              <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 bg-white/80 dark:bg-gray-800/80 sm:bg-transparent dark:sm:bg-transparent rounded-lg sm:rounded-none shadow-sm sm:shadow-none min-w-0 flex-shrink">
+              <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 min-w-0 flex-shrink">
                 <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-md flex-shrink-0">
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
@@ -49,7 +49,7 @@ const Navigation = () => {
               </div>
               
               {/* Combined Email Option - Mobile Optimized */}
-              <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 bg-white/80 dark:bg-gray-800/80 sm:bg-transparent dark:sm:bg-transparent rounded-lg sm:rounded-none shadow-sm sm:shadow-none min-w-0 flex-shrink">
+              <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 min-w-0 flex-shrink">
                 <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-md flex-shrink-0">
                   <Mail className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
@@ -57,18 +57,16 @@ const Navigation = () => {
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=akhtar_nangaparbat@yahoo.com&cc=akhtarnagabarbat@gmail.com&su=Inquiry%20about%20Mazano%20Adventures"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center text-xs sm:text-sm truncate max-w-[60px] sm:max-w-none"
+                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center text-xs sm:text-sm"
                   title="Send email to both addresses via Gmail"
                 >
-                  <span className="hidden xs:inline">Email Us</span>
-                  <span className="xs:hidden">Mail</span>
+                  Email Us
                 </a>
               </div>
             </div>
             
             {/* WhatsApp CTA Button - Always horizontal */}
             <div className="flex items-center justify-end flex-shrink-0">
-              {/* Mobile: Compact button */}
               <Button 
                 variant="default" 
                 size="sm" 
@@ -83,8 +81,7 @@ const Navigation = () => {
                   aria-label="Chat on WhatsApp"
                 >
                   <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
-                  <span className="font-bold tracking-wide hidden xs:inline">WhatsApp</span>
-                  <span className="font-bold tracking-wide hidden sm:inline">Chat on WhatsApp</span>
+                  <span className="font-bold tracking-wide">Chat on WhatsApp</span>
                 </a>
               </Button>
             </div>
