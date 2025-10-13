@@ -29,19 +29,19 @@ const Navigation = () => {
       {/* Top contact bar */}
       <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-0 sm:px-4 border-b border-border/30 backdrop-blur-sm">
         <div className="container mx-auto max-w-7xl overflow-x-hidden">
-          <div className="flex flex-row items-center justify-start gap-1 sm:gap-3">
+          <div className="flex flex-row items-center justify-start gap-0.5 sm:gap-3">
             {/* Contact Information */}
-            <div className="flex flex-row items-center justify-between w-full gap-1 sm:gap-4 text-[11px] sm:text-sm flex-nowrap">
+            <div className="flex flex-row items-center justify-between w-full gap-0.5 sm:gap-4 text-[11px] sm:text-sm flex-nowrap">
               {/* Phone */}
               <div className="flex items-center justify-center gap-1 sm:gap-3 p-1 sm:p-0 flex-1 min-w-0 basis-1/4">
-                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
-                  <Phone className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                <div className="flex items-center justify-center w-6 h-6 max-[360px]:w-5 max-[360px]:h-5 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
+                  <Phone className="h-3 w-3 max-[360px]:h-3 max-[360px]:w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <a 
                   href="https://wa.link/d4d1pg" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap truncate max-w-[100px] sm:max-w-none"
+                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap truncate max-w-[90px] sm:max-w-none"
                   title="Call or WhatsApp +92 345 9160113"
                 >
                   +92 345 9160113
@@ -50,8 +50,8 @@ const Navigation = () => {
               
               {/* Email */}
               <div className="flex items-center justify-center gap-1 sm:gap-3 p-1 sm:p-0 flex-1 min-w-0 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
-                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm">
-                  <Mail className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                <div className="flex items-center justify-center w-6 h-6 max-[360px]:w-5 max-[360px]:h-5 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm">
+                  <Mail className="h-3 w-3 max-[360px]:h-3 max-[360px]:w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <a 
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=akhtar_nangaparbat@yahoo.com&cc=akhtarnagabarbat@gmail.com&su=Inquiry%20about%20Mazano%20Adventures"
@@ -60,7 +60,7 @@ const Navigation = () => {
                   className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 text-[11px] sm:text-sm min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap truncate max-w-[95px] sm:max-w-none"
                   title="Send email to both addresses via Gmail"
                 >
-                  Email Us
+                  <span className="max-[360px]:hidden">Email Us</span>
                 </a>
               </div>
 
@@ -71,7 +71,7 @@ const Navigation = () => {
                   variant="default"
                   size="icon"
                   asChild
-                  className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[24px] min-w-[24px] sm:min-h-[32px] sm:min-w-[32px] md:min-h-[36px] md:min-w-[36px] p-0 transform hover:scale-105 active:scale-95"
+                  className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[24px] min-w-[24px] max-[360px]:min-h-[22px] max-[360px]:min-w-[22px] sm:min-h-[32px] sm:min-w-[32px] md:min-h-[36px] md:min-w-[36px] p-0 transform hover:scale-105 active:scale-95"
                 >
                   <a
                     href="https://wa.link/d4d1pg"
@@ -79,7 +79,7 @@ const Navigation = () => {
                     rel="noopener noreferrer"
                     aria-label="Chat on WhatsApp"
                   >
-                    <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
+                    <MessageCircle className="h-3 w-3 max-[360px]:h-3 max-[360px]:w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                   </a>
                 </Button>
 
@@ -103,7 +103,7 @@ const Navigation = () => {
               </div>
 
               {/* Theme Toggle (separate item) */}
-              <div className="flex items-center justify-center flex-1 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
+              <div className="flex items-center justify-center flex-1 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4 max-[360px]:scale-90">
                 <ThemeToggle />
               </div>
             </div>
