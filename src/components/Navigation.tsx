@@ -27,92 +27,73 @@ const Navigation = () => {
   return (
     <nav className="bg-background/95 backdrop-blur-md border-b border-border/50 z-50 shadow-sm">
       {/* Top contact bar */}
-      <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-0 sm:px-4 border-b border-border/30 backdrop-blur-sm">
-        <div className="container mx-auto max-w-7xl overflow-x-hidden">
-          <div className="flex flex-row items-center justify-start gap-0.5 sm:gap-3">
-            {/* Contact Information */}
-            <div className="flex flex-row items-center justify-between w-full gap-0.5 sm:gap-4 text-[11px] sm:text-sm flex-nowrap">
-              {/* Phone */}
-              <div className="flex items-center justify-center gap-1 sm:gap-3 p-1 sm:p-0 flex-1 min-w-0 basis-1/4">
-                <div className="flex items-center justify-center w-6 h-6 max-[360px]:w-5 max-[360px]:h-5 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
-                  <Phone className="h-3 w-3 max-[360px]:h-3 max-[360px]:w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+      <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-2 sm:px-4 border-b border-border/30 backdrop-blur-sm">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex flex-row items-center justify-between gap-2 sm:gap-3">
+            {/* Contact Information - Always horizontal */}
+            <div className="flex flex-row items-center gap-1 sm:gap-3 md:gap-4 text-xs sm:text-sm flex-1">
+              {/* Phone/WhatsApp - Mobile First Design */}
+              <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 bg-white/80 dark:bg-gray-800/80 sm:bg-transparent dark:sm:bg-transparent rounded-lg sm:rounded-none shadow-sm sm:shadow-none min-w-0 flex-shrink">
+                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-md flex-shrink-0">
+                  <Phone className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <a 
                   href="https://wa.link/d4d1pg" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap truncate max-w-[90px] sm:max-w-none"
+                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center text-xs sm:text-sm truncate max-w-[80px] sm:max-w-none"
                   title="Call or WhatsApp +92 345 9160113"
                 >
                   +92 345 9160113
                 </a>
               </div>
               
-              {/* Email */}
-              <div className="flex items-center justify-center gap-1 sm:gap-3 p-1 sm:p-0 flex-1 min-w-0 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
-                <div className="flex items-center justify-center w-6 h-6 max-[360px]:w-5 max-[360px]:h-5 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm">
-                  <Mail className="h-3 w-3 max-[360px]:h-3 max-[360px]:w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+              {/* Combined Email Option - Mobile Optimized */}
+              <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 bg-white/80 dark:bg-gray-800/80 sm:bg-transparent dark:sm:bg-transparent rounded-lg sm:rounded-none shadow-sm sm:shadow-none min-w-0 flex-shrink">
+                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-md flex-shrink-0">
+                  <Mail className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <a 
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=akhtar_nangaparbat@yahoo.com&cc=akhtarnagabarbat@gmail.com&su=Inquiry%20about%20Mazano%20Adventures"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 text-[11px] sm:text-sm min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap truncate max-w-[95px] sm:max-w-none"
+                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center text-xs sm:text-sm truncate max-w-[60px] sm:max-w-none"
                   title="Send email to both addresses via Gmail"
                 >
-                  <span className="max-[360px]:hidden">Email Us</span>
+                  <span className="hidden xs:inline">Email Us</span>
+                  <span className="xs:hidden">Mail</span>
                 </a>
               </div>
-
-              {/* WhatsApp */}
-              <div className="flex items-center justify-center gap-1 sm:gap-3 flex-1 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
-                {/* Mobile icon-only button */}
-                <Button
-                  variant="default"
-                  size="icon"
-                  asChild
-                  className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[24px] min-w-[24px] max-[360px]:min-h-[22px] max-[360px]:min-w-[22px] sm:min-h-[32px] sm:min-w-[32px] md:min-h-[36px] md:min-w-[36px] p-0 transform hover:scale-105 active:scale-95"
+            </div>
+            
+            {/* WhatsApp CTA Button - Always horizontal */}
+            <div className="flex items-center justify-end flex-shrink-0">
+              {/* Mobile: Compact button */}
+              <Button 
+                variant="default" 
+                size="sm" 
+                asChild 
+                className="bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-2 sm:px-4 md:px-6 py-2 sm:py-2 rounded-full font-semibold text-xs sm:text-sm md:text-base min-h-[36px] sm:min-h-0 transform hover:scale-105 active:scale-95"
+              >
+                <a 
+                  href="https://wa.link/d4d1pg" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center gap-1 sm:gap-2 md:gap-3"
+                  aria-label="Chat on WhatsApp"
                 >
-                  <a
-                    href="https://wa.link/d4d1pg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Chat on WhatsApp"
-                  >
-                    <MessageCircle className="h-3 w-3 max-[360px]:h-3 max-[360px]:w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
-                  </a>
-                </Button>
-
-                {/* Tablet/Desktop full button */}
-                <Button 
-                  variant="default" 
-                  size="default" 
-                  asChild 
-                  className="hidden sm:inline-flex bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-4 sm:px-6 py-3 sm:py-2 rounded-full font-semibold text-sm sm:text-base transform hover:scale-105 active:scale-95"
-                >
-                  <a 
-                    href="https://wa.link/d4d1pg" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center justify-center gap-2 sm:gap-3"
-                  >
-                    <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
-                    <span className="font-bold tracking-wide">Chat on WhatsApp</span>
-                  </a>
-                </Button>
-              </div>
-
-              {/* Theme Toggle (separate item) */}
-              <div className="flex items-center justify-center flex-1 basis-1/4 sm:border-l sm:border-border/50 sm:pl-4 max-[360px]:scale-90">
-                <ThemeToggle />
-              </div>
+                  <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
+                  <span className="font-bold tracking-wide hidden xs:inline">WhatsApp</span>
+                  <span className="font-bold tracking-wide hidden sm:inline">Chat on WhatsApp</span>
+                </a>
+              </Button>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main navigation */}
-      <div className="container mx-auto px-0 sm:px-4 max-w-7xl">
+      <div className="container mx-auto px-3 sm:px-4 max-w-7xl">
         <div className="flex justify-between items-center h-16 sm:h-20 md:h-24 lg:h-28">
           {/* Logo */}
           <Link 
@@ -150,20 +131,26 @@ const Navigation = () => {
                 />
               </Link>
             ))}
+            <div className="ml-4">
+              <ThemeToggle />
+            </div>
           </div>
 
-          {/* Mobile menu button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="lg:hidden min-h-[44px] min-w-[44px] rounded-full hover:bg-primary/10 transition-all duration-300"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? 
-              <X className="h-5 w-5 transition-transform duration-300 rotate-90" /> : 
-              <Menu className="h-5 w-5 transition-transform duration-300" />
-            }
-          </Button>
+          {/* Mobile: Theme Toggle + Menu Button */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="sm"
+              className="min-h-[44px] min-w-[44px] rounded-full hover:bg-primary/10 transition-all duration-300"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? 
+                <X className="h-5 w-5 transition-transform duration-300 rotate-90" /> : 
+                <Menu className="h-5 w-5 transition-transform duration-300" />
+              }
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
