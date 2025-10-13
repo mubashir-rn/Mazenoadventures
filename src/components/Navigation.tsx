@@ -25,13 +25,13 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-background/95 backdrop-blur-md border-b border-border/50 sticky top-0 z-50 shadow-sm">
+    <nav className="bg-background/95 backdrop-blur-md border-b border-border/50 z-50 shadow-sm">
       {/* Top contact bar */}
       <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-3 sm:px-4 border-b border-border/30 backdrop-blur-sm">
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center gap-2 sm:gap-3">
             {/* Contact Information */}
-            <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4 text-xs sm:text-sm">
+            <div className="flex flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm">
               {/* Phone/WhatsApp - Mobile First Design */}
               <div className="flex items-center gap-2 sm:gap-3 p-1 sm:p-0">
                 <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
@@ -59,8 +59,7 @@ const Navigation = () => {
                   className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 text-xs sm:text-sm min-h-[44px] sm:min-h-0 flex items-center"
                   title="Send email to both addresses via Gmail"
                 >
-                  <span className="hidden sm:inline">Email Us</span>
-                  <span className="sm:hidden">Contact</span>
+                  Email Us
                 </a>
               </div>
             </div>
