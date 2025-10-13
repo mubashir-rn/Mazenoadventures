@@ -28,35 +28,36 @@ const Navigation = () => {
     <nav className="bg-background/95 backdrop-blur-md border-b border-border/50 z-50 shadow-sm">
       {/* Top contact bar */}
       <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-0 sm:px-4 border-b border-border/30 backdrop-blur-sm">
-        <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-row items-center justify-start gap-2 sm:gap-3">
+        <div className="container mx-auto max-w-7xl overflow-x-hidden">
+          <div className="flex flex-row items-center justify-start gap-1 sm:gap-3">
             {/* Contact Information */}
-            <div className="flex flex-row items-center justify-between w-full gap-2 sm:gap-4 text-xs sm:text-sm flex-nowrap">
+            <div className="flex flex-row items-center justify-between w-full gap-1 sm:gap-4 text-[11px] sm:text-sm flex-nowrap">
               {/* Phone */}
-              <div className="flex items-center gap-2 sm:gap-3 p-1 sm:p-0 md:basis-1/4">
-                <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
+              <div className="flex items-center gap-1 sm:gap-3 p-1 sm:p-0 basis-1/4 min-w-0">
+                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm">
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                 </div>
                 <a 
                   href="https://wa.link/d4d1pg" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap"
+                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap truncate max-w-[100px] sm:max-w-none"
+                  title="Call or WhatsApp +92 345 9160113"
                 >
                   +92 345 9160113
                 </a>
               </div>
               
               {/* Email */}
-              <div className="flex items-center justify-center gap-2 sm:gap-3 p-1 sm:p-0 md:basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
-                <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm">
+              <div className="flex items-center justify-center gap-1 sm:gap-3 p-1 sm:p-0 basis-1/4 min-w-0 sm:border-l sm:border-border/50 sm:pl-4">
+                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm">
                   <Mail className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                 </div>
                 <a 
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=akhtar_nangaparbat@yahoo.com&cc=akhtarnagabarbat@gmail.com&su=Inquiry%20about%20Mazano%20Adventures"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 text-xs sm:text-sm min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap"
+                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 text-[11px] sm:text-sm min-h-[44px] sm:min-h-0 flex items-center whitespace-nowrap truncate max-w-[95px] sm:max-w-none"
                   title="Send email to both addresses via Gmail"
                 >
                   Email Us
@@ -64,13 +65,13 @@ const Navigation = () => {
               </div>
 
               {/* WhatsApp */}
-              <div className="flex items-center justify-center gap-2 md:basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
+              <div className="flex items-center justify-center gap-2 flex-none basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
                 {/* Mobile icon-only button */}
                 <Button
                   variant="default"
                   size="icon"
                   asChild
-                  className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[40px] min-w-[40px] transform hover:scale-105 active:scale-95"
+                  className="sm:hidden bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full min-h-[24px] min-w-[24px] p-0 transform hover:scale-105 active:scale-95"
                 >
                   <a
                     href="https://wa.link/d4d1pg"
@@ -78,7 +79,7 @@ const Navigation = () => {
                     rel="noopener noreferrer"
                     aria-label="Chat on WhatsApp"
                   >
-                    <MessageCircle className="h-5 w-5" />
+                    <MessageCircle className="h-3 w-3" />
                   </a>
                 </Button>
 
@@ -95,14 +96,14 @@ const Navigation = () => {
                     rel="noopener noreferrer" 
                     className="inline-flex items-center justify-center gap-2 sm:gap-3"
                   >
-                    <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
+                    <MessageCircle className="h-4 w-4" />
                     <span className="font-bold tracking-wide">Chat on WhatsApp</span>
                   </a>
                 </Button>
               </div>
 
               {/* Theme Toggle (separate item) */}
-              <div className="flex items-center justify-end md:basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
+              <div className="flex items-center justify-end flex-none basis-1/4 sm:border-l sm:border-border/50 sm:pl-4">
                 <ThemeToggle />
               </div>
             </div>
@@ -121,6 +122,8 @@ const Navigation = () => {
             <img
               src={Logo}
               alt="Mazano Adventures"
+              data-no-preview="true"
+              draggable={false}
               className={`h-12 sm:h-16 md:h-20 lg:h-28 w-auto transition-all duration-300 ${
                 theme === 'dark' ? 'invert brightness-0' : ''
               } group-hover:drop-shadow-lg`}

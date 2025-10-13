@@ -43,6 +43,8 @@ const Footer = () => {
               <img
                 src={Logo}
                 alt="Mazano Adventures"
+                data-no-preview="true"
+                draggable={false}
                 className="h-28 w-auto transition-all duration-300 invert brightness-0"
               />
             </Link>

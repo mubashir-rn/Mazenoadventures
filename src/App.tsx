@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DefaultSEO from "@/components/DefaultSEO";
+import GlobalImagePreview from "@/components/GlobalImagePreview";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Expeditions from "./pages/Expeditions";
@@ -42,6 +43,7 @@ const App = () => (
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <GlobalImagePreview />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
