@@ -3,13 +3,23 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Camera, Mountain, Snowflake, Star, Users } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { useState } from "react";
+import { MapPin, Camera, Mountain, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
 import gondogoroImage from "@/assets/gondogoro-trek.jpg";
 import k2Image from "@/assets/k2-expedition.jpg";
 import snowLakeImage from "@/assets/snow-lake-trek.jpg";
 
 const Destinations = () => {
+  const [open, setOpen] = useState(false);
+  const [detail, setDetail] = useState<
+    | { type: "mountain"; item: typeof mountainDestinations[number] }
+    | { type: "northern"; item: typeof northernDestinations[number] }
+    | { type: "cultural"; item: typeof culturalDestinations[number] }
+    | null
+  >(null);
   const mountainDestinations = [
     {
       id: "k2-peak",
@@ -193,8 +203,8 @@ const Destinations = () => {
                     <span className="text-sm text-muted-foreground">
                       {destination.expeditions} Expeditions Available
                     </span>
-                    <Button variant="mountain" size="sm">
-                      Explore
+                    <Button variant="mountain" size="sm" asChild>
+                      <Link to={`/destination/${destination.id}`}>Explore</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -243,8 +253,8 @@ const Destinations = () => {
                   
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-muted-foreground">Best: {destination.bestTime}</span>
-                    <Button variant="outline" size="sm">
-                      Visit
+                    <Button variant="outline" size="sm" asChild>
+                      <Link to={`/destination/${destination.id}`}>Visit</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -287,8 +297,8 @@ const Destinations = () => {
                     ))}
                   </div>
                   
-                  <Button variant="mountain" size="sm" className="w-full">
-                    Explore Heritage
+                  <Button variant="mountain" size="sm" className="w-full" asChild>
+                    <Link to={`/destination/${destination.id}`}>Explore Heritage</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -296,6 +306,78 @@ const Destinations = () => {
           </div>
         </div>
       </section>
+
+      {/* Detail Dialog */}
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent className="sm:max-w-xl">
+          {detail && (
+            <>
+              <DialogHeader>
+                <DialogTitle>
+                  {detail.type === "mountain" && detail.item.name}
+                  {detail.type === "northern" && detail.item.name}
+                  {detail.type === "cultural" && detail.item.name}
+                </DialogTitle>
+                <DialogDescription>
+                  {detail.type === "mountain" && detail.item.description}
+                  {detail.type === "northern" && detail.item.description}
+                  {detail.type === "cultural" && detail.item.description}
+                </DialogDescription>
+              </DialogHeader>
+
+              <div className="space-y-4 mt-2">
+                {detail.type === "mountain" && (
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between"><span>Location:</span><span className="font-medium">{detail.item.location}</span></div>
+                    <div className="flex justify-between"><span>Elevation:</span><span className="font-medium">{detail.item.elevation}</span></div>
+                    <div className="flex justify-between"><span>Category:</span><span className="font-medium">{detail.item.category}</span></div>
+                    <div className="flex justify-between"><span>Rating:</span><span className="font-medium">{detail.item.rating}</span></div>
+                    <div className="flex justify-between"><span>Expeditions:</span><span className="font-medium">{detail.item.expeditions}</span></div>
+                  </div>
+                )}
+
+                {detail.type === "northern" && (
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between"><span>Region:</span><span className="font-medium">{detail.item.region}</span></div>
+                    <div className="flex justify-between"><span>Best Time:</span><span className="font-medium">{detail.item.bestTime}</span></div>
+                    <div>
+                      <div className="font-semibold mb-1">Top Attractions</div>
+                      <ul className="list-disc list-inside space-y-1">
+                        {detail.item.attractions.map((a, i) => (
+                          <li key={i}>{a}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+
+                {detail.type === "cultural" && (
+                  <div className="space-y-3 text-sm">
+                    <div className="flex items-center gap-2 text-muted-foreground">
+                      <span className="font-semibold text-foreground">Heritage:</span>
+                      <span>{detail.item.heritage}</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold mb-1">Heritage Sites</div>
+                      <ul className="list-disc list-inside space-y-1">
+                        {detail.item.sites.map((s, i) => (
+                          <li key={i}>{s}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+
+                <div className="pt-2">
+                  <Button variant="mountain" className="w-full" onClick={() => setOpen(false)}>
+                    Close
+                  </Button>
+                </div>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
 
       <Footer />
     </div>
