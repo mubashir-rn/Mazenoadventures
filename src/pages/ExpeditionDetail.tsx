@@ -33,6 +33,37 @@ import g1Img4 from "@/assets/GASHERBRUM I EXPEDITION 4.jpg";
 import g1Img5 from "@/assets/GASHERBRUM I EXPEDITION 5.jpg";
 import g1Img6 from "@/assets/GASHERBRUM I EXPEDITION 6.jpg";
 import ShareBookingButtons from "@/components/ShareBookingButtons";
+// Hunza Tour images
+import hunzaAltit5 from "@/assets/HunzaTour/Altit-fort-hunza-valley-pakistan-5.jpg";
+import hunzaAttabad3 from "@/assets/HunzaTour/attabad-3.jpg";
+import hunzaAttabadTunnel1 from "@/assets/HunzaTour/attabad-tunnel-1.jpg";
+import hunzaBabusar3 from "@/assets/HunzaTour/babusar-pass-top-3.jpg";
+import hunzaBaltit1 from "@/assets/HunzaTour/baltit-1.jpg";
+import hunzaBaltit2 from "@/assets/HunzaTour/baltit-2.jpg";
+import hunzaBaltit7 from "@/assets/HunzaTour/baltit-7.jpg";
+import hunzaEmbassyHotel2 from "@/assets/HunzaTour/embassy-hotel-hunza-2.jpg";
+import hunzaKarimabad1 from "@/assets/HunzaTour/karimabad-1.jpg";
+import hunzaKarimabad from "@/assets/HunzaTour/karimabad.jpg";
+import hunzaKhunjerab1 from "@/assets/HunzaTour/khunjerab-1.jpg";
+import hunzaKhunjerab4 from "@/assets/HunzaTour/khunjerab-4.jpg";
+import hunzaNaran2 from "@/assets/HunzaTour/naran-2.jpg";
+import hunzaPassu1 from "@/assets/HunzaTour/passu-1.jpg";
+import hunzaPassu4 from "@/assets/HunzaTour/passu-4.jpg";
+import hunzaPradoClassic1 from "@/assets/HunzaTour/prado-classic-1.jpg";
+// Deosai Tour images
+import deosaiCover2 from "@/assets/Deosai National Park Tour/Deosai-Plain-plateau-baltistan-karakoram-west-2.jpg";
+import deosaiCover3 from "@/assets/Deosai National Park Tour/Deosai-Plain-plateau-baltistan-karakoram-west-3.jpg";
+import deosaiCover4 from "@/assets/Deosai National Park Tour/Deosai-Plain-plateau-baltistan-karakoram-west-4.jpg";
+import deosaiCover5 from "@/assets/Deosai National Park Tour/Deosai-Plain-plateau-baltistan-karakoram-west-5.jpg";
+import deosai1 from "@/assets/Deosai National Park Tour/deosai-1.jpg";
+import deosai3 from "@/assets/Deosai National Park Tour/deosai-3.jpg";
+import deosaii from "@/assets/Deosai National Park Tour/Deosai-National-Park-Tour-6.jpeg";
+// Lahore Tour images
+import lahore11 from "@/assets/lahoretour/Lahore-11.jpeg";
+import lahore5 from "@/assets/lahoretour/Lahore-5.jpeg";
+import lahore2 from "@/assets/lahoretour/lahore-tour-2.jpg";
+import lahore5b from "@/assets/lahoretour/lahore-tour-5.jpg";
+import lahoreFort from "@/assets/lahoretour/lahore-tour-Oposite-the-mosque-Lahore-Fort-Mughal-emperor-Shah-Jahans-palace.jpg";
 
 const ExpeditionDetail = () => {
   const { id } = useParams();
@@ -45,23 +76,71 @@ const ExpeditionDetail = () => {
     ? [k2Img1, k2Img2, k2Img3, k2Img4, k2Img5, k2Img6]
     : expedition.id === "broad-peak-expedition"
       ? [bpImg1, bpImg2, bpImg3, bpImg4, bpImg5, bpImg6]
-      : expedition.id === "nanga-parbat-expedition"
-        ? [npImg1, npImg2, npImg3, npImg4, npImg5, npImg6]
-        : expedition.id === "gasherbrum-i-expedition"
+    : expedition.id === "nanga-parbat-expedition"
+      ? [npImg1, npImg2, npImg3, npImg4, npImg5, npImg6]
+    : expedition.id === "gasherbrum-i-expedition"
           ? [g1Img1, g1Img2, g1Img3, g1Img4, g1Img5, g1Img6]
+          : expedition.id === "hunza-valley-tour"
+            ? [
+                hunzaBaltit1,
+                hunzaBaltit2,
+                hunzaBaltit7,
+                hunzaAltit5,
+                hunzaKarimabad,
+                hunzaKarimabad1,
+                hunzaAttabad3,
+                hunzaAttabadTunnel1,
+                hunzaKhunjerab1,
+                hunzaKhunjerab4,
+                hunzaPassu1,
+                hunzaPassu4,
+                hunzaBabusar3,
+                hunzaNaran2,
+                hunzaEmbassyHotel2,
+                hunzaPradoClassic1,
+              ]
+          : expedition.id === "skardu-deosai-tour"
+            ? [
+                deosaiCover2,
+                deosaiCover3,
+                deosaiCover4,
+                deosaiCover5,
+                deosai1,
+                deosai3,
+                deosaii,
+              ]
+          : expedition.id === "lahore-cultural-tour"
+            ? [
+                lahore5b,
+                lahoreFort,
+                lahore2,
+                lahore11,
+                lahore5,
+              ]
           : Array.from({ length: 6 }, () => expedition.image);
 
   // Custom display title and description overrides for certain expeditions
   const displayTitle = expedition.id === "nanga-parbat-expedition"
     ? "NANGA PARBAT (8126M) EXPEDITION"
-    : expedition.title;
+    : expedition.id === "hunza-valley-tour"
+      ? "Hunza Valley Tour"
+      : expedition.title;
 
   const displaySubtitle = expedition.id === "nanga-parbat-expedition" ? "DIAMIR FACE" : "";
+
+  // Use Tour wording for Holiday Tours
+  const isTour = expedition.tourType?.toLowerCase().includes("tour");
 
   const description = expedition.id === "nanga-parbat-expedition"
     ? "Nanga Parbat means “necked mountain” in Sanskrit and called by few other nicknames such as “Killer Mountain” “Mountain of destiny” & Mountain of demons etc. Its gigantic mass forms Western bastion of the Himalaya. It is the ninth highest mountain in the world and the second highest in Pakistan after K2. Steeped in a history matched by few others in Asia it has staged some of the greatest Himalayan ascents of all time. From Hermann Buhl’s solo first ascent in 1953 via the Upper North ridge to Gunther and Reinhold Messner’s first ascent of the Rupal Face in 1970 via the South South East Spur, Messner’s solo climb of the Diamir Face in 1978, and more recently Vince Anderson and Steve House’s Alpine-style ascent of the Central Pillar of the Rupal Face. These epic climbs continue to inspire climbers to attempt yearly what is considered to be the second hardest 8000m mountain after K2. Nanga Parbat is a truly awesome spectacle. The south face is the largest in the world extending over four kilometers above base camp. To date there have only been five ascents from the south. Nanga Parbat means “Naked Mountain” in Hindi/Urdu and is with reference to the south face’s exposed rock buttresses. The north face is equally intimidating. In contrast to the south face’s steep rock and ice the snowy north face is guarded by a broad barrier of seracs that extend the width of the mountain."
     : expedition.id === "gasherbrum-i-expedition"
     ? "Gasherbrum I (8080m) is the lowest of the Karakoram’s 8000ers by a small margin, offering a serious yet achievable high‑altitude climb. Approached via one of the world’s greatest treks to Concordia, the route tackles steep snowy faces and mixed terrain above the heavily crevassed Gasherbrum Glacier. From the Banana Ridge, climbers progress through technical pitches to the shoulder near 7490m, then traverse to the summit pyramid on the East Ridge for a committing finish on breathtaking terrain."
+    : expedition.id === "hunza-valley-tour"
+    ? "Hunza Valley Tour is one the most popular tours of the world. It is located in the far Northern territory of Pakistan. It is widely believed by many people that James Hilton’s famous novel “Lost Horizon” was inspired from Hunza Valley. The world acclaim the Hunza Valley as the “Land Of Legends” and it is famous worldwide for its culture, landscape, friendliness and hospitality. Travelers and adventurers from around the world make their visit to this point of Earth every year.\n\nThe mighty peaks of Karakoram Range surround Hunza Valley. Rakaposhi Peak (7,788 m), Diran Peak (7,266 m), Spantik (7,072 m), Shishper Peak (7,611 m), Ultar Peak (7,388 m) and many other above 6,000 m peaks and mountains can be clearly viewed from any point in central Hunza valley. Hunza valley is home to many species of Flora and Fauna. You will experience sights of beautiful lakes, huge mountains, unique culture, history, architecture, wild life, glaciers and the community system. The itinerary for Hunza valley tour is given below."
+    : expedition.id === "skardu-deosai-tour"
+    ? "Deosai National Park Tour is an amazing light adventure for families, friends, students, couples and infact everyone. The national park is a must-see for every Pakitani once in life. Many international tourists appreciate the natural environment by flying to the area from thousands of miles away.\n\nAlso known as the land of Giant, Deosai plains provides the perfect environment for camping. The average height is 4,000m. The area is covered by lush green grass, streams, mountains etc.\n\nThe park is located on the boundary of Western end of Himalayas with Karakoram. Deosai National park is snow-covered for seven months. The perfect time to visit the Park is between July and September when snow has melted enough to make the area green. The natural environment is also made up of hundreds of varities of beautiful flowers of all colors and hues.\n\nWe provide two options for this amazing tour starting from Islamabad. One is by road and the other is via flight to Skardu Airport from Islamabad. Below is the itinerary for a road trip. Leave an inquiry for a trip by air."
+    : expedition.id === "lahore-cultural-tour"
+    ? "Tour of Lahore (2025-26) – 03 Days. Tour of Lahore is a must if you are in town for a few days. Lahore (Punjab province’s capital) is also famous for its culture and traditions. The city has been a hub of arts, literature, and music for centuries and has produced many renowned artists and writers. Lahore is also renowned for its spicy and flavorful cuisine, which is a mix of traditional Pakistani and Mughlai dishes. The city’s bazaars, including the famous Anarkali bazaar, offer a wide range of street food such as fried fish and spicy kebabs, as well as traditional dishes like haleem and biryani. Lahore also has many monuments and attractions, making it a reasonable tourist destination for visitors from all over the world. Three day tour of Lahore is a guided sightseeing tour offered by Mazeno Adventures Tours. Our fixed departures (group tours) & private tour of Lahore are given in the table below."
     : expedition.description;
 
   const priceIncludes = expedition.id === "nanga-parbat-expedition"
@@ -158,6 +237,31 @@ const ExpeditionDetail = () => {
         { day: 44, title: "Hushe – Skardu City", description: "Drive to Skardu" },
         { day: 45, title: "Skardu – Islamabad", description: "Fly/drive back to Islamabad" },
       ]
+    : expedition.id === "hunza-valley-tour"
+    ? [
+        { day: 1, title: "Hunza Valley Tour – Islamabad to Naran", description: "Depart for Kaghan Valley via Haripur, Abbottabad and Balakot. Scenic drive with lush green hills, streams, glaciers and alpine trees along River Kunhar. Tea stops en route. Lunch and rest at hotel, followed by optional walk or sightseeing. Hotel at Naran." },
+        { day: 2, title: "Hunza Valley Tour – Naran to Hunza", description: "Early start. Stop at Lulusar Lake and tea at Babusar Pass (4,173 m). Enter Chilas with a shift from green hills to rugged mountains. Travel on Karakoram Highway, view Nanga Parbat, and stop at Rakaposhi viewpoint before arriving at hotel in Hunza Valley. Night stay in Hunza." },
+        { day: 3, title: "Hunza Valley Travel Guide", description: "Visit Baltit Fort (700 years old) and Altit Fort (900 years old) with local cultural guide. Explore Leif Larson Music School and Royal Gardens. Try local food at Khabasi Café. Visit Duikar before sunset for panoramic views of Karakoram peaks. Night stay in Hunza." },
+        { day: 4, title: "Hunza Valley Tour – Khunjerab Pass (Pak-China Border)", description: "Depart for Khunjerab Pass via Ganish (ancient rock carvings), Attabad Lake, Hussaini Glacier, Passu village, and conservation areas. See Shispar, Passu Peak and Passu Cones. Reach Khunjerab Pass (4,733 m), meet travelers, enjoy landscape and possible summer snowfall. Shopping stop at Sost and free time in Karimabad Market for herbs, caps, dry fruits, handicrafts and gemstones. Night stay in Hunza." },
+        { day: 5, title: "Return to Naran Kaghan Valley", description: "Travel back to Naran via same route with quick scenic stops. Visit Naran Bazaar upon arrival. Night stay in Naran." },
+        { day: 6, title: "Islamabad City", description: "Continue journey to Islamabad with quick stops. 7–8 hours drive from Naran. Tour ends upon arrival in Islamabad." },
+      ]
+    : expedition.id === "skardu-deosai-tour"
+    ? [
+        { day: 1, title: "Naran/Kaghan", description: "Leave Islamabad and drive to Naran/Kaghan via Abbottabad, Mansehra, Balakot for night stay. Enjoyable drive through beautiful valleys." },
+        { day: 2, title: "Skardu via Babusar", description: "Long drive to Skardu. Parallel drive along Lulusar Lake up to Babusar Pass for a short rest and photography. Continue via Diamer district to Karakoram Highway, Alam bridge to Skardu road along Indus. Night stay in Skardu." },
+        { day: 3, title: "Deosai National Park Tour", description: "Drive towards Deosai Plains via Sadpara lake and village. First night camping at Bara Pani, Deosai." },
+        { day: 4, title: "Deosai Plains Tour", description: "Day for fishing, camping, BBQ, hiking, sunrise/sunset photography. Second night camping at Bara Pani, Deosai." },
+        { day: 5, title: "Skardu", description: "Drive back to Skardu town for lunch. Optional sightseeing: Shangrila Resort, Kharpocho Fort, Shigar desert etc. Night stay in Skardu." },
+        { day: 6, title: "Naran/Kaghan", description: "Drive back to Naran and rest." },
+        { day: 7, title: "Islamabad", description: "Drop in Islamabad." },
+      ]
+    : expedition.id === "lahore-cultural-tour"
+    ? [
+        { day: 1, title: "Lahore Fort, Badshahi & Wazir Khan, Anarkali", description: "9:00 AM – Visit Lahore Fort (UNESCO), 2–3 hours. 12:00 PM – Badshahi Mosque next to the Fort, 1–2 hours. 2:00 PM – Wazir Khan Mosque in the old city, 1–2 hours. 4:00 PM – Stroll through Anarkali Bazaar, 1–2 hours." },
+        { day: 2, title: "Shalimar Gardens, Museum, Minar-e-Pakistan, Food Street", description: "9:00 AM – Shalimar Gardens (2–3 hours). 12:00 PM – Lahore Museum (1–2 hours). 2:00 PM – Minar-e-Pakistan at Iqbal Park (1–2 hours). 4:00 PM – Food Street in old city (1–2 hours)." },
+        { day: 3, title: "Zoo, Model Town Park, Emporium Mall, Canal Road", description: "9:00 AM – Lahore Zoo (2–3 hours). 12:00 PM – Model Town Park (2–3 hours). 3:00 PM – Emporium Mall (2–3 hours). 6:00 PM – Walk along Canal Road (1–2 hours)." },
+      ]
     : [
         { day: 1, title: "Islamabad Arrival", description: "Arrival in Islamabad, hotel check-in, expedition briefing" },
         { day: 2, title: "Fly to Skardu", description: "Morning flight to Skardu, weather dependent" },
@@ -236,7 +340,7 @@ const ExpeditionDetail = () => {
                 <TabsContent value="details" className="mt-8">
                   <div className="space-y-8">
                     <div>
-                      <h2 className="text-2xl font-bold mb-4">About This Expedition</h2>
+                      <h2 className="text-2xl font-bold mb-4">{isTour ? "About This Tour" : "About This Expedition"}</h2>
                       <p className="text-muted-foreground leading-relaxed">
                         {description}
                       </p>
@@ -407,7 +511,7 @@ const ExpeditionDetail = () => {
             <div className="lg:col-span-1">
               <Card className="sticky top-24">
                 <CardHeader>
-                  <CardTitle>Book This Expedition</CardTitle>
+                  <CardTitle>{isTour ? "Book This Tour" : "Book This Expedition"}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">

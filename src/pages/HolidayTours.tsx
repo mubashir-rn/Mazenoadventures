@@ -5,66 +5,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Search, Filter, Plane, Car, Camera, Heart, Users, Calendar } from "lucide-react";
+import { Filter, Plane, Camera, Heart, Users } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
-import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
-import gondogoroImage from "@/assets/gondogoro-trek.jpg";
-import k2Expedition1 from "@/assets/k2 expedition 1.jpg";
-import nangaParbatExpedition1 from "@/assets/NANGA PARBAT  EXPEDITION 1.jpg";
-import broadPeakExpedition1 from "@/assets/BROAD PEAK expedition 1.jpg";
 import gasherbrumIExpedition1 from "@/assets/GASHERBRUM I EXPEDITION 1.jpg";
 import mountainImage from "@/assets/mountain.jpeg";
-import tarishingImage from "@/assets/tarishing.jpeg";
-import groupImage from "@/assets/group.jpeg";
-import heroMountainImage from "@/assets/hero-mountain.jpg";
+import lahoreCover from "@/assets/lahoretour/lahore-tour-5.jpg";
+import hunzaCover from "@/assets/HunzaTour/baltit-1.jpg";
 
 const HolidayTours = () => {
   const { theme } = useTheme();
 
-  const tourCategories = [
-    {
-      title: "Air Travel",
-      icon: Plane,
-      description: "Comfortable flight-based tours to major destinations",
-      tours: 25,
-      image: k2Expedition1
-    },
-    {
-      title: "Road Trips",
-      icon: Car,
-      description: "Scenic overland journeys through northern Pakistan",
-      tours: 18,
-      image: tarishingImage
-    },
-    {
-      title: "Cultural Tours",
-      icon: Camera,
-      description: "Explore Pakistan's rich heritage and local traditions",
-      tours: 32,
-      image: nangaParbatExpedition1
-    },
-    {
-      title: "Family Holidays",
-      icon: Users,
-      description: "Perfect family-friendly adventures and experiences",
-      tours: 22,
-      image: groupImage
-    },
-    {
-      title: "Honeymoon",
-      icon: Heart,
-      description: "Romantic getaways in stunning mountain settings",
-      tours: 15,
-      image: fairyMeadowsImage
-    },
-    {
-      title: "Weekend Retreats",
-      icon: Calendar,
-      description: "Short 2-3 day escapes from city life",  
-      tours: 28,
-      image: heroMountainImage
-    }
-  ];
+  
 
   const featuredTours = [
     {
@@ -72,14 +23,14 @@ const HolidayTours = () => {
       title: "HUNZA VALLEY CULTURAL TOUR",
       peak: "Hunza Valley",
       elevation: "2400M",
-      duration: "7 Days",
+      duration: "6 Days",
       groupSize: "6-15",
       difficulty: 2,
       minAge: "All Ages",
       pickupLocation: "Gilgit Airport",
       tourType: "Cultural Tour",
       description: "Discover the enchanting Hunza Valley with its ancient forts, apricot orchards, and warm hospitality. Perfect for families and cultural enthusiasts.",
-      image: broadPeakExpedition1,
+      image: hunzaCover,
       rating: 4.8,
       reviews: 234
     },
@@ -88,7 +39,7 @@ const HolidayTours = () => {
       title: "SKARDU & DEOSAI PLAINS TOUR",
       peak: "Deosai Plains",
       elevation: "4100M",
-      duration: "6 Days",
+      duration: "7 Days",
       groupSize: "4-12",
       difficulty: 2,
       minAge: "12+",
@@ -104,14 +55,14 @@ const HolidayTours = () => {
       title: "LAHORE HISTORICAL & CULTURAL TOUR",
       peak: "Lahore City",
       elevation: "217M",
-      duration: "4 Days",
+      duration: "3 Days",
       groupSize: "8-20",
       difficulty: 1,
       minAge: "All Ages",
       pickupLocation: "Lahore Airport",
       tourType: "Heritage Tour",
       description: "Explore the cultural heart of Pakistan with visits to Badshahi Mosque, Lahore Fort, and the vibrant streets of the Walled City.",
-      image: gasherbrumIExpedition1,
+      image: lahoreCover,
       rating: 4.6,
       reviews: 298
     }
@@ -205,37 +156,7 @@ const HolidayTours = () => {
         </div>
       </section>
 
-      {/* Tour Categories */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Tour Categories</h2>
-            <p className="text-muted-foreground">Choose from our diverse range of holiday experiences</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {tourCategories.map((category, index) => (
-              <Card key={index} className="hover:shadow-mountain transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={category.image} 
-                    alt={category.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-hero flex items-center justify-center">
-                    <category.icon className="h-16 w-16 text-white" />
-                  </div>
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-foreground mb-2">{category.title}</h3>
-                  <p className="text-muted-foreground mb-4">{category.description}</p>
-                  <div className="text-primary font-semibold">{category.tours} Tours Available</div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Featured Tours */}
       <section className="py-20 bg-muted/30">
