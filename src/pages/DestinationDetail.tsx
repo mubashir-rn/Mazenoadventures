@@ -116,6 +116,24 @@ const DestinationDetail = () => {
                           <span className="font-medium text-foreground">Heritage Focus:</span> {destination.heritage}
                         </p>
                       )}
+                      {destination.whyVisit && (
+                        <div className="mt-8">
+                          <h3 className="text-xl font-semibold mb-2">Why Visit</h3>
+                          <p className="text-muted-foreground leading-relaxed">{destination.whyVisit}</p>
+                        </div>
+                      )}
+                      {destination.whenToVisitDetailed && (
+                        <div className="mt-6">
+                          <h3 className="text-xl font-semibold mb-2">When to Visit</h3>
+                          <p className="text-muted-foreground leading-relaxed">{destination.whenToVisitDetailed}</p>
+                        </div>
+                      )}
+                      {destination.howToGetThere && (
+                        <div className="mt-6">
+                          <h3 className="text-xl font-semibold mb-2">How to Get There</h3>
+                          <p className="text-muted-foreground leading-relaxed">{destination.howToGetThere}</p>
+                        </div>
+                      )}
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

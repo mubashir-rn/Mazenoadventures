@@ -18,6 +18,9 @@ export type Destination = {
   duration?: string;
   pickupLocation?: string;
   itinerary?: { day: number | string; title: string; description: string }[];
+  whyVisit?: string;
+  whenToVisitDetailed?: string;
+  howToGetThere?: string;
 };
 
 // Assets
@@ -51,6 +54,11 @@ import lahoreFort from "@/assets/lahoretour/lahore-tour-Oposite-the-mosque-Lahor
 import lahore2 from "@/assets/lahoretour/lahore-tour-2.jpg";
 import lahore11 from "@/assets/lahoretour/Lahore-11.jpeg";
 import lahore5 from "@/assets/lahoretour/Lahore-5.jpeg";
+
+// Shimshal
+import shimshal1 from "@/assets/shimshal/shimshal 1.jpeg";
+import shimshal2 from "@/assets/shimshal/shimshal 2.jpeg";
+import shimshalCover from "@/assets/shimshal/Shimshal-Autumn-Forest-CMP.jpg";
 
 export const destinations: Destination[] = [
   // Mountain Peaks (brief sightseeing style)
@@ -216,6 +224,37 @@ export const destinations: Destination[] = [
       { day: 3, title: "Sheosar & Return", description: "Sheosar Lake and back to Skardu." }
     ],
     photos: [deosai2, deosai3, deosai4, deosai5, deosaiA, deosaiB, deosaiC]
+  },
+  {
+    id: "shimshal",
+    title: "Shimshal The Lost Valley of Hunza",
+    category: "Northern",
+    region: "Hunza, Gilgit-Baltistan",
+    description:
+      "Shimshal. A word that evokes feelings of adventure and even danger. Hidden deep in the Karakoram, Shimshal Valley is famed for its remote beauty and the notorious road that leads there. Renowned yet rarely visited due to its secluded, hard-to-reach nature, it rewards those willing to venture far off the beaten path with jagged peaks, vast landscapes, the chance to spot exotic wildlife, and an incomparable silence far from Hunza’s crowds.",
+    image: shimshalCover,
+    attractions: [
+      "Karakoram panoramas",
+      "Remote valley villages",
+      "Wildlife encounters",
+      "High alpine meadows"
+    ],
+    bestTime: "May-Oct",
+    duration: "3–5 Days",
+    price: "$0",
+    pickupLocation: "Gilgit / Hunza (Passu–Gulmit corridor)",
+    whyVisit:
+      "Straight away, Shimshal is not a casual, easy-to-reach destination. Getting to this valley requires effort and going out of your way, and more than likely braving danger to some degree. Experiencing Shimshal, peeling back its many layers, and soaking in its exquisite, remote beauty requires a level of commitment that pays off in a BIG way. Shimshal is for adventurous visitors looking for epic treks, an escape from civilization, and plenty of peaceful places to relax in silence. Jagged peaks, vast landscapes, the potential to see exotic wildlife, and the risk of danger await. If that appeals and you want to get away from Hunza’s often-stifling crowds, Shimshal is the place to be.",
+    whenToVisitDetailed:
+      "Shimshal Valley is defined by rugged terrain and a harsh, unforgiving climate. It’s best visited between May and October when temperatures are more bearable and the road is in an acceptable state. Summer months see the most visitors, but overcrowding is never an issue. Autumn is stunning but cold; by late October water pipes can freeze, so expect limited running water and come prepared for the trade-off: breathtaking colors and near-solitude.",
+    howToGetThere:
+      "The approach road to Shimshal is one of Pakistan’s most thrilling drives, carved into the cliffs deep in the Karakoram. Travel with care and local knowledge. With Mazano Adventures, you can choose peaceful trek and tour options—contact us for planning, safety-first logistics, and bookings.",
+    itinerary: [
+      { day: 1, title: "Approach to Shimshal", description: "Drive from Hunza towards Shimshal via the dramatic valley road; photography stops and village check-in." },
+      { day: 2, title: "Explore The Lost Valley", description: "Short hikes to meadows and viewpoints; optional cultural walk through the village; serene downtime away from crowds." },
+      { day: 3, title: "Return / Extensions", description: "Drive back towards Hunza or add extra days for deeper treks with Mazano Adventures." }
+    ],
+    photos: [shimshalCover, shimshal1, shimshal2]
   },
 
   // Cultural

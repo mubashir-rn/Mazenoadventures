@@ -11,6 +11,7 @@ import fairyMeadowsImage from "@/assets/fairy-meadows.jpg";
 import gondogoroImage from "@/assets/gondogoro-trek.jpg";
 import k2Image from "@/assets/k2-expedition.jpg";
 import snowLakeImage from "@/assets/snow-lake-trek.jpg";
+import shimshalCover from "@/assets/shimshal/Shimshal-Autumn-Forest-CMP.jpg";
 
 const Destinations = () => {
   const [open, setOpen] = useState(false);
@@ -105,6 +106,18 @@ const Destinations = () => {
       bestTime: "Jun-Sep"
     }
   ];
+
+  // Add Shimshal to Northern Pakistan list
+  northernDestinations.push({
+    id: "shimshal",
+    name: "SHIMSHAL",
+    region: "Hunza, Gilgit-Baltistan",
+    description:
+      "The Lost Valley of Hunza—remote, rugged, and profoundly beautiful. A paradise for adventure travelers seeking silence, wildlife, and high Karakoram panoramas.",
+    image: shimshalCover,
+    attractions: ["Valley Road Adventure", "High Alpine Meadows", "Karakoram Views", "Village Culture"],
+    bestTime: "May-Oct",
+  });
 
   const culturalDestinations = [
     {
