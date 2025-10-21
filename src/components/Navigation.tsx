@@ -34,14 +34,22 @@ const Navigation = () => {
             <div className="flex flex-row items-center gap-1 sm:gap-3 md:gap-4 text-xs sm:text-sm flex-1">
               {/* Phone/WhatsApp - Mobile First Design */}
               <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 min-w-0 flex-shrink">
-                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-md flex-shrink-0">
-                  <Phone className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                {/* Mobile: phone icon acts as tel link; Desktop: plain icon with text link next to it */}
+                <a
+                  href="tel:+923459160113"
+                  className="sm:hidden flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-md flex-shrink-0"
+                  aria-label="Call +92 345 9160113"
+                >
+                  <Phone className="h-3 w-3 text-white" />
+                </a>
+                <div className="hidden sm:flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-md flex-shrink-0">
+                  <Phone className="h-4 w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <a 
                   href="https://wa.link/d4d1pg" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center text-xs sm:text-sm truncate max-w-[80px] sm:max-w-none"
+                  className="hidden sm:flex font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] items-center text-sm"
                   title="Call or WhatsApp +92 345 9160113"
                 >
                   +92 345 9160113
@@ -50,14 +58,22 @@ const Navigation = () => {
               
               {/* Combined Email Option - Mobile Optimized */}
               <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 min-w-0 flex-shrink">
-                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-md flex-shrink-0">
-                  <Mail className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                {/* Mobile: mail icon acts as mailto link; Desktop: plain icon with text link next to it */}
+                <a
+                  href="mailto:akhtar_nangaparbat@yahoo.com,akhtarnagabarbat@gmail.com"
+                  className="sm:hidden flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-md flex-shrink-0"
+                  aria-label="Email Mazano Adventures"
+                >
+                  <Mail className="h-3 w-3 text-white" />
+                </a>
+                <div className="hidden sm:flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-md flex-shrink-0">
+                  <Mail className="h-4 w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <a 
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=akhtar_nangaparbat@yahoo.com&cc=akhtarnagabarbat@gmail.com&su=Inquiry%20about%20Mazano%20Adventures"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center text-xs sm:text-sm"
+                  className="hidden sm:flex font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 min-h-[44px] items-center text-sm"
                   title="Send email to both addresses via Gmail"
                 >
                   Email Us
@@ -66,7 +82,7 @@ const Navigation = () => {
             </div>
             
             {/* WhatsApp CTA Button - Always horizontal */}
-            <div className="flex items-center justify-end flex-shrink-0">
+            <div className="hidden sm:flex items-center justify-end flex-shrink-0">
               <Button 
                 variant="default" 
                 size="sm" 
