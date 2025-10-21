@@ -32,3 +32,7 @@ const DefaultSEO = () => {
 };
 
 export default DefaultSEO;
+
+
+
+//Seo
