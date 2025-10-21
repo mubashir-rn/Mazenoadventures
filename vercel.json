@@ -1,8 +1,22 @@
 {
+  "headers": [
+    {
+      "source": "/favicon.ico",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate, max-age=0" }
+      ]
+    },
+    {
+      "source": "/favicon.ico",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate, max-age=0" }
+      ]
+    }
+  ],
   "routes": [
     {
       "src": "/favicon.ico",
-      "dest": "/favicon.png"
+      "dest": "/favicon.ico"
     },
     {
       "src": "/sitemap.xml",
