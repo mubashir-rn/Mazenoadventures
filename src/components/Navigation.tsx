@@ -26,78 +26,92 @@ const Navigation = () => {
 
   return (
     <nav className="bg-background/95 backdrop-blur-md border-b border-border/50 z-50 shadow-sm">
-      {/* Top contact bar */}
-      <div className="bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 dark:from-gray-900/50 dark:via-gray-800/50 dark:to-gray-900/50 py-2 sm:py-3 px-2 sm:px-4 border-b border-border/30 backdrop-blur-sm">
+      {/* Top contact bar - Modern & Attractive */}
+      <div className="bg-gradient-to-r from-emerald-50/90 via-blue-50/90 to-purple-50/90 dark:from-gray-900/80 dark:via-gray-800/80 dark:to-gray-900/80 py-2.5 sm:py-3 px-3 sm:px-4 border-b border-border/30 backdrop-blur-md">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-row items-center justify-between gap-2 sm:gap-3">
-            {/* Contact Information - Always horizontal */}
-            <div className="flex flex-row items-center gap-1 sm:gap-3 md:gap-4 text-xs sm:text-sm flex-1">
-              {/* Phone/WhatsApp - Mobile First Design */}
-              <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 min-w-0 flex-shrink">
-                {/* Mobile: phone icon acts as tel link; Desktop: plain icon with text link next to it */}
+          <div className="flex flex-row items-center justify-between gap-3 sm:gap-4">
+            {/* Contact Information - Modern Card Style */}
+            <div className="flex flex-row items-center gap-2 sm:gap-4 md:gap-5 text-xs sm:text-sm flex-1">
+              {/* Phone/WhatsApp - Enhanced Modern Design */}
+              <div className="flex items-center gap-1.5 sm:gap-2.5 group">
+                {/* Mobile: Animated icon button */}
                 <a
                   href="tel:+923459160113"
-                  className="sm:hidden flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-md flex-shrink-0"
+                  className="sm:hidden flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-green-400 via-green-500 to-green-600 shadow-lg hover:shadow-xl transform hover:scale-110 active:scale-95 transition-all duration-300 flex-shrink-0 relative overflow-hidden"
                   aria-label="Call +92 345 9160113"
                 >
-                  <Phone className="h-3 w-3 text-white" />
+                  <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                  <Phone className="h-4 w-4 text-white relative z-10 animate-[wiggle_1s_ease-in-out_infinite]" />
                 </a>
-                <div className="hidden sm:flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-md flex-shrink-0">
-                  <Phone className="h-4 w-4 md:h-5 md:w-5 text-white" />
+                {/* Desktop: Static icon with pulse effect */}
+                <div className="hidden sm:flex items-center justify-center w-10 h-10 md:w-11 md:h-11 rounded-xl bg-gradient-to-br from-green-400 via-green-500 to-green-600 shadow-lg group-hover:shadow-xl transition-all duration-300 flex-shrink-0 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-300"></div>
+                  <Phone className="h-5 w-5 md:h-5.5 md:w-5.5 text-white relative z-10 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
+                {/* Desktop: Text link with modern styling */}
                 <a 
                   href="https://wa.link/d4d1pg" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="hidden sm:flex font-semibold text-foreground hover:text-green-600 transition-all duration-300 hover:scale-105 min-h-[44px] items-center text-sm"
+                  className="hidden sm:flex font-bold text-foreground hover:text-green-600 dark:hover:text-green-400 transition-all duration-300 hover:scale-105 min-h-[44px] items-center text-sm md:text-base relative group"
                   title="Call or WhatsApp +92 345 9160113"
                 >
-                  +92 345 9160113
+                  <span className="relative">
+                    +92 345 9160113
+                    <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-green-600 group-hover:w-full transition-all duration-300"></span>
+                  </span>
                 </a>
               </div>
               
-              {/* Combined Email Option - Mobile Optimized */}
-              <div className="flex items-center gap-1 sm:gap-2 p-1 sm:p-0 min-w-0 flex-shrink">
-                {/* Mobile: mail icon acts as mailto link; Desktop: plain icon with text link next to it */}
+              {/* Email - Enhanced Modern Design */}
+              <div className="flex items-center gap-1.5 sm:gap-2.5 group">
+                {/* Mobile: Animated icon button */}
                 <a
                   href="mailto:akhtar_nangaparbat@yahoo.com,akhtarnagabarbat@gmail.com"
-                  className="sm:hidden flex items-center justify-center w-6 h-6 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-md flex-shrink-0"
+                  className="sm:hidden flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 shadow-lg hover:shadow-xl transform hover:scale-110 active:scale-95 transition-all duration-300 flex-shrink-0 relative overflow-hidden"
                   aria-label="Email Mazano Adventures"
                 >
-                  <Mail className="h-3 w-3 text-white" />
+                  <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                  <Mail className="h-4 w-4 text-white relative z-10 animate-[wiggle_1s_ease-in-out_infinite]" />
                 </a>
-                <div className="hidden sm:flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-md flex-shrink-0">
-                  <Mail className="h-4 w-4 md:h-5 md:w-5 text-white" />
+                {/* Desktop: Static icon with pulse effect */}
+                <div className="hidden sm:flex items-center justify-center w-10 h-10 md:w-11 md:h-11 rounded-xl bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 shadow-lg group-hover:shadow-xl transition-all duration-300 flex-shrink-0 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-300"></div>
+                  <Mail className="h-5 w-5 md:h-5.5 md:w-5.5 text-white relative z-10 group-hover:-rotate-12 transition-transform duration-300" />
                 </div>
+                {/* Desktop: Text link with modern styling */}
                 <a 
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=akhtar_nangaparbat@yahoo.com&cc=akhtarnagabarbat@gmail.com&su=Inquiry%20about%20Mazano%20Adventures"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hidden sm:flex font-medium text-foreground hover:text-blue-600 transition-all duration-300 hover:scale-105 min-h-[44px] items-center text-sm"
+                  className="hidden sm:flex font-bold text-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:scale-105 min-h-[44px] items-center text-sm md:text-base relative group"
                   title="Send email to both addresses via Gmail"
                 >
-                  Email Us
+                  <span className="relative">
+                    Email Us
+                    <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 group-hover:w-full transition-all duration-300"></span>
+                  </span>
                 </a>
               </div>
             </div>
             
-            {/* WhatsApp CTA Button - Always horizontal */}
+            {/* WhatsApp CTA Button - Enhanced Modern Design */}
             <div className="hidden sm:flex items-center justify-end flex-shrink-0">
               <Button 
                 variant="default" 
                 size="sm" 
                 asChild 
-                className="bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-2 xs:px-3 sm:px-4 md:px-6 py-2 sm:py-2 rounded-full font-semibold text-xs sm:text-sm md:text-base min-h-[36px] sm:min-h-0 transform hover:scale-105 active:scale-95"
+                className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#075E54] text-white shadow-xl hover:shadow-2xl transition-all duration-300 px-3 sm:px-4 md:px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm md:text-base min-h-[40px] sm:min-h-0 transform hover:scale-110 active:scale-95 relative overflow-hidden group"
               >
                 <a 
                   href="https://wa.link/d4d1pg" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center justify-center gap-1 sm:gap-2 md:gap-3"
+                  className="inline-flex items-center justify-center gap-1.5 sm:gap-2 md:gap-2.5 relative z-10"
                   aria-label="Chat on WhatsApp"
                 >
-                  <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 flex-shrink-0" />
-                  {/* Responsive text - icon only on mobile, full text on larger screens */}
+                  <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-300"></div>
+                  <MessageCircle className="h-4 w-4 sm:h-4.5 sm:w-4.5 md:h-5 md:w-5 flex-shrink-0 animate-[bounce_2s_ease-in-out_infinite]" />
                   <span className="font-bold tracking-wide hidden sm:inline">Chat on WhatsApp</span>
                 </a>
               </Button>
