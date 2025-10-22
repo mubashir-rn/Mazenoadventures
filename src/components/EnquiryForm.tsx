@@ -80,7 +80,7 @@ const EnquiryForm = () => {
               <Button variant="secondary" asChild>
                 <a href="https://wa.link/d4d1pg" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  Chat on WhatsAppuuu
+                  Chat on WhatsApp
                 </a>
               </Button>
               <Button variant="outline" asChild>

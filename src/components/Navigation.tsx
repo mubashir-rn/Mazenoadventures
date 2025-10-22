@@ -96,12 +96,12 @@ const Navigation = () => {
             </div>
             
             {/* WhatsApp CTA Button - Enhanced Modern Design */}
-            <div className="hidden sm:flex items-center justify-end flex-shrink-0">
+            <div className="flex items-center justify-end flex-shrink-0">
               <Button 
                 variant="default" 
                 size="sm" 
                 asChild 
-                className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#075E54] text-white shadow-xl hover:shadow-2xl transition-all duration-300 px-3 sm:px-4 md:px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm md:text-base min-h-[40px] sm:min-h-0 transform hover:scale-110 active:scale-95 relative overflow-hidden group"
+                className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#075E54] text-white shadow-xl hover:shadow-2xl transition-all duration-300 px-2.5 sm:px-4 md:px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm md:text-base min-h-[40px] sm:min-h-0 transform hover:scale-110 active:scale-95 relative overflow-hidden group"
               >
                 <a 
                   href="https://wa.link/d4d1pg" 
@@ -111,7 +111,7 @@ const Navigation = () => {
                   aria-label="Chat on WhatsApp"
                 >
                   <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-300"></div>
-                  <MessageCircle className="h-4 w-4 sm:h-4.5 sm:w-4.5 md:h-5 md:w-5 flex-shrink-0 animate-[bounce_2s_ease-in-out_infinite]" />
+                  <MessageCircle className="h-5 w-5 sm:h-4.5 sm:w-4.5 md:h-5 md:w-5 flex-shrink-0 animate-[bounce_2s_ease-in-out_infinite]" />
                   <span className="font-bold tracking-wide hidden sm:inline">Chat on WhatsApp</span>
                 </a>
               </Button>

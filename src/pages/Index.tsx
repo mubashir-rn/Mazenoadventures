@@ -187,7 +187,7 @@ const Index = () => {
                   <span className="inline-flex items-center text-xs px-3 py-1 rounded-full bg-muted text-foreground">Region: Rupal Valley, Astore</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Link to="/resources" className="inline-flex items-center justify-center px-5 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition">
+                  <Link to="/destination/latobah" className="inline-flex items-center justify-center px-5 py-2 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition">
                     Read Guide
                   </Link>
                   <Link to="/contact-us" className="inline-flex items-center justify-center px-5 py-2 rounded-md border border-input hover:bg-muted/50 transition">

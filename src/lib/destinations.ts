@@ -60,6 +60,10 @@ import shimshal1 from "@/assets/shimshal/shimshal 1.jpeg";
 import shimshal2 from "@/assets/shimshal/shimshal 2.jpeg";
 import shimshalCover from "@/assets/shimshal/Shimshal-Autumn-Forest-CMP.jpg";
 
+// Latobah
+import latobahCover from "@/assets/latbo/latbo 1.jpeg";
+import latobahKid from "@/assets/latbo/latbi kid.jpeg";
+
 export const destinations: Destination[] = [
   // Mountain Peaks (brief sightseeing style)
   {
@@ -255,6 +259,73 @@ export const destinations: Destination[] = [
       { day: 3, title: "Return / Extensions", description: "Drive back towards Hunza or add extra days for deeper treks with Mazano Adventures." }
     ],
     photos: [shimshalCover, shimshal1, shimshal2]
+  },
+  {
+    id: "latobah",
+    title: "Latobah (Rupal Valley, Nanga Parbat)",
+    category: "Northern",
+    region: "Astore District, Gilgit-Baltistan",
+    elevation: "3,530m (11,580 ft)",
+    description:
+      "Latobah, also known as Latboh or Latobah Meadow, is situated in the Rupal Valley of Astore District, Gilgit-Baltistan, Pakistan. The meadow lies at an altitude of approximately 3,530 meters (11,580 feet), positioned on the south-eastern face of Nanga Parbat (8,126 meters) — the world's highest mountain face, with a near-vertical rise of over 4,600 meters.",
+    image: latobahCover,
+    attractions: [
+      "Direct views of the Rupal Wall, the world's highest mountain face",
+      "Bazhin Glacier views",
+      "Alpine meadows with pastoral scenery",
+      "Exceptional photography conditions",
+      "Clear night skies for stargazing",
+      "Remote wilderness experience"
+    ],
+    bestTime: "mid-Jun to early Sep",
+    duration: "6 Days",
+    price: "$500",
+    pickupLocation: "Islamabad",
+    whyVisit:
+      "Latobah offers a serene and authentic high-altitude experience on the Rupal Face of Nanga Parbat. It is ideal for trekkers seeking solitude, dramatic mountain scenery, and a close connection with Pakistan's raw alpine landscapes. Located just above the Bazhin Glacier and opposite Herligkoffer Base Camp, Latobah serves as a major base for trekkers approaching the Rupal Face of Nanga Parbat. The site combines dramatic alpine scenery, expansive grassy pastures, and proximity to glacier routes, making it a key stop for high-altitude expeditions and adventure travelers.",
+    whenToVisitDetailed:
+      "The ideal trekking season extends from mid-June to early September, when the meadows are lush, the glacier crossings are stable, and the weather is generally favorable. Daytime temperatures range from 10–20°C, while nights can drop below freezing. During the warmer months, local herders bring their sheep, goats, and horses to graze in the meadow, adding to the pastoral atmosphere of the region.",
+    howToGetThere:
+      "Access Route (Most Common):\n\n**Option 1: From Islamabad via Karakoram Highway**\n• Islamabad → Chilas: Drive via Karakoram Highway through Mansehra and Naran (when open) or via Babusar Top (9–11 hours, 420 km)\n• Chilas → Astore: Turn off from Raikot Bridge toward Astore Valley (3 hours, 80 km)\n• Astore → Tarashing: Jeep track; narrow mountain road suitable for 4x4 vehicles (2 hours, 30 km)\n• Tip: An overnight stay in Astore is recommended before beginning the trek.\n\n**Option 2: Via Gilgit**\n• Islamabad → Gilgit: Flight (1 hr 15 min) or by road (12–14 hrs)\n• Gilgit → Astore: Drive via Jaglot and Astore Bridge (4–5 hours, 120 km)\n• Astore → Tarashing: Jeep track (2 hours, 30 km)\n\n**Trek Route:**\n• Day 1: Trek from Tarashing to Herligkoffer Base Camp (approximately 3–4 hours). The route ascends gradually along the Bazhin Glacier.\n• Day 2: Trek from Herligkoffer Base Camp to Latobah Meadow (approximately 3–4 hours). The trail crosses the lateral moraine of the Bazhin Glacier and rises to a vast grassy plateau surrounded by mountains.\n• Optional Extensions: Continue to Latboi Camp, Mazeno Base Camp, or advanced viewpoints on the Rupal Face.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Islamabad → Chilas / Astore",
+        description:
+          "Scenic mountain drive via Karakoram Highway through Mansehra and Naran (when open) or via Babusar Top. Alternatively, take a flight to Gilgit and drive to Astore. Overnight stay in Astore (2,600m)."
+      },
+      {
+        day: 2,
+        title: "Astore → Tarashing (by jeep) → Trek to Herligkoffer Base Camp",
+        description:
+          "2-hour jeep drive from Astore to Tarashing (last jeep-accessible settlement at 2,900m). Begin 3–4 hour trek along the Bazhin Glacier to Herligkoffer Base Camp (3,550m). Overnight camping."
+      },
+      {
+        day: 3,
+        title: "Herligkoffer Base Camp → Latobah Meadow",
+        description:
+          "Trek 3–4 hours crossing the lateral moraine of Bazhin Glacier to reach Latobah Meadow (3,530m). Set up camp on the wide grassy plateau with panoramic views of Rupal Face, Laila Peak, Mazeno Ridge, and Shaigiri Peak. Enjoy the pastoral atmosphere with streams and alpine flowers."
+      },
+      {
+        day: 4,
+        title: "Exploration at Latobah",
+        description:
+          "Full day to explore the meadow and surrounding areas. Optional hikes toward Latboi Camp or Mazeno Ridge for advanced viewpoints. Photography, wildlife spotting, and stargazing. Experience the pristine environment with fewer visitors than Fairy Meadows (Raikot) side."
+      },
+      {
+        day: 5,
+        title: "Latobah → Tarashing",
+        description:
+          "Descend back to Tarashing (2,900m) via Herligkoffer Base Camp. Overnight rest in Tarashing or continue to Astore."
+      },
+      {
+        day: 6,
+        title: "Tarashing → Astore → Islamabad",
+        description:
+          "Drive back to Astore and then to Islamabad (or flight from Gilgit to Islamabad if preferred). End of trek."
+      }
+    ],
+    photos: [latobahCover, latobahKid, nangaParbatImg, fairyMeadowsImage]
   },
 
   // Cultural
