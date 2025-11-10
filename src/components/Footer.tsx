@@ -19,7 +19,6 @@ const Footer = () => {
     { label: "NANGA PARBAT & MAZENO PASS TREK", id: "mazeno-pass-trek" },
     { label: "K2 BASE CAMP TREK", id: "k2-base-camp-trek" },
     { label: "K2 Gondogoro La Trek", id: "gondogoro-la-trek" },
-    { label: "Nanga parbat Rupal Face Trek", id: "nanga-parbat-rupal-face-trek" },
     { label: "Biafo Hispar Snow Lake", id: "snow-lake-bifo-hispar-trek" },
     { label: "BIAFO GLACIER TREK", id: "biafo-glacier-trek" },
   ];

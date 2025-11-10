@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from "@/components/ui/dialog";
-import { Clock, Users, MapPin, Calendar, Star, TrendingUp, Tag } from "lucide-react";
+import { Clock, Users, MapPin, Calendar, Star, TrendingUp, Tag, ChevronDown, ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 interface TrekkingCardProps {
   id: string;
@@ -40,6 +41,11 @@ const TrekkingCard = ({
   category,
   bestTime
 }: TrekkingCardProps) => {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+  
+  // Limit description to 100 characters for the preview
+  const previewDescription = description.length > 100 ? description.substring(0, 100) + "..." : description;
+
   return (
     <Card className="overflow-hidden shadow-[0_10px_35px_rgb(0,0,0,0.15)] hover:shadow-[0_15px_45px_rgb(0,0,0,0.22)] transition-all duration-300 transform hover:-translate-y-3 bg-white/95 dark:bg-card backdrop-blur-sm border-0">
       <div className="relative">
@@ -66,7 +72,27 @@ const TrekkingCard = ({
       <CardContent className="p-6">
         <div className="mb-4">
           <h3 className="text-xl font-bold text-foreground mb-2">{title}</h3>
-          <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            {showFullDescription ? description : previewDescription}
+          </p>
+          {description.length > 100 && (
+            <button 
+              onClick={() => setShowFullDescription(!showFullDescription)}
+              className="flex items-center text-sm text-primary hover:text-primary/80 mt-1"
+            >
+              {showFullDescription ? (
+                <>
+                  <ChevronUp className="h-4 w-4 mr-1" />
+                  Show Less
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="h-4 w-4 mr-1" />
+                  Show More
+                </>
+              )}
+            </button>
+          )}
         </div>
 
         <div className="grid grid-cols-2 gap-4 mb-4 text-sm">
@@ -166,7 +192,7 @@ const TrekkingCard = ({
                   </div>
                 </div>
               </div>
-              <div className="mt-3 text-sm text-muted-foreground line-clamp-5">
+              <div className="mt-3 text-sm text-muted-foreground">
                 {description}
               </div>
               <DialogFooter>

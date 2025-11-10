@@ -57,12 +57,8 @@ import ggl3 from "@/assets/K2 Gondogoro La Trek/K2 Gondogoro La Trek 3.jpeg";
 import ggl4 from "@/assets/K2 Gondogoro La Trek/K2 Gondogoro La Trek 4.jpeg";
 import ggl5 from "@/assets/K2 Gondogoro La Trek/K2 Gondogoro La Trek 5.jpg";
 import ggl6 from "@/assets/K2 Gondogoro La Trek/K2 Gondogoro La Trek 6.jpg";
-import rupal1 from "@/assets/Nanga parbat Rupal Face Trek/Nanga parbat Rupal Face Trek 1.jpeg";
-import rupal2 from "@/assets/Nanga parbat Rupal Face Trek/Nanga parbat Rupal Face Trek 2.jpeg";
-import rupal3 from "@/assets/Nanga parbat Rupal Face Trek/Nanga parbat Rupal Face Trek 3.jpeg";
-import rupal4 from "@/assets/Nanga parbat Rupal Face Trek/Nanga parbat Rupal Face Trek 4.jpeg";
-import rupal5 from "@/assets/Nanga parbat Rupal Face Trek/ Nanga parbat Rupal Face Trek 5.jpeg";
-import rupal6 from "@/assets/Nanga parbat Rupal Face Trek/Nanga parbat Rupal Face Trek 6.jpeg";
+import rushImg1 from "@/assets/Rush Phari Lake Trek/RUSH LAKE TREK.jpg";
+import rushImg3 from "@/assets/Rush Phari Lake Trek/RUSH LAKE TREK 3.jpg";
 import snow1 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 1.jpeg";
 import snow2 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 2.jpg";
 import snow3 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 3.jpg";
@@ -70,8 +66,7 @@ import snow4 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW 
 import snow5 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 5.jpg";
 import snow6 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 6.jpg";
 import snow7 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 7.jpg";
-import rushImg1 from "@/assets/Rush Phari Lake Trek/RUSH LAKE TREK.jpg";
-import rushImg3 from "@/assets/Rush Phari Lake Trek/RUSH LAKE TREK 3.jpg";
+import snow8 from "@/assets/arround nangaparbat/BIAFO SNOW LAKE TREK/BIAFO SNOW LAKE TREK 8.jpeg";
 
 interface TrekData {
   id: string;
@@ -316,7 +311,7 @@ const treks: Record<string, TrekData> = {
     tourType: "Wilderness Trek",
     description:
       "Biafo & Hispar Glaciers have a total length of 126 km and are the longest of their kind outside of the Polar Regions. They meet at the 5,150 m high Hispar Pass. This immense highway of ice and rock connects the antique kingdoms of Nagar in the West and Askoli (little Tibet) in the East. This route was extensively used to connect the Silk Route with the Indian Sub-Continent, China and Tibet. Mr. H.W. Tilman, an English trekker, claimed in 1937 that he had seen the footprints of Yeti on the glacier. The same way served the people of Hunza to invade Askoli. Later it was used as a more progressive way between Hunza and Askoli and the people of Hunza came over to Askoli to play Polo with them. This life-long trekking experience ends at the beautiful Hunza Valley, the Valley of Eternal Youth and home of the most progressive people compared with other parts of the Northern Areas. The people of Hunza are known for their longevity. In Karimabad we visit Altit and Baltit Fort and enjoy the unforgettable view from the roof-top of Baltit on Rakaposhi and Diran. Glaciologists after conducting tests on the Snow Lake confirmed that the thickness of snow is one mile. Here one can observe the rare species of animals in abundance like Snow Leopards, Himalayan Bears, Ibex, Markhore and some times the Marco Polo Sheep.",
-    images: [snow1, snow2, snow3, snow4, snow5, snow6, snow7],
+    images: [snow1, snow2, snow3, snow4, snow5, snow6, snow7, snow8],
     rating: 4.9,
     reviews: 67,
     bestTime: "July to September",
@@ -349,41 +344,6 @@ const treks: Record<string, TrekData> = {
       { day: "21", title: "Karimabad – Chilas (1265m)", description: "Drive to Chilas; visit Thalpan rock carvings en route. Overnight hotel (4–5 hrs)." },
       { day: "22", title: "Chilas to Islamabad via Babusar", description: "Early start over Babusar Pass (4173m); lunch at Naran; continue to Islamabad. Overnight hotel." },
       { day: "23", title: "Departure", description: "Morning transfer to airport for international flight." }
-    ]
-  },
-  "nanga-parbat-rupal-face-trek": {
-    id: "nanga-parbat-rupal-face-trek",
-    title: "Nanga parbat Rupal Face Trek",
-    elevation: "4600m",
-    duration: "10 DAYS / 09 NIGHTS",
-    groupSize: "4-15",
-    difficulty: 3,
-    minAge: "14+",
-    pickupLocation: "Islamabad Airport",
-    tourType: "Trekking",
-    description:
-      "Nanga Parbat Rupal Face Trek is a challenging yet rewarding trek that offers stunning views of the second-highest mountain in Pakistan. Nanga Parbat is not a single peak but consists of a 20km long series of peaks and ridges culminating in an ice crest of 8125m. Its South Face known as Rupal Face is ~5000m high, while the North or Raikot Face plunges over 7000m from the summit to the Indus forming one of the world’s deepest gorges. This trek follows the south side of Nanga Parbat through the lush Rupal Valley to Herrligkoffer Base Camp at ~4600m, offering breathtaking views of the massive Rupal Face rising over 5,000m from the valley floor.",
-    images: [rupal1, rupal2, rupal3, rupal4, rupal5, rupal6],
-    rating: 4.7,
-    reviews: 203,
-    bestTime: "June to September",
-    price: "$1800",
-    emails: [
-      "akhtar_nangaparbat@yahoo.com",
-      "akhtarnagabarbat@gmail.com"
-    ],
-    itinerary: [
-      { day: "1", title: "Islamabad", description: "Arrival at Islamabad. Transfer to hotel; afternoon visit of the twin towns of Islamabad and Rawalpindi. Evening program presentation." },
-      { day: "2", title: "Islamabad - Chilas (1200m)", description: "Drive via Karakoram Highway and Potwar plateau into forested ridges; pass Abbottabad (1220m). Chilas lies on the Indus, famous for petroglyphs. Overnight hotel. Option: Fly to Gilgit then drive to Tarishing; or drive via Babusar to Chilas." },
-      { day: "3", title: "Tarishing (2911m) – 6 hrs", description: "Drive along Astore River via Gurikot and Astore to Tarishing, at the end of the jeep road and start point of trek. Overnight camp." },
-      { day: "4", title: "Herrligkoffer BC", description: "Begin trekking with porters towards Herrligkoffer Base Camp. Cross Lower and Upper Rupal villages, Tarshing and Bashin glaciers, and meadows with grand Rupal Face views. Lunch at BC; explore while team sets camp. Overnight tents." },
-      { day: "5", title: "Latoboh (4000m)", description: "Break camp and trek towards Latoboh; support team and porters rendezvous at lunch. Overnight camp." },
-      { day: "6", title: "Latoba (4000m) & Shaigiri (4450m)", description: "Follow northern lateral moraines of Toshain and Shaigiri glaciers with views to Leila and Rupal peaks and Nanga Parbat. Overnight camp." },
-      { day: "7", title: "Tarishing (2911m)", description: "Trek back to Tarishing, interact with locals and learn mountain lifestyle. Overnight at Tarishing hotel." },
-      { day: "8", title: "Chilas – 6 hrs", description: "Drive to Chilas. Overnight hotel." },
-      { day: "9", title: "Chilas to Islamabad", description: "Follow Indus and KKH to Islamabad; lunch at Besham. Transfer to hotel. Overnight hotel." },
-      { day: "10", title: "Explore Rawalpindi & Islamabad", description: "Explore bazaars (Saddar, Moti, Raja, Kashmiri; Sarafa for gold/silverware). Afternoon visit Lok Virsa, Pakistan Monument Museum, Faisal Mosque, Daman-e-Koh. Farewell dinner with Nanga Parbat Adventure team. Overnight hotel." },
-      { day: "11", title: "Departure", description: "Morning transfer to airport for international flight." }
     ]
   },
   "gondogoro-la-trek": {
