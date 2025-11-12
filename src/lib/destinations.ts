@@ -64,6 +64,13 @@ import shimshalCover from "@/assets/shimshal/Shimshal-Autumn-Forest-CMP.jpg";
 import latobahCover from "@/assets/latbo/latbo 1.jpeg";
 import latobahKid from "@/assets/latbo/latbi kid.jpeg";
 
+// Astore
+import astore1 from "@/assets/astore destination/rama astore destination.webp";
+import astore2 from "@/assets/astore destination/rama 1 astore destination.webp";
+import astore3 from "@/assets/astore destination/minimarg astore destination.webp";
+import astore4 from "@/assets/astore destination/rupal astore destination.webp";
+import astore5 from "@/assets/astore destination/deosai astore destination.webp";
+
 export const destinations: Destination[] = [
   // Mountain Peaks (brief sightseeing style)
   {
@@ -326,6 +333,55 @@ export const destinations: Destination[] = [
       }
     ],
     photos: [latobahCover, latobahKid, nangaParbatImg, fairyMeadowsImage]
+  },
+  {
+    id: "astore-valley",
+    title: "Astore Valley",
+    category: "Northern",
+    region: "Gilgit-Baltistan",
+    description: "Astore Valley, located in Gilgit-Baltistan, Pakistan, is famous for its breathtaking landscapes, snow-capped mountains, and lush green meadows. It serves as the gateway to the Deosai National Park, known as the Land of Giants, and offers stunning views of Nanga Parbat, the 9th highest peak in the world. The valley is ideal for hiking, camping, jeep safaris, and nature photography. Key attractions include Rama Meadows, Minimarg, and Chilum. With its peaceful environment and natural beauty, Astore Valley is a must-visit for nature lovers and adventure seekers in northern Pakistan.",
+    image: astore1,
+    attractions: [
+      "Rama Lake - One of Pakistan's most picturesque alpine lakes, surrounded by lush meadows, dense pine forests, and snow-capped peaks. The lake's crystal-clear waters reflect the mighty Nanga Parbat, creating a surreal view.",
+      "Rupal Valley - Offers one of the closest and most dramatic views of Nanga Parbat's Rupal Face, the highest mountain face in the world (4,600m vertical wall).",
+      "Gudai & Chilam Valley - Less explored but equally stunning, lush green alpine valleys surrounded by snow-capped peaks. Perfect spots for camping, trout fishing, and scenic hikes.",
+      "Deosai National Park - Known as the Roof of the World, one of the highest plateaus on Earth (4,114m), stretching between Astore and Skardu. Home to Himalayan brown bears, marmots, and endless wildflower meadows."
+    ],
+    bestTime: "May-Sep",
+    duration: "5 Days",
+    price: "$450",
+    pickupLocation: "Islamabad Airport",
+    whyVisit: "Nestled in the Gilgit-Baltistan region, Astore Valley is a breathtaking destination offering lush green meadows, towering mountains, crystal-clear lakes, and vibrant culture. Known as the gateway to Nanga Parbat (8,126m), the ninth-highest peak in the world, Astore is perfect for trekkers, adventure seekers, and nature lovers. From the mesmerizing Rama Lake to the stunning Deosai Plains, Astore Valley is a must-visit for those looking to explore Pakistan's untouched beauty.",
+    whenToVisitDetailed: "The best time to visit Astore Valley is from May to September when the weather is pleasant and the roads are accessible. During these months, the valleys are lush green, and the flowers are in full bloom. Winter months (November to March) bring heavy snowfall, making the region inaccessible. Spring (April) and autumn (October) are also good times to visit, with clear skies and moderate temperatures.",
+    howToGetThere: "From Islamabad, take the Karakoram Highway (KKH) towards Gilgit. After reaching Raikot Bridge, turn off towards Astore Valley. The journey takes approximately 10-12 hours by road. Alternatively, you can fly to Gilgit Airport and then drive to Astore, which takes about 4-5 hours.",
+    itinerary: [
+      {
+        day: 1,
+        title: "Islamabad → Chilas → Astore",
+        description: "Drive from Islamabad to Chilas via the Karakoram Highway, then continue to Astore Valley. Overnight in Astore."
+      },
+      {
+        day: 2,
+        title: "Explore Rama Lake",
+        description: "Day trip to Rama Lake, one of the most picturesque alpine lakes in Pakistan. Enjoy the scenic beauty and photography opportunities. Return to Astore for overnight stay."
+      },
+      {
+        day: 3,
+        title: "Rupal Valley Exploration",
+        description: "Visit Rupal Valley for dramatic views of Nanga Parbat's Rupal Face. Experience the close proximity to the world's highest mountain face. Overnight in Astore."
+      },
+      {
+        day: 4,
+        title: "Gudai & Chilam Valley",
+        description: "Explore the less-visited but stunning Gudai and Chilam Valleys. Enjoy camping, trout fishing, and scenic hikes in these lush green alpine valleys. Overnight camping."
+      },
+      {
+        day: 5,
+        title: "Deosai National Park → Return",
+        description: "Visit Deosai National Park, known as the Roof of the World. See the Himalayan brown bears and wildflower meadows. Drive back to Islamabad."
+      }
+    ],
+    photos: [astore1, astore2, astore3, astore4, astore5]
   },
 
   // Cultural

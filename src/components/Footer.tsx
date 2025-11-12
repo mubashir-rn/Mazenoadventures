@@ -26,12 +26,13 @@ const Footer = () => {
   ];
 
   const destinationLinks = [
-    { label: "SKARDU" },
-    { label: "HUNZA VALLEY" },
-    { label: "FAIRY MEADOWS" },
-    { label: "DEOSAI NATIONAL PARK" },
-    { label: "K2 (8611M) – SECOND HIGHEST PEAK IN THE WORLD" },
-    { label: "NANGA PARBAT (8126M) – KILLER MOUNTAIN" },
+    { label: "SKARDU", id: "skardu" },
+    { label: "HUNZA VALLEY", id: "hunza-valley" },
+    { label: "FAIRY MEADOWS", id: "fairy-meadows" },
+    { label: "DEOSAI NATIONAL PARK", id: "deosai-plains" },
+    { label: "K2 (8611M) – SECOND HIGHEST PEAK IN THE WORLD", id: "k2-peak" },
+    { label: "NANGA PARBAT (8126M) – KILLER MOUNTAIN", id: "nanga-parbat" },
+    { label: "ASTORE VALLEY", id: "astore-valley" },
   ];
 
   return (
@@ -151,7 +152,7 @@ const Footer = () => {
               {destinationLinks.map((item, index) => (
                 <li key={index}>
                   <Link 
-                    to="/destinations"
+                    to={`/destination/${item.id}`}
                     className="text-white/70 hover:text-secondary transition-colors text-sm"
                   >
                     {item.label}

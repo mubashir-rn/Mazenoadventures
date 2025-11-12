@@ -12,6 +12,7 @@ import gondogoroImage from "@/assets/gondogoro-trek.jpg";
 import k2Image from "@/assets/k2-expedition.jpg";
 import snowLakeImage from "@/assets/snow-lake-trek.jpg";
 import shimshalCover from "@/assets/shimshal/Shimshal-Autumn-Forest-CMP.jpg";
+import astoreImage from "@/assets/astore destination/rama astore destination.webp";
 
 const Destinations = () => {
   const [open, setOpen] = useState(false);
@@ -104,6 +105,15 @@ const Destinations = () => {
       image: snowLakeImage,
       attractions: ["Brown Bears", "Wildflowers", "Sheosar Lake", "Rolling Plains"],
       bestTime: "Jun-Sep"
+    },
+    {
+      id: "astore-valley",
+      name: "ASTORE VALLEY",
+      region: "Gilgit-Baltistan",
+      description: "Breathtaking landscapes with lush meadows and views of Nanga Parbat",
+      image: astoreImage,
+      attractions: ["Rama Lake", "Rupal Valley", "Deosai Park", "Gudai Valley"],
+      bestTime: "May-Sep"
     }
   ];
 
