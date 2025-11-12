@@ -175,51 +175,6 @@ const treks: Record<string, TrekData> = {
       { day: "14", title: "Departure - Transfer to airport" }
     ]
   },
-  "mazeno-pass-trek": {
-    id: "mazeno-pass-trek",
-    title: "NANGA PARBAT & MAZENO PASS TREK",
-    elevation: "5400m",
-    duration: "21 DAYS / 20 NIGHTS",
-    groupSize: "6-10",
-    difficulty: 5,
-    minAge: "18+",
-    pickupLocation: "Islamabad Airport",
-    tourType: "Trekking",
-    description:
-      "Around Nanga Parbat Trek is a challenging but rewarding adventure that takes you on a circular route around the majestic Nanga Parbat, the ninth-highest mountain in the world. This trek offers stunning views of the mountain's various faces, including the iconic Rupal Face, as well as other impressive peaks in the surrounding region. The trek involves crossing three high passes: Mazeno La (5,400 meters), Kado Sagar Pass (4,900 meters), and Khustu Pass (4,840 meters). While Mazeno La presents technical challenges, particularly during the descent, the other two passes are generally less demanding. The trek offers breathtaking panoramic views of Nanga Parbat, its surrounding glaciers, and the surrounding Himalayan landscape. The Around Nanga Parbat Trek is a unique opportunity to explore a remote and unspoiled region of Pakistan, far from the tourist crowds. The trek also offers opportunities to interact with local communities and learn about their culture and traditions.",
-    images: [mazenoImg7, mazenoImg1, mazenoImg2, mazenoImg3, mazenoImg4, mazenoImg5, mazenoImg6],
-    rating: 4.5,
-    reviews: 42,
-    bestTime: "May to October",
-    price: "$3500",
-    emails: [
-      "akhtar_nangaparbat@yahoo.com",
-      "akhtarnagabarbat@gmail.com"
-    ],
-    itinerary: [
-      { day: "1", title: "Islamabad (600m)", description: "Arrival at Islamabad. Transfer to hotel, afternoon visit of the twin towns of Islamabad and Rawalpindi. Evening presentation of the program." },
-      { day: "2", title: "Chilas (1200m) 12 hrs", description: "Drive to Chilas by the Karakorum Highway (KKH). Visit Abbottabad and see petroglyphs in Chilas. Meals and overnight at hotel." },
-      { day: "3", title: "Tarishing (2911m) 6 hrs", description: "Drive to Tarshing along the Astore River via Gurikot and Astore. Tarshing is the departure point of the trek. Meals and overnight at camp." },
-      { day: "4", title: "Latoba (4000m) 5 hrs", description: "Cross Tarshing and Bashin glaciers, discover Rupal villages. Campsite offers a view of the Rupal face of Nanga Parbat. Meals and overnight at camp." },
-      { day: "5", title: "Shaigiri 4450m 4-5 hrs", description: "Follow the northern lateral moraine of the Toshain glacier with views of Leila, Rupal peaks, and Nanga Parbat. View of the Toshain glacier. Meals and overnight at camp." },
-      { day: "6", title: "Shaigri", description: "Rest day at Shaigri. Explore the nearby mountains walls. Overnight at Camp." },
-      { day: "7", title: "Mazeno BC (4700m) 6 hrs", description: "Trek towards Mazeno pass. This is a high and cold location where porters from Tarishing are often changed. Overnight at camp." },
-      { day: "8", title: "Mazeno high Camp. 5399m 4 hrs", description: "Early morning trek to the highest point to cross the Mazeno pass. Overnight at camp." },
-      { day: "9", title: "Upper Loiba (4300m) 6 hrs", description: "Climb up is not difficult. The other side is a steady slope on a glacier. Reach birch woods and green meadows at the foot. Meals and overnight at camp." },
-      { day: "10", title: "Sargialo Pass (4843m) 7 hrs", description: "Cross Sargialo Pass for a magnificent view of snow-covered mountains including Nanga Parbat Diamer side. Descend to Sargialo campsite. Overnight at camp." },
-      { day: "11", title: "Kotghali (3000m) 4 hrs", description: "Walk on the Diamir glacier towards Kotghali, a summer settlement. Interact with locals and enjoy local dairy products. Overnight at camp." },
-      { day: "12", title: "Kotghali 6 hrs Rest day", description: "Relaxing day at Kotghali. Option to walk on the glacier and surroundings. View of Nanga Parbat. Free time for laundry. Overnight at camp." },
-      { day: "13", title: "Day excursion Nanga Parbat Base Camp", description: "Walk towards the first base camp (3850m) and second Base Camp (4250m), the departure point for most expeditions. View of the ninth highest peak in the world. Option for acclimatization climb of Diamerio peak (6000m). Meals and overnight at camp." },
-      { day: "14", title: "Kutgali Pass to Karu Sagar 6-7 hrs", description: "Hike up to Kutgali Pass with amazing views of Nanga Parbat. Reach Karu Sagar. Overnight at camp." },
-      { day: "15", title: "Trekking to Gutum Sagar / Base Camp of Jiliper Pass 4 to 5 hrs.", description: "Walk towards Gutum Sagar on green meadows, passing small summer villages. Meals and overnight at camp." },
-      { day: "16", title: "Crossing of Jiliper Pass to Bayal", description: "Cross Jiliper Pass to approach the Fairy Meadows region (North face of Nanga Parbat). Overnight at camp." },
-      { day: "17", title: "Nanga Parbat Base camp (3300m) Option", description: "Excursions to the Base Camp (4300m) of the north face of Nanga Parbat. Visit the memorial of early expeditions, including the first successful 1953 expedition. Trek back to Fairy Meadows. Overnight at wooden huts." },
-      { day: "18", title: "Fairy Meadows – Naran 7-8 hrs", description: "Trek back to Tato, then take jeeps to KKH and drive over Babusar pass to Naran. Overnight at Hotel." },
-      { day: "19", title: "Naran - Islamabad", description: "Drive towards Islamabad. If time allows, visit Taxila museum and archaeological sites. Overnight at Islamabad hotel." },
-      { day: "20", title: "Islamabad", description: "Sightseeing in Rawalpindi (Raja Bazar) and modern Islamabad (Shah Faisal Mosque, Margala hills). Farewell dinner. Overnight in Hotel." },
-      { day: "21", title: "Departure", description: "Transfer to airport for onward international flight." }
-    ]
-  },
   "wakhan-corridor-trek": {
     id: "wakhan-corridor-trek",
     title: "WAKHAN CORRIDOR AND CHILINJI PASS TREK",

@@ -16,11 +16,13 @@ const Footer = () => {
 
   const trekkingLinks = [
     { label: "AROUND NANGA PARBAT TREK", id: "around-nanga-parbat-trek" },
-    { label: "NANGA PARBAT & MAZENO PASS TREK", id: "mazeno-pass-trek" },
     { label: "K2 BASE CAMP TREK", id: "k2-base-camp-trek" },
     { label: "K2 Gondogoro La Trek", id: "gondogoro-la-trek" },
     { label: "Biafo Hispar Snow Lake", id: "snow-lake-bifo-hispar-trek" },
-    { label: "BIAFO GLACIER TREK", id: "biafo-glacier-trek" },
+    { label: "WAKHAN CORRIDOR AND CHILINJI PASS TREK", id: "wakhan-corridor-trek" },
+    { label: "Rakaposhi & Diran Base Camp", id: "biafo-glacier-trek" },
+    { label: "Fairy Meadows Nanga Parbat base camp Trek", id: "rakaposhi-base-camp-trek" },
+    { label: "Rush Phari Lake Trek", id: "rush-lake-trek" },
   ];
 
   const destinationLinks = [

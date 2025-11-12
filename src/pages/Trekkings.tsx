@@ -154,24 +154,6 @@ const Trekkings = () => {
       category: "Challenging Trek"
     },
     {
-      id: "mazeno-pass-trek",
-      title: "NANGA PARBAT & MAZENO PASS TREK",
-      duration: "21 DAYS / 20 NIGHTS",
-      groupSize: "6-10",
-      difficulty: 5,
-      minAge: "18+",
-      pickupLocation: "Islamabad Airport",
-      tourType: "Trekking",
-      description: "Challenging circuit of Nanga Parbat via Mazeno La (5400m), Kado Sagar (4900m), and Khustu Pass (4840m), with panoramic glacier and peak views and rich local culture.",
-      image: mazenoLatabo,
-      rating: 4.5,
-      reviews: 42,
-      bestTime: "June to September",
-      price: "$3500",
-      elevation: "5400m",
-      category: "Challenging Trek"
-    },
-    {
       id: "rakaposhi-base-camp-trek",
       title: "Fairy Meadows Nanga Parbat base camp Trek",
       duration: "10 Days",
